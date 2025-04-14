@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <header>
+        <h1>Contacto</h1>
+    </header>
+    <main>
+        <form action="/formulario" method="post"> <!-- action es la URL a la que se enviará el formulario, method es el método de envío (GET o POST) -->
+            <fieldset>
+                <legend>Información Personal</legend>
+
+                <label for="nombre">Nombre:</label> <!-- for es para enlazar la etiqueta label con el input -->
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre" required> <!-- name es el nombre del campo que se enviará al servidor -->
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" placeholder="ejemplo@ejemplo.com"> <!-- type="email" valida el formato del correo -->
+                <label for="edad">Edad:</label>
+                <input value="100" type="number" id="edad" name="edad" min="0" max="120"> <!-- type="number" es para ingresar solo números, value da valor por defecto -->
+                <label for="mensaje">Mensaje:</label>
+                <textarea cols="50" rows="10" id="mensaje" name="mensaje" rows="4"></textarea> <!-- textarea es para ingresar texto de varias líneas -->
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="(123) 456-7890"> <!-- type="tel" es para ingresar números de teléfono -->
+            </fieldset>
+            <br> <!-- <br> es para saltar de línea -->
+            <fieldset>
+                <legend>Preferencias</legend>
+                <label for="opcion">Seleccione una opción:</label>
+                <select id="opcion" name="opcion">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="js">JavaScript</option>
+                </select>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Intereses</legend>
+                <input type="checkbox" id="interes1" name="interes1" value="programacion"> <!-- type="checkbox" es para seleccionar varias opciones -->
+                <label for="interes1">Programación</label>
+                <input type="checkbox" id="interes2" name="interes2" value="diseño">
+                <label for="interes2">Diseño</label>
+                <input type="checkbox" id="interes3" name="interes3" value="marketing">
+                <label for="interes3">Marketing</label>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Condiciones</legend>
+                <label for="terminos">Acepto los términos y condiciones</label>
+                <input type="checkbox" id="terminos" name="terminos">
+                <br>
+                <label for="aceptar">Aceptar</label>
+                <input type="radio" id="aceptar" name="aceptar" value="si" title="Aceptar los términos"> <!-- type="radio" es para seleccionar una opción entre varias -->
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Archivo</legend>
+                <label for="archivo">Subir archivo:</label>
+                <input type="file" id="archivo" name="archivo" accept=".jpg, .jpeg, .png"> <!-- type="file" es para subir archivos -->
+            </fieldset>
+            <br>
+            <button type="submit">Enviar</button> <!-- type="submit" es para enviar el formulario a donde se indica en action-->
+            <button type="reset">Limpiar</button> <!-- type="reset" es para limpiar el formulario -->
+            <button type="button" onclick="alert('¡Hola!')">Alerta</button> <!-- type="button" es para crear un botón que no envía el formulario -->
+        </form>
+    </main>
+    <footer> <!-- footer es para el pie de página -->
+        <a href="index.html">⬅ Volver al inicio</a>
+    </footer>
+</body>
+</html>
