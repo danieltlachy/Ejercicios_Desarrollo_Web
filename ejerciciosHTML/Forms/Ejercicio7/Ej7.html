@@ -1,0 +1,28 @@
+<!-- Realizar programa con introducción de datos por formulario:
+Introducimos un número ºC y el programa contesta en ºF -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 7</title>
+</head>
+
+<head>
+    <script>
+        function calculo() {
+            let cantidadEntrada = document.fdatos.entrada.value
+            document.writeln(`La conversion de ${cantidadEntrada} grados Celsius a Fahrenheit es ${cantidadEntrada * 9 / 5 + 32} grados Fahrenheit`)
+        }
+    </script>
+</head>
+
+<body>
+    <form name="fdatos">
+        Escribe tu cantidad: <input type="text" size="10" name="entrada" placeholder="Tu cantidad" />
+        <input type="button" value="Pulsa aquí" onclick="calculo()" />
+    </form>
+</body>
+
+</html>

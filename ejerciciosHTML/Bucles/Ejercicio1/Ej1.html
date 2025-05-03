@@ -1,0 +1,21 @@
+<!-- Script que muestra los números del 0 al 4 (bucle) en un párrafo con el id "central". -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1</title>
+</head>
+<body>
+    <p id="central"></p>
+    <script>
+        let cadena = "", i;
+        for (i = 0; i < 5; i++) {
+            cadena = cadena + `El numero es ${i} <br />`;
+        }
+        document.getElementById("central").innerHTML = cadena;
+    </script>
+</body>
+
+</html>

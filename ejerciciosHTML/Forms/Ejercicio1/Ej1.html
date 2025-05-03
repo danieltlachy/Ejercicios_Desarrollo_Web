@@ -1,0 +1,28 @@
+<!-- Script que muestra un saludo al usuario al pulsar el botón. 
+El nombre del usuario se obtiene del campo de entrada del formulario. -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1</title>
+</head>
+
+<head>
+    <script>
+        function saludo() {
+            let nom_usuario = document.fdatos.entrada.value
+            document.writeln(`Hola, bon dia ${nom_usuario} `)
+        }
+    </script>
+</head>
+
+<body>
+    <form name="fdatos">
+        Escribe tu nombre: <input type="text" size="10" name="entrada" placeholder="Tu nombre" />
+        <input type="button" value="Pulsa aquí" onclick="saludo()" />
+    </form>
+</body>
+
+</html>

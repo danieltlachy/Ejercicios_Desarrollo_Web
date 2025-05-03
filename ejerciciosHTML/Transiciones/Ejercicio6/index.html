@@ -1,0 +1,44 @@
+<!-- Proyecto Menu-Slide con programación jQuery -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transitions amb jQuery</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript">
+    var toggle = 1;
+    $(document).ready(function () {
+      $(".encabezado").click(function () {
+        if (toggle) {
+          $(".slide-menu").css("transform", "translate3d(0, 0, 0)");
+          $(".contenedor").css("transform", "translate3d(250px, 0, 0)");
+          toggle = 0;
+        } else {
+          $(".slide-menu").css("transform", "translate3d(-250px, 0, 0)");
+          $(".contenedor").css("transform", "translate3d(0, 0, 0)");
+          toggle = 1;
+        }
+      });
+    });
+  </script>
+</head>
+<body>
+  <div class="slide-menu">
+    <nav class="menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Contacto</a></li>
+    </nav>
+  </div>
+  <div class="contenedor">
+    <div class="encabezado">
+      <!-- Añadimos un icono de hamburguesa para hacer el clic más intuitivo -->
+      <span style="font-size: 2em; padding: 20px; cursor: pointer;">☰</span>
+    </div>
+    <h1>Transitions</h1>
+    <h2>Texto e información de la web</h2>
+  </div>
+</body>
+</html>

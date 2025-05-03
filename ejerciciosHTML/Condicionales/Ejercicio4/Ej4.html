@@ -1,0 +1,27 @@
+<!-- Realizar un programa que simule el lanzamiento de un dado. Si el número es mayor que 3, mostrar "Has ganado", si no "Lo siento" -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 4</title>
+</head>
+
+<body>
+    <p id="salida"></p>
+    <script>
+        let suerte = (Math.random() * 6);
+        let dado = parseInt(suerte) + 1;
+        let obj1 = document.getElementById("salida")
+        if (dado > 3) {
+            obj1.innerHTML = `Has ganado, ha salido el numero ${dado} `;
+        }
+        else {
+            obj1.innerHTML = `Lo siento, ha salido el numero ${dado} `;
+        }
+    </script>
+</body>
+
+</html>
+<!-- Esta dentro de body porque se ejecuta directamente cuando el navegador carga el contenido de la pagina,
+ asegurando que los elementos del DOM esten disponibles para ser manipulador por el script-->

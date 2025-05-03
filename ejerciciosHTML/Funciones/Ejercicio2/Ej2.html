@@ -1,0 +1,27 @@
+<!-- Realiza un script que contenga una función que reciba un número como parámetro y 
+ devuelva el cuadrado de ese número. Si no se pasa ningún número, la función debe devolver 
+ el cuadrado de 1.-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2</title>
+</head>
+
+<head>
+    <script>
+        function Calcula(numero = 1) { // si no se pasa un número, por defecto será 1
+            let calculo = numero * numero;
+            document.write(`<p/> Resultado = ${calculo} </p>`);
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" onclick="Calcula()" value="Calculo">
+    <input type="button" onclick="Calcula(5)" value="Otro Calculo ">
+</body>
+
+</html>

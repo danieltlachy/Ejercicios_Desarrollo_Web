@@ -1,0 +1,35 @@
+<!-- Programa que lee tres notas de un alumno, calcula la media e indicar el valor de la nota y la palabra
+“Excelente” si tiene un valor mayor que 8 , “Aprobado” entre 5 y 8 , “Suspendido” < 5. 
+Agregar resultado "bien" si la nota es entre 5 y 6-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2</title>
+    <script>
+        let nota1, nota2, nota3;
+        let media;
+        dato1 = prompt("Primer número?", "0");
+        dato2 = prompt("Segundo número?", "0");
+        dato3 = prompt("Tercer número?", "0");
+        nota1 = parseInt(dato1);
+        nota2 = parseInt(dato2);
+        nota3 = parseInt(dato3);
+        media = (nota1 + nota2 + nota3) / 3;
+        if (media > 8) {
+            resultat = " Excelente";
+        }
+        else {
+            if (media >= 7 && media <= 8)
+                resultat = " Aprobado";
+            else
+                if (media >= 5 && media <= 6)
+                    resultat = " Bien";
+                else
+                    resultat = "Suspendido";
+        }
+        document.write(`La nota final es ${media} y eso es ${resultat}`);
+    </script>
+    </body>
+</html>

@@ -1,0 +1,34 @@
+<!-- Realiza un script que contenga una función que declare una variable local y otra global. 
+ La función debe mostrar el valor de ambas variables. El script debe mostrar el valor de la variable global. -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 11</title>
+</head>
+
+<head>
+    <script>
+        function f() {
+            let solo_local = 100;
+            let z = solo_local;
+        }
+    </script>
+</head>
+
+<body>
+    <script>
+        let x, y;
+        y = "Bon dia";
+        document.write(`<p> Este es el valor de x: ${x} <br></p>`);
+        document.write(`<h3>Este es el valor de y: ${y} </h3>`);
+        f();
+        document.write(`<p>Este es el valor de z: + ${z} <br></p>`);
+    </script>
+    <p><br>Las variables declaradas en la función (f) existen durante el tiempo de
+        ejecución de la función. El resto son variables globales.</p>
+</body>
+
+</html>

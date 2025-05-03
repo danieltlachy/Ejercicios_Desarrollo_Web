@@ -1,0 +1,25 @@
+<!-- Realizar programa donde se Introducen de 3 números y 
+el programa indica cuál es el mayor de los 3 -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 5</title>
+    <script>
+        let numero1, numero2, numero3;
+        let mayor;
+        numero1 = parseInt(prompt("Introduce el primer número:", "0"));
+        numero2 = parseInt(prompt("Introduce el segundo número:", "0"));
+        numero3 = parseInt(prompt("Introduce el tercer número:", "0"));
+        if (numero1 >= numero2 && numero1 >= numero3) {
+            mayor = numero1;
+        } else if (numero2 >= numero1 && numero2 >= numero3) {
+            mayor = numero2;
+        } else {
+            mayor = numero3;
+        }
+        document.write(`El número mayor es: ${mayor}`);
+    </script>
+    </body>
+</html>

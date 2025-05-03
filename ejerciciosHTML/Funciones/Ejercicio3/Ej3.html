@@ -1,0 +1,27 @@
+<!-- Realiza una función que reciba dos números y devuelva la suma de ambos. 
+ Llama a la función desde un botón y muestra el resultado en el documento HTML. -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 3</title>
+</head>
+
+<head>
+    <meta content="text/html; charset=utf-8">
+    <script>
+        function suma(n1, n2) {
+            return n1 + n2;
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Suma" onclick="document.write(`Resultado:
+${suma(2,3)}`)">
+    <p><br>La función utiliza la sentencia <b>return</b> para devolver un valor.</p>
+</body>
+
+</html>

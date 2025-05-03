@@ -1,0 +1,28 @@
+<!-- Script que consiste en crear un formulario con un control de tipo "range" que permita 
+al usuario seleccionar un valor entre 0 y 100. Al cambiar el valor del control, se mostrará 
+el valor seleccionado en un párrafo debajo del control. -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 5</title>
+</head>
+
+<head>
+    <script>
+        function ProcesaDatos() {
+            let objx = document.getElementById("RangoValor").value;
+            document.getElementById("resultado").innerHTML = objx;
+        }
+    </script>
+</head>
+
+<body>
+    <h3>Entrada de datos por 'Slide'</h3>
+    <input type="range" id="RangoValor" value="50" onchange="ProcesaDatos()" placeholder="Tu cantidad" />
+    <p id="resultado"></p>
+</body>
+
+</html>

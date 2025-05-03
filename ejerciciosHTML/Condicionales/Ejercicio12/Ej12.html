@@ -1,0 +1,24 @@
+<!-- Escribe un script que pida la edad y muestre por pantalla si es mayor de edad o no (valida solo aceptar numeros) -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1</title>
+</head>
+
+<head>
+    <script>
+        let edad, final;
+        edad = prompt("edad?", "0");
+        if (isNaN(edad)) {
+            final = "Error. No es un número";
+        } else {
+            final = (edad < 18) ? "Demasiado joven" : "Mayor de edad";
+        }
+        document.write(final);
+    </script>
+</head>
+
+</html>

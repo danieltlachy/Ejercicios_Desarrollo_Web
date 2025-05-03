@@ -1,0 +1,27 @@
+<!-- Realiza un script que contenga una función que cambie el color de un texto al hacer clic en un botón. -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 8</title>
+</head>
+
+<head>
+    <title> Ejemplo getElementById </title>
+    <script>
+        function CambiaColor(nombreColor) {
+            let obj = document.getElementById("informacion");
+            obj.style.color = nombreColor;
+        }
+    </script>
+</head>
+
+<body>
+    <p id="informacion">Curso de ECMAScript6</p>
+    <button onclick="CambiaColor('blue');">azul</button>
+    <button onclick="CambiaColor('red');">rojo</button>
+</body>
+
+</html>

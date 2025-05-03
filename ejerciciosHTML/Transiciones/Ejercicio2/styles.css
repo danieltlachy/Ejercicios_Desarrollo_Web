@@ -1,0 +1,18 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background: #3498db;
+  margin: 50px;
+}
+
+.no-transition:hover {
+  transform: translateX(100px);
+}
+
+.with-transition {
+  transition: transform 1s;
+}
+
+.with-transition:hover {
+  transform: translateX(100px);
+}

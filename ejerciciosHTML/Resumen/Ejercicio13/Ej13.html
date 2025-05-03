@@ -1,0 +1,21 @@
+<!-- Programa donde se introducen 3 números y muestra cual es el mayor de los 3. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 13</title>
+    <script>
+        let dato, altura;
+        dato = prompt("Escribe tu altura en cm", "0");
+        altura = parseInt(dato);
+        if (altura > 180) resultado = "Por encima de la media";
+        else {
+            if (altura >= 140)
+                resultado = "Altura media";
+            else
+                resultado = "Por debajo de la media";
+        }
+        document.write(resultado);
+    </script>
+</html>

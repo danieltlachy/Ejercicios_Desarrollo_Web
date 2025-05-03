@@ -1,0 +1,12 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background: #3498db;
+  margin: 50px;
+  transition: transform 1s;
+  transition-delay: 0.5s;
+}
+
+.box:hover {
+  transform: translateX(100px);
+}

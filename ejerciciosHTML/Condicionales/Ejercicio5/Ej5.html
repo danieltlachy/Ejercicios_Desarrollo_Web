@@ -1,0 +1,27 @@
+<!-- Realizar un programa para una tienda de coches: si el coche a la venta es un ford fiesta, el descuento es de un 5%.
+ Si el coche es un ford focus, el descuento es del 10%. El usuario introduce el articulo (o su codigo) y el programa saca
+ el descuento correspondiente por pantalla -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 5</title>
+</head>
+
+<body>
+    <script>
+        let marca, modelo, descuento = 0;
+        marca = prompt("Marca?", "0");
+        modelo = prompt("Modelo?", "0");
+        if ((marca == "ford") && (modelo == "fiesta")) {
+            descuento = 5;
+        }
+        if ((marca == "ford") && (modelo == "focus")) {
+            descuento = 10;
+        }
+        document.write(`<h3>Su descuento es ${descuento} </h3>`);
+    </script>
+</body>
+
+</html>

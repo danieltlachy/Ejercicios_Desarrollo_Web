@@ -1,0 +1,38 @@
+<!-- Crear programa donde se introduce una temperatura en ºCelsius sale el resultado en ºFahrenheit. 
+ Añade una función que recibe como parámetro ºFahrenheit y que saca per pantalla las seguientes frases:
+1) Si ºF está entre 14 y 32, sale la frase “Temperatura baja”
+2) Si ºF está entre 32 y 68, sale la frase “Temperatura adecuada”
+3) Si ºF está entre 68 y 96, sale la farse “Temperatura alta”
+4) Si no está entre ningún caso anterior la frase “Temperatura desconocida” -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 10</title>
+    <script>
+        function convertirCelsiusAFahrenheit(celsius) {
+            return (celsius * 9/5) + 32;
+        }
+
+        function evaluarTemperatura(fahrenheit) {
+            if (fahrenheit >= 14 && fahrenheit <= 32) {
+                return "Temperatura baja";
+            } else if (fahrenheit > 32 && fahrenheit <= 68) {
+                return "Temperatura adecuada";
+            } else if (fahrenheit > 68 && fahrenheit <= 96) {
+                return "Temperatura alta";
+            } else {
+                return "Temperatura desconocida";
+            }
+        }
+
+        let celsius = parseFloat(prompt("Introduce la temperatura en ºCelsius:"));
+        let fahrenheit = convertirCelsiusAFahrenheit(celsius);
+        let mensaje = evaluarTemperatura(fahrenheit);
+        document.write(`La temperatura en ºFahrenheit es: ${fahrenheit}°F<br>`);
+        document.write(mensaje);
+    </script>
+</head>
+<body>
+</body>

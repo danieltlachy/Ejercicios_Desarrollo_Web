@@ -1,0 +1,31 @@
+<!-- Script que calcula el resultado de una expresión matemática introducida por el usuario. -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 3</title>
+</head>
+
+<head>
+    <script>
+        function calcula() {
+            document.datos.respuesta.value = eval(document.datos.entrada.value)
+        }
+    </script>
+</head>
+
+<body>
+    <form name="datos" action="Ejercicio.html">
+        Escribe una fórmula matemática, por ejemplo: (2+3)*10
+        <input type="text" size="20" name="entrada" placeholder="Tu cantidad"/>
+        <input type="button" name="B1" value="Ejecuta" onclick="calcula()" />
+        <br /><br />
+        Respuesta:<input type="text" size="20" name="respuesta" placeholder="Tu cantidad"/>
+        <br /><br />
+        <input type="reset" name="B2" value="Reset" />
+    </form>
+</body>
+
+</html>

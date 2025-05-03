@@ -1,0 +1,29 @@
+<!-- Realizar programa donde el usuario introduce números y la computadora responde
+sacando por pantalla los mismos números hasta que el introducido es el número 7 -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 14</title>
+</head>
+
+<script language="javascript">
+{
+    let num;
+    do {
+        let dato = prompt('Introduce un número del 1 al 10 (introduce 7 para salir):', '');
+        num = parseInt(dato);
+        if (!isNaN(num)) {
+            console.log(`El número introducido es: ${num}`);
+            alert(`El número introducido es: ${num}`);
+        } else {
+            alert('Por favor, introduce un número válido.');
+        }
+    } while (num !== 7);
+    alert('¡Has salido del programa!');
+}
+</script>
+
+</html>

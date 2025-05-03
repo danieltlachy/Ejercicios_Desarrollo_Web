@@ -1,0 +1,25 @@
+<!-- Script que muestre los números del 1 al 10 (bucle) en una tabla repitiendo la impresion del numero segun su valor. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <p id="central"></p>
+    <script>
+        let i, j;
+        let x = "<table>";
+        for (i = 1; i <= 10; i++) // 10 filas
+        {
+            x = x + "<tr>";
+            for (j = 1; j <= i; j++) // números en cada fila
+                x = x + `<td> El numero es ${i} </td>`;
+            x = x + "</tr>";
+        }
+        x = x + "</table>";
+        document.getElementById("central").innerHTML = x;
+    </script>
+</body>
+</html>

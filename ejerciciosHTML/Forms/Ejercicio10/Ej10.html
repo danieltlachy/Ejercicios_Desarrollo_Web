@@ -1,0 +1,33 @@
+<!-- Formulario con dos campos de fecha y calcular la diferencia entre ambas fechas en días. -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 10</title>
+</head>
+
+<head>
+    <script src="http://momentjs.com/downloads/moment.min.js"></script>
+</head>
+
+<body>
+    <form>
+        <input type="date" id="start" placeholder="Fecha de inicio">
+        <input type="date" id="end" placeholder="Fecha de fin">
+        <input type="button" value="Calcular" onclick="getEventTime()" />
+        <input type="reset" value="Limpiar" />
+    </form>
+    <script>
+        var getEventTime = function () {
+            var start = moment(document.getElementById("start").value);
+            var end = moment(document.getElementById("end").value);
+            console.log("Fecha de inicio: " + start.format("DD/MM/YYYY"));
+            console.log("Fecha de fin: " + end.format("DD/MM/YYYY"));
+            alert("La diferencia entre las fechas es de " + moment.duration(end.diff(start)).asDays() + " días.");
+        }
+    </script>
+</body>
+
+</html>

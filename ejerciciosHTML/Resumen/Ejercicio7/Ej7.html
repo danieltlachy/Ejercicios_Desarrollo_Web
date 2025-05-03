@@ -1,0 +1,40 @@
+<!-- Script que simula un juego de apuestas con un dado. El jugador comienza con 50 euros 
+y puede apostar en un número del 1 al 6. Si acierta, gana el doble de su apuesta; si no, 
+pierde la cantidad apostada. El juego termina cuando el jugador se queda sin dinero o alcanza 200 euros. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 7</title>
+    <script>
+        let dinero = 50, ganancias = 0, apuesta = 20, numero = 0;
+        while (dinero > 0 && apuesta > 0) // si la apuesta es cero, acaba el juego.
+        {
+            let dado = Math.floor(Math.random() * 6) + 1;
+            let num = prompt("A que número quiere apostar, del 1 al 6 ", "1");
+            numero = parseInt(num);
+            let cantidad = prompt("Cantidad que quiere apostar ", "20");
+            apuesta = parseInt(cantidad);
+            document.write(`Ha salido el número: ${dado} <br>`);
+            if (numero == dado) {
+                dinero = dinero + apuesta * 2
+                alert(`Has ganado ${dinero}`)
+            }
+            else {
+                dinero = dinero - apuesta
+                alert(`Has perdido ${apuesta} ahora tienes ${dinero}`)
+            }
+            if (dinero == 0) {
+                alert("Game over")
+                break;
+            }
+            if (dinero >= 200) {
+                alert("Has ganado el juego")
+                break;
+            }
+        }
+    </script>
+</head>
+<body></body>
+</html>

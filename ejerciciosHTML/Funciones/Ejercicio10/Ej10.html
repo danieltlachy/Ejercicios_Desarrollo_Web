@@ -1,0 +1,35 @@
+<!-- Script que define una variable x dentro de una función y se muestra su valor al hacer clic en un botón. 
+ El valor de x es diferente dependiendo de si se pasa un argumento a la función o no. -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 10</title>
+</head>
+
+<head>
+    <script>
+        function programa() {
+            let x = 3;
+            function func(randomize) {
+                if (randomize) {
+                    let x = parseInt(Math.random() * 10);
+                    return x;
+                }
+                return x;
+            }
+            document.getElementById("salida").innerHTML = func(false); // 3
+            document.getElementById("salida").innerHTML += func(1);
+        }
+    </script>
+</head>
+
+<body>
+    <h3>Alcance de variables (Scope)</h3>
+    <input type="button" value="Pulsa aquí" onclick="programa()" />
+    <div id="salida"></div>
+</body>
+
+</html>

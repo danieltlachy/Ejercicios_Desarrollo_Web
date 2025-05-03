@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2</title>
+    <!-- Teoria: https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Classes -->
+    <script>
+        class EntradaDatos {
+            constructor() {
+                let nombre;
+                let contrasenya;
+                this.nombre = "admin";
+                this.contrasenya = "1234"
+            }
+            introduceNombre() {
+                let valorEntrada = document.formEntrada.txtInicial.value;
+                if (this.compruebaNombre(valorEntrada))
+                    this.nombre = valorEntrada;
+                else
+                    this.nombre = "No valido";
+            }
+            compruebaNombre(valor) {
+                let flag = true;
+                if (valor == null || valor == "") flag = false;
+                return flag
+            }
+            verNombre() {
+                return this.nombre;
+            }
+        }
+        function programa() {
+            let obj = new EntradaDatos();
+            obj.introduceNombre();
+            document.writeln(`El nombre es ${obj.verNombre()} <br>`);
+        }
+    </script>
+</head>
+
+<body>
+    <h3>Clase Entrada Datos </h3>
+    <form name="formEntrada">
+        <input type="text" name="txtInicial" placeholder="Texto"/>
+        <input type="button" value="Pulsa aquí" onclick="programa()" />
+    </form>
+</body>
+
+</html>

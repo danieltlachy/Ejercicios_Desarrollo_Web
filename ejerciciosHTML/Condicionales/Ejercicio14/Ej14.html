@@ -1,0 +1,31 @@
+<!-- Escribir un script que pida un mes y diga cuántos días tiene dependiendo el mes y suponiendo que el año tiene 31 días.
+Agregar que el usuario solo pueda introducir numeros del 1 al 12  -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 14</title>
+</head>
+
+<head>
+    <script>
+        let dia, mes, año;
+        mes = prompt('Introduzca el número del mes:', '');
+        mes = parseInt(mes);
+        if (isNaN(mes)) {
+            document.write('ERROR. Solo se aceptan números.');
+        } else if (mes < 1 || mes > 12) {
+            document.write('Error. Solo se aceptan números del 1 al 12.');
+        } else if (mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10 || mes == 12) {
+            document.write('Este mes tiene 31 dias.');
+        } else if (mes == 2) {
+            document.write('Este mes puede tener 30 dias.');
+        } else {
+            document.write('Este mes tiene 30 dias.');
+        }
+    </script>
+</head>
+
+</html>

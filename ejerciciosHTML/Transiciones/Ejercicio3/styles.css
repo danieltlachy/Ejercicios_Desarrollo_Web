@@ -1,0 +1,17 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background: #3498db;
+  margin: 50px;
+  transition: transform 1s;
+}
+
+.ease { transition-timing-function: ease; }
+.linear { transition-timing-function: linear; }
+.ease-in { transition-timing-function: ease-in; }
+.ease-out { transition-timing-function: ease-out; }
+.ease-in-out { transition-timing-function: ease-in-out; }
+
+.box:hover {
+  transform: translateX(100px);
+}

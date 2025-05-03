@@ -1,0 +1,23 @@
+<!-- Realizar un programa que pida un número y calcule el doble. 
+Mostrar el resultado por pantalla. Utilizar innerHTML para mostrar el resultado -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9 </title>
+</head>
+
+<body>
+    <p>innerHtml controla que puede incluirse en un elemento.</p>
+    <div id="salida"></div>
+    <script>
+        let dato, num;
+        dato = window.prompt("Introduce un número ?", "0");
+        num = parseInt(dato);
+        let resultado = num * 2;
+        document.getElementById("salida").innerHTML = (`El doble es ${resultado} `);
+    </script>
+</body>
+
+</html>

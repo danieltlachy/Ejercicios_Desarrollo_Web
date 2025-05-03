@@ -1,0 +1,24 @@
+<!-- Realizar un script que pida si un alumno es de FP y tiene más de 18 años, Sí tiene acceso al portal web. (por pantalla: Bienvenid@)
+Si un alumno es de FP y NO tiene más de 18 años, NO tiene acceso al portal web.. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 8</title>
+</head>
+<head>
+    <script>
+        let areaAlumno, edad;
+        areaAlumno = prompt("Area?", "0");
+        edad = prompt("Edad?", "0");
+        if (areaAlumno == "FP")
+            if (edad >= 18) {
+                document.write(`<h3>Bienvenid@</h3>`);
+            }
+            else {
+                document.write(`<h3>NO tiene acceso al portal web</h3>`);
+            }
+    </script>
+</head>
+</html>

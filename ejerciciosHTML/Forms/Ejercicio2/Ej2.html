@@ -1,0 +1,28 @@
+<!-- Script que muestra un saludo al usuario al pulsar el botón. 
+El nombre del usuario se obtiene del campo de entrada del formulario. -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2</title>
+</head>
+
+<head>
+    <script>
+        function calculo() {
+            let cantidadEntrada = document.fdatos.entrada.value
+            document.writeln(`El 10% de ${cantidadEntrada} es ${cantidadEntrada * 0.1}`)
+        }
+    </script>
+</head>
+
+<body>
+    <form name="fdatos">
+        Escribe tu cantidad: <input type="text" size="10" name="entrada" placeholder="Tu cantidad" />
+        <input type="button" value="Pulsa aquí" onclick="calculo()" />
+    </form>
+</body>
+
+</html>

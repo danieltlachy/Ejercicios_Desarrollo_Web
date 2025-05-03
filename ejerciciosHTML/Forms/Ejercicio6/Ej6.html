@@ -1,0 +1,39 @@
+<!-- Script para calcular el producto de un número por un valor de una lista desplegable -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 6</title>
+</head>
+
+<head>
+    <title> Entrada de Datos</title>
+    <script>
+        function calcula() {
+            let numero = document.fdatos.entrada.value;
+            let dato = document.getElementById("lista");
+            let valor = dato.options[lista.selectedIndex].value; // .text
+            let resultado = numero * valor;
+            document.getElementById("salida").innerHTML = resultado;
+        }
+    </script>
+</head>
+
+<body>
+    <form name="fdatos">
+        Introduce número: <input type="text" size="10" name="entrada" placeholder="Tu cantidad"/>
+        <b> X </b>
+        <select id="lista" onchange="calcula()" title="Selecciona un número">
+            <option value="0">cero</option>
+            <option value="1" selected>uno</option>
+            <option value="2">dos</option>
+            <option value="3">tres</option>
+            <option value="4">cuatro</option>
+        </select>
+    </form>
+    <div id="salida"></div>
+</body>
+
+</html>

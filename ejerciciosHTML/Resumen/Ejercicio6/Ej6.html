@@ -1,0 +1,59 @@
+<!-- Script que lee un octeto de una dirección IP y determina su clase. La clase se determina según el valor del octeto, donde:
+// Clase A: 0 - 127
+// Clase B: 128 - 191
+// Clase C: 192 - 223
+// Clase D: 224 - 239
+// Clase E: 240 - 255-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 6</title>
+    <script>
+        function getClass(i) {
+            if (i >= 240) {
+                return alert("Clase E");
+            }
+            else {
+                if (i >= 224) {
+                    return alert("Clase D");
+                }
+                else {
+                    if (i >= 192) {
+                        return alert("Clase C");
+                    }
+                    else {
+                        if (i >= 128) {
+                            return alert("Clase B");
+                        }
+                        else {
+                            if (i >= 0) {
+                                return alert("Clase A");
+                            }
+                            else {
+                                return alert("No es una clase válida");
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        function getOctal() {
+            var txt = document.getElementById("octal1");
+            var o1 = parseInt(txt.value);
+            getClass(o1);
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Calculadora Clase IP</h2>
+    <h3>Introducir 8 bits en cada campo.</h3>
+    <input type="text" name="oc1" id="octal1" placeholder="Octeto 1" maxlength="3" size="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+    <input type="text" name="oc2" id="octal2" placeholder="Octeto 2" maxlength="3" size="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+    <input type="text" name="oc3" id="octal3" placeholder="Octeto 3" maxlength="3" size="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+    <input type="text" name="oc4" id="octal4" placeholder="Octeto 4" maxlength="3" size="3" onkeypress="return event.charCode >= 48 && event.charCode <= 57">
+</body> <input type="button" value="Obtener Clase" onClick="getOctal()">
+
+</html>

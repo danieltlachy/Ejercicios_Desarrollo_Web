@@ -1,0 +1,29 @@
+<!-- Realizar una página web, con programación en ES6, con al menos una función. En esta web se pide al
+usuario 2 números del 1 al 10. Una vez introducidos los números, el ordenador muestra una tabla
+(HTML) que contiene la tabla de multiplicar del número 1 hasta el número2. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 7</title>
+    <script>
+        function funcionUno() {
+            let num1 = parseInt(prompt("Introduce el primer número (1-10):"));
+            let num2 = parseInt(prompt("Introduce el segundo número (1-10):"));
+            let tablaMultiplicar = "<table border='1'>";
+            tablaMultiplicar += "<tr><th>Multiplicación</th><th>Resultado</th></tr>";
+            for (let i = 1; i <= num2; i++) {
+                let resultado = num1 * i;
+                tablaMultiplicar += `<tr><td>${num1} x ${i}</td><td>${resultado}</td></tr>`;
+            }
+            tablaMultiplicar += "</table>";
+            document.getElementById("central").innerHTML = tablaMultiplicar;
+        }
+    </script>
+</head>
+<body>
+    <p>Pulsa el botón y se crea la tabla de multiplicar</p>
+    <button onclick="funcionUno()">Pulsa aquí</button>
+    <div id="central"></div>
+</html>

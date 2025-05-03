@@ -1,0 +1,28 @@
+<!-- Realizar un script que pida la marca y el modelo de un coche. 
+ Si la marca es Ford y el modelo es Fiesta, el descuento es del 5%; sino, el descuento es del 10%. 
+ Mostrar el descuento por pantalla. -->
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Ejercicio 7</title>
+ </head>
+ 
+ <head>
+     <script>
+         let marca, modelo, descuento = 0;
+         marca = prompt("Marca?", "0");
+         modelo = prompt("Modelo?", "0");
+         if (marca == "ford")
+             if (modelo == "fiesta") {
+                 descuento = 5;
+             }
+             else {
+                 descuento = 10;
+             }
+         document.write(`<h3>Su descuento es ${descuento} </h3> `);
+     </script>
+ </head>
+ 
+ </html>

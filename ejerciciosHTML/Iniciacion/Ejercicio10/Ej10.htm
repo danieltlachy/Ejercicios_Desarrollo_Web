@@ -1,0 +1,23 @@
+<!--Realizar programa donde el usuario introduce 2 números y el ordenador responde sacando por pantalla la resta de ambos números-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 10</title>
+</head>
+
+<body>
+    <div id="salida"></div>
+    <script>
+        let dato1, dato2, num1, num2;
+        dato1 = window.prompt("Introduce primer número ?", "0");
+        num1 = parseInt(dato1);
+        dato2 = window.prompt("Introduce segundo número ?", "0");
+        num2 = parseInt(dato2);
+        let resultado = num1 - num2;
+        document.getElementById("salida").innerHTML = (`La resta de ambos numeros es ${resultado} `);
+    </script>
+</body>
+</html>

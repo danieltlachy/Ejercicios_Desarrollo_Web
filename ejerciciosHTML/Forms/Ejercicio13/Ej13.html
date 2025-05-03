@@ -1,0 +1,64 @@
+<!-- Script que simula un juego de apuestas. El usuario introduce un número del 1 al 6 (caras del dado) y una apuesta. 
+ Si el número coincide con el resultado de un dado aleatorio, gana el doble de su apuesta. 
+ Si no, pierde la apuesta. El juego termina cuando el usuario se queda sin dinero. -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 13</title>
+</head>
+
+<head>
+    <script type="text/javascript">
+        function inic() {
+            var DI = document.game.dinero.value = 100;
+        }
+        function calc() {
+            var Din = parseInt(document.game.dinero.value);
+            var Num = document.game.num.value;
+            var Apu = parseInt(document.game.apuesta.value);
+            var dado = Math.floor(Math.random() * 7);
+            var ganancia = 0;
+            if (Din > 0) {
+                if (Num == dado) {
+                    document.game.dado.value = dado;
+                    document.game.res.value = ("Has ganado :) " + Apu * 2);
+                    ganancia = (Din + Apu * 2);
+                    document.game.dinero.value = ganancia;
+                }
+                else {
+                    document.game.dado.value = dado;
+                    document.game.res.value = ("Has perdido :( " + Apu);
+                    ganancia = (Din - Apu);
+                    document.game.dinero.value = ganancia;
+                }
+            }
+            else {
+                window.alert("Has perdido todo tu dinero!");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1 align="center">JUEGO APUESTAS</h1>
+    <form name="game">
+        <div align="center">
+            Dinero: <input type="text" name="dinero" size="5" placeholder="Dinero"> &nbsp;&nbsp;
+            Numero del dado: <input type="label" name="dado" size="5" placeholder="Dado" readonly>
+            <br><br>
+            Introduzca un numero del 1 al 6: <input type="text" name="num" size="5" placeholder="Numero del dado">
+            <br><br>
+            Introduzca su apuesta: <input type="text" name="apuesta" size="5" placeholder="Apuesta">
+            <br><br>
+            <input type="button" name="play" value="Jugar" onClick="calc()">
+            <input type="button" name="Start" value="Start" onClick="inic()">
+            <br><br>
+            <input type="label" name="res" size="15" placeholder="Resultado">
+        </div>
+    </form>
+</body>
+
+</html>

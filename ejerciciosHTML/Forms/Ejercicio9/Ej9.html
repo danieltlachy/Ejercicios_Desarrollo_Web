@@ -1,0 +1,32 @@
+<!-- Realizar programa para una web, en el cual el usuario introduce 2 notas y su valor
+ponderado (como cuando un examen vale un 30% y otro examen el 70%).
+Pulsando el botón “Calcula” , la web muestra como resultado la nota media ponderada. -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 9</title>
+</head>
+
+<head>
+    <script>
+        function calculo() {
+            let cantidadEntrada1 = document.fdatos.entrada1.value
+            let cantidadEntrada2 = document.fdatos.entrada2.value
+            document.writeln(`La nota media ponderada es ${(cantidadEntrada1 * 0.3) + (cantidadEntrada2 * 0.7)}`)
+        }
+    </script>
+</head>
+
+<body>
+    <form name="fdatos">
+        Escribe tus cantidades: 
+        <input type="text" size="10" name="entrada1" placeholder="Tu cantidad" />
+        <input type="text" size="10" name="entrada2" placeholder="Tu cantidad" />
+        <input type="button" value="calcular" onclick="calculo()" />
+    </form>
+</body>
+
+</html>

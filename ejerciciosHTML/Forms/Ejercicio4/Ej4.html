@@ -1,0 +1,30 @@
+<!-- Realizar un programa en el cual se introduce un valor numérico en un FORM y como
+resultado se muestran el resultado de elevar el número al cuadrado y también el resultado de elevar el
+número al cubo.-->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 4</title>
+</head>
+
+<head>
+    <script>
+        function calculo() {
+            let cantidadEntrada = document.fdatos.entrada.value
+            document.writeln(`El cuadrado de ${cantidadEntrada} es ${cantidadEntrada * cantidadEntrada} 
+            y el cubo es ${cantidadEntrada * cantidadEntrada * cantidadEntrada}`)
+        }
+    </script>
+</head>
+
+<body>
+    <form name="fdatos">
+        Escribe tu cantidad: <input type="text" size="10" name="entrada" placeholder="Tu cantidad" />
+        <input type="button" value="Pulsa aquí" onclick="calculo()" />
+    </form>
+</body>
+
+</html>

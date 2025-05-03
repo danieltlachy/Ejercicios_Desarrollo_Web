@@ -1,0 +1,24 @@
+<!-- Realiza un script que pida números hasta que se introduzca un número menor que 10. 
+Al final debe mostrar la lista de todos los números introducidos. -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 11</title>
+</head>
+
+<head>
+    <script>
+        let num = 1; let dato;
+        while (num < 10) {
+            dato = prompt('Introduce número menor que 10:', '');
+            num = parseInt(dato);
+            document.write(` ${num} <br> `);
+        }
+        document.write("Fin del programa");
+    </script>
+</head>
+
+</html>

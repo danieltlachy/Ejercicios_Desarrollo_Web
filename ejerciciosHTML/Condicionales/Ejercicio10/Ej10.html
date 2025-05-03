@@ -1,0 +1,37 @@
+<!-- Realizar ALGORITMO ESTRUCTURADO para una agencia de viajes.
+Si el usuario introduce como origen la ciudad de Palma y como destino Barcelona, el descuento se establece
+en el 5%. Con el mismo origen, si el destino es Madrid el descuento es del 10% y si el destino es Valencia , 
+el descuento es del 15%. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 10</title>
+</head>
+<head>
+    <script>
+        let ciudadOrigen, ciudadDestino, descuento;
+        ciudadOrigen = prompt("Ciudad de origen?", "0");
+        ciudadDestino = prompt("Ciudad de destino?", "0");
+        if (ciudadOrigen == "Palma") {
+            if (ciudadDestino == "Barcelona") {
+                descuento = 5;
+                document.write(`<h3>Descuento: ${descuento}%</h3>`);
+            } else if (ciudadDestino == "Madrid") {
+                descuento = 10;
+                document.write(`<h3>Descuento: ${descuento}%</h3>`);
+            } else if (ciudadDestino == "Valencia") {
+                descuento = 15;
+                document.write(`<h3>Descuento: ${descuento}%</h3>`);
+            } else {
+                descuento = 0;
+                document.write(`<h3>Descuento: ${descuento}%</h3>`);
+            }
+        } else {
+            descuento = 0;
+            document.write(`<h3>No hay descuento disponible para esta ciudad de origen</h3>`);
+        }
+    </script>
+</head>
+</html>

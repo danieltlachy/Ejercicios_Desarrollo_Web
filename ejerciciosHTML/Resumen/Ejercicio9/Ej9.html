@@ -1,0 +1,53 @@
+<!-- Crear un programa “Calculadora”, con las 4 operacions básicas, sumar restar, multiplicar y dividir. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 9</title>
+    <script>
+        function sumar() {
+            let num1, num2, res;
+            num1 = parseInt(document.calculadora.valor1.value);
+            num2 = parseInt(document.calculadora.valor2.value);
+            res = num1 + num2;
+            document.calculadora.resultado.value = res;
+        }
+        function restar() {
+            let num1, num2, res;
+            num1 = parseInt(document.calculadora.valor1.value);
+            num2 = parseInt(document.calculadora.valor2.value);
+            res = num1 - num2;
+            document.calculadora.resultado.value = res;
+        }
+        function multiplicar() {
+            let num1, num2, res;
+            num1 = parseInt(document.calculadora.valor1.value);
+            num2 = parseInt(document.calculadora.valor2.value);
+            res = num1 * num2;
+            document.calculadora.resultado.value = res;
+        }
+        function dividir() {
+            let num1, num2, res;
+            num1 = parseInt(document.calculadora.valor1.value);
+            num2 = parseInt(document.calculadora.valor2.value);
+            if (num2 === 0) {
+                alert("No se puede dividir entre cero.");
+                return;
+            }
+            res = num1 / num2;
+            document.calculadora.resultado.value = res;
+        }
+    </script>
+</head>
+<body>
+    <form name="calculadora">
+        Primer número: <input type="text" name="valor1" placeholder="Tu numero"><br>
+        Segundo número: <input type="text" name="valor2" placeholder="Tu numero"><br>
+        <input type="button" name="button1" value="sumar" onclick="sumar()">
+        <input type="button" name="button2" value="restar" onclick="restar()">
+        <input type="button" name="button3" value="multiplicar" onclick="multiplicar()">
+        <input type="button" name="button4" value="dividir" onclick="dividir()"><br>
+        Resultado: <input type="text" name="resultado" placeholder="Resultado"><br>
+    </form>
+</body>

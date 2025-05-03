@@ -1,0 +1,31 @@
+<!-- Realizar programa donde la computadora "piensa" un número aleatorio entre 1 y 100. El usuario debe
+adivinarlo con las pistas de "es mayor" o "es menor" en un número determinado de intentos. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 8</title>
+    <script>
+        let numeroPensado = Math.floor(Math.random() * 100) + 1;
+        let intentos = 5;
+        let adivinado = false;
+        while (intentos > 0 && !adivinado) {
+            let numeroUsuario = parseInt(prompt(`Adivina el número (tienes ${intentos} intentos):`, "0"));
+            if (numeroUsuario === numeroPensado) {
+                adivinado = true;
+                document.write("¡Felicidades! Adivinaste el número.");
+            } else if (numeroUsuario < numeroPensado) {
+                document.write("El número es mayor.<br>");
+            } else {
+                document.write("El número es menor.<br>");
+            }
+            intentos--;
+        }
+        if (!adivinado) {
+            document.write(`Lo siento, no adivinaste el número. Era ${numeroPensado}.`);
+        }
+    </script>
+</head>
+<body></body>
+</html>

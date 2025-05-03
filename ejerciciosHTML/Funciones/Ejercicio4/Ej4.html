@@ -1,0 +1,35 @@
+<!-- Realiza una función que reciba dos números y devuelva su producto. 
+Luego, crea otra función que reciba dos números y devuelva su suma. 
+Por último, utiliza ambas funciones para mostrar el resultado de la multiplicación y la suma de dos números en un cuadro de alerta -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 4</title>
+</head>
+
+<body>
+    <script>
+        let multipli = function (x, y) {
+            return x * y
+        }
+        /* otra forma de definir la función multipli
+        let expon = function (x,y){
+            return Math.pow(x, y);
+        }
+        */
+        let suma = (x, y) => { return x + y };
+        let resta = (x, y) => { return x - y };
+
+        var result = multipli(5, 2);
+        alert(result);
+        result = suma(3, 4);
+        alert(result);
+        result = resta(5, 3);
+        alert(result);
+    </script>
+</body>
+
+</html>

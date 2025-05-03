@@ -1,0 +1,25 @@
+<!-- Script que pida tres números y muestre el mayor de los tres. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 14</title>
+    <script>
+        let num1, num2, num3;
+        let numA = prompt('Introduce primer número:', '');
+        let numB = prompt('Introduce segundo número:', '');
+        let numC = prompt('Introduce tercer número:', '');
+        num1 = parseInt(numA); num2 = parseInt(numB); num3 = parseInt(numC);
+        if (num1 > num2 && num1 > num3) {
+            document.write(`El mayor es el ${num1} `);
+        }
+        else {
+            if (num2 > num3) document.write(`El mayor es el ${num2} `);
+            else {
+                document.write(`El mayor es el ${num3} `);
+            }
+        }
+    </script>
+</head>
+</html>

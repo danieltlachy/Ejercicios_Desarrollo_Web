@@ -1,0 +1,22 @@
+<!-- Programa donde se introducen 3 números y muestra cual es el mayor de los 3. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 12</title>
+    <script>
+        function mayorDeTres() {
+            let num1 = parseInt(prompt("Introduce el primer número:"));
+            let num2 = parseInt(prompt("Introduce el segundo número:"));
+            let num3 = parseInt(prompt("Introduce el tercer número:"));
+
+            let mayor = Math.max(num1, num2, num3);
+            document.write(`El mayor de los tres números es: ${mayor}`);
+        }
+        mayorDeTres();
+    </script>
+</head>
+<body>
+</body>
+</html>

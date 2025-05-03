@@ -1,0 +1,26 @@
+<!-- Realiza un script que contenga una función que reciba un nombre como parámetro y 
+ lo muestre en la página web. El script debe incluir un botón que al pulsarlo llame a 
+ la función y pase el nombre "Ana" como argumento. -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1</title>
+</head>
+
+<head>
+    <meta content="text/html; charset=utf-8">
+    <script>
+        function saludo(nombre) {
+            document.write(`Hola ${nombre} `);
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" onclick="saludo('Ana')" value="Pulsa aquí">
+</body>
+
+</html>

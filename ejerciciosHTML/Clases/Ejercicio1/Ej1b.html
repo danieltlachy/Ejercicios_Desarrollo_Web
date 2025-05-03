@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1b</title>
+    <script>
+        let ficha = (function () {
+            let alumno;
+            this.alumno = "Marga";
+            return {
+                inicio() {
+                    this.alumno = "Norat"
+                },
+                verNombre() {
+                    return this.alumno;
+                },
+            } // fin return
+        })(); //fin 'clase'
+        function programa() {
+            ficha.inicio();
+            document.writeln(`El nombre es ${ficha.verNombre()} <br>`);
+            //document.writeln(`La edad es ${ficha.verEdad()} <br>`);
+        }
+    </script>
+</head>
+
+<body>
+    <h3>Clase ficha </h3>
+    <input type="button" value="Pulsa aquí" onclick="programa()" />
+</body>
+
+</html>

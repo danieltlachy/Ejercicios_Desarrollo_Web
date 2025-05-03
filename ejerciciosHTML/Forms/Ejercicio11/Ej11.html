@@ -1,0 +1,51 @@
+<!-- Crear programa donde el usuario intruduce su altura (cm), edad, sexo
+y peso actual. El programa responde con una referencia de peso aproximado. -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 11</title>
+</head>
+
+<head>
+    <script>
+        function calculo() {
+            let altura = document.fdatos.entrada1.value
+            let edad = document.fdatos.entrada2.value
+            let sexo = document.fdatos.entrada3.value
+            let peso = document.fdatos.entrada4.value
+            let pesoIdeal = 0
+            if (sexo == "hombre" || sexo == "Hombre") {
+                pesoIdeal = 50 + (((altura - 150) / 4) * 3) + (edad - 20) / 4
+            } else if (sexo == "mujer" || sexo == "Mujer") {
+                pesoIdeal = pesoIdeal = (50 + (((altura - 150) / 4) * 3) + (edad - 20) / 4) * 0.9
+            } else {
+                document.writeln("Entradas no válidas")
+                return
+            }
+            document.writeln(`Tu peso de referencia es ${pesoIdeal} kg.`)
+            if (peso < pesoIdeal) {
+                document.writeln("Estás por debajo de tu peso ideal")
+            } else if (peso > pesoIdeal) {
+                document.writeln("Estás por encima de tu peso ideal")
+            } else {
+                document.writeln("Tienes el peso ideal")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <form name="fdatos">
+        Escribe tus cantidades: 
+        <input type="text" size="10" name="entrada1" placeholder="Tu altura en cm" />
+        <input type="text" size="10" name="entrada2" placeholder="Tu edad" />
+        <input type="text" size="10" name="entrada3" placeholder="Tu sexo (hombre o mujer)" />
+        <input type="text" size="10" name="entrada4" placeholder="Tu peso actual" />
+        <input type="button" value="calcular" onclick="calculo()" />
+    </form>
+</body>
+
+</html>

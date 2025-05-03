@@ -1,0 +1,29 @@
+<!-- Crear PSEUDOCODIGO , en un paper o medio digital, en el que un usuario introduce
+un número la computadora contesta con diferentes valres:
+Si el número esta entre 1 i 127 , el resultado es “ Tipo A”
+Si el número esta entre 128 i 191 , el resultado es “ Tipo B
+Si el número esta entre 192 i 191 , el resultado es “ Tipo C -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 3</title>
+    <script>
+        let nota1, nota2, nota3;
+        let media;
+        dato1 = prompt("Numero?", "0");
+        numero = parseInt(dato1);
+        if (numero >= 1 && numero <= 127) {
+            resultat = " Tipo A";
+        } else if (numero >= 128 && numero <= 191) {
+            resultat = " Tipo B";
+        } else if (numero >= 192 && numero <= 255) {
+            resultat = " Tipo C";
+        } else {
+            resultat = " Fuera de rango";
+        }
+        document.write(`El número ${numero} es de tipo ${resultat}`);
+    </script>
+    </body>
+</html>
