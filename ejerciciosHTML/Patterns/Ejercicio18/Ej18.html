@@ -1,0 +1,62 @@
+<!-- Crear una clase llamada miDisplay que contenga un objeto con las propiedades nombre
+ y contrasenya usando el patron ObjetcInterface.-->
+ <!DOCTYPE html>
+ <html lang="es">
+ <head>
+     <meta charset="utf-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <title>Ejercicio 18</title>
+     <style type="text/css">
+         #contenedor {
+             position: relative;
+             background-color: #C0C0C0;
+         }
+ 
+         #display {
+             background-color: #00FF00;
+             width: 100px;
+             height: 100px;
+             position: relative;
+             left: 200px
+         }
+     </style>
+     <script>
+         class miDisplay {
+             constructor(inicio) {
+                 this.miObj = document.getElementById('display');
+                 this.miObjestilo = document.getElementById('display').style;
+                 this.valor = inicio;
+             }
+             posiciona(x, y) {
+                 this.miObjestilo.left = x + "px";
+                 this.miObjestilo.top = y + "px";
+             }
+             asignaValor(result) {
+                 this.valor = result;
+             }
+             muestraValor() {
+                 let tam = document.formEntrada.txtTamano.value;
+                 this.miObjestilo.fontSize = tam + "px";
+                 this.miObj.innerHTML = this.valor;
+             }
+         }
+         function programa(num) {
+             let obj = new miDisplay(0);
+             obj.posiciona(500, 200);
+             obj.asignaValor(num);
+             obj.muestraValor();
+         }
+     </script>
+ </head>
+ <body>
+     <h3> Display </h3>
+     <div id="contenedor">
+         <form name="formEntrada">
+             Tamaño<input type="text" name="txtTamano" value="36" title="text"/>
+             Valor <input type="text" name="txtValor" value="0" title="text" />
+             <input type="button" value="Pulsa" onclick="programa(formEntrada.txtValor.value)" /></br>
+         </form>
+         <div id="display"></div>
+     </div>
+ </body>
+ </html>

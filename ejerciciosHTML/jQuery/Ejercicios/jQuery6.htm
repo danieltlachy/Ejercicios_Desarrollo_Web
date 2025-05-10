@@ -1,0 +1,29 @@
+<!-- Programa que contiene dos botones que cambian el color y 
+ el tamaño de un título al hacer clic en ellos. El primer botón 
+ cambia el color del texto a verde y el segundo botón aumenta el 
+ tamaño de la fuente a 28 píxeles. Se utiliza jQuery para manejar 
+ los eventos de clic y aplicar los estilos CSS correspondientes. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 6</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#boton1").click(function () {
+                $("#titulo").css("color", "#00ff00");
+            });
+            $("#boton2").click(function () {
+                $("#titulo").css("font-size", "28px")
+            });
+        });
+    </script>
+</head>
+<body>
+    <p id="titulo">Pulsa para cambiar este título dinámico</p>
+    <input id="boton1" type="button" value="Cambiar Color">
+    <input id="boton2" type="button" value="Cambiar Tamaño">
+</body>
+</html>

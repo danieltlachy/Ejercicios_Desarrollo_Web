@@ -1,0 +1,219 @@
+<!-- Crear un sistema gestor de libros en HTML y JavaScript que permita mostrar una 
+ lista de libros, filtrar por precio y buscar por autor. 
+ El sistema debe incluir al menos 10 libros con diferentes atributos como título, 
+ autor, precio, género, etc. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 13</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .controls {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            cursor: pointer;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            width: 200px;
+            margin: 5px;
+        }
+
+        #bookList {
+            margin-top: 20px;
+        }
+
+        .book {
+            border: 1px solid #ddd;
+            padding: 15px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+        .book p {
+            margin: 5px 0;
+        }
+
+        .no-results {
+            color: #888;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Book Management System</h1>
+    <div class="controls">
+        <button onclick="displayAllBooks()">Show All Books</button>
+        <button onclick="displayExpensiveBooks()">Show Books > €20</button>
+        <div>
+            <input type="text" id="authorInput" placeholder="Enter author name">
+            <button onclick="displayBooksByAuthor()">Show Books by Author</button>
+        </div>
+    </div>
+    <div id="bookList"></div>
+
+    <script>
+        // Book data with 3 additional entries
+        const books = [
+            {
+                "id": "978-0641723445",
+                "cat": ["book", "hardcover"],
+                "name": "The Lightning Thief",
+                "author": "Rick Riordan",
+                "series_t": "Percy Jackson and the Olympians",
+                "genre_s": "fantasy",
+                "inStock": true,
+                "price": 12,
+                "pages_i": 384
+            },
+            {
+                "id": "978-1857995879",
+                "cat": ["book", "paperback"],
+                "name": "Sophie's World : The Greek Philosophers",
+                "author": "Jostein Gaarder",
+                "genre_s": "fantasy",
+                "inStock": true,
+                "price": 3,
+                "pages_i": 64
+            },
+            {
+                "id": "978-1933988177",
+                "cat": ["book", "paperback"],
+                "name": "Lucene in Action, Second Edition",
+                "author": "Michael McCandless",
+                "genre_s": "IT",
+                "inStock": true,
+                "price": 30,
+                "pages_i": 475
+            },
+            {
+                "id": "978-0141439518",
+                "cat": ["book", "paperback"],
+                "name": "Pride and Prejudice",
+                "author": "Jane Austen",
+                "genre_s": "romance",
+                "inStock": true,
+                "price": 8,
+                "pages_i": 432
+            },
+            {
+                "id": "978-0439554930",
+                "cat": ["book", "hardcover"],
+                "name": "Harry Potter and the Philosopher's Stone",
+                "author": "J.K. Rowling",
+                "series_t": "Harry Potter",
+                "genre_s": "fantasy",
+                "inStock": true,
+                "price": 25,
+                "pages_i": 223
+            },
+            {
+                "id": "978-0451524935",
+                "cat": ["book", "paperback"],
+                "name": "1984",
+                "author": "George Orwell",
+                "genre_s": "dystopian",
+                "inStock": true,
+                "price": 10,
+                "pages_i": 328
+            }
+        ];
+
+        // Function to display all books
+        function displayAllBooks() {
+            const bookList = document.getElementById('bookList');
+            bookList.innerHTML = '';
+            books.forEach(book => {
+                bookList.innerHTML += `
+                    <div class="book">
+                        <p><strong>Title:</strong> ${book.name}</p>
+                        <p><strong>Author:</strong> ${book.author}</p>
+                        <p><strong>Price:</strong> €${book.price}</p>
+                        <p><strong>Genre:</strong> ${book.genre_s}</p>
+                        <p><strong>In Stock:</strong> ${book.inStock ? 'Yes' : 'No'}</p>
+                    </div>
+                `;
+            });
+        }
+
+        // Function to display books with price > €20
+        function displayExpensiveBooks() {
+            const bookList = document.getElementById('bookList');
+            bookList.innerHTML = '';
+            const expensiveBooks = books.filter(book => book.price > 20);
+            if (expensiveBooks.length === 0) {
+                bookList.innerHTML = '<p class="no-results">No books found with price above €20.</p>';
+                return;
+            }
+            expensiveBooks.forEach(book => {
+                bookList.innerHTML += `
+                    <div class="book">
+                        <p><strong>Title:</strong> ${book.name}</p>
+                        <p><strong>Author:</strong> ${book.author}</p>
+                        <p><strong>Price:</strong> €${book.price}</p>
+                        <p><strong>Genre:</strong> ${book.genre_s}</p>
+                        <p><strong>In Stock:</strong> ${book.inStock ? 'Yes' : 'No'}</p>
+                    </div>
+                `;
+            });
+        }
+
+        // Function to display books by a specific author
+        function displayBooksByAuthor() {
+            const author = document.getElementById('authorInput').value.trim();
+            const bookList = document.getElementById('bookList');
+            bookList.innerHTML = '';
+            if (!author) {
+                bookList.innerHTML = '<p class="no-results">Please enter an author name.</p>';
+                return;
+            }
+            const authorBooks = books.filter(book => book.author.toLowerCase() === author.toLowerCase());
+            if (authorBooks.length === 0) {
+                bookList.innerHTML = `<p class="no-results">No books found by author ${author}.</p>`;
+                return;
+            }
+            authorBooks.forEach(book => {
+                bookList.innerHTML += `
+                    <div class="book">
+                        <p><strong>Title:</strong> ${book.name}</p>
+                        <p><strong>Author:</strong> ${book.author}</p>
+                        <p><strong>Price:</strong> €${book.price}</p>
+                        <p><strong>Genre:</strong> ${book.genre_s}</p>
+                        <p><strong>In Stock:</strong> ${book.inStock ? 'Yes' : 'No'}</p>
+                    </div>
+                `;
+            });
+        }
+    </script>
+</body>
+</html>

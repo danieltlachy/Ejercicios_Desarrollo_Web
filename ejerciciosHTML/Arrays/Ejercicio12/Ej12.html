@@ -1,0 +1,254 @@
+<!-- Realizar programa en base al código que se da a continuación:
+a) Añadir informaciones: hora salida y hora llegada al array de datos
+b) Añadir datos hasta llegar a tener al menos 10 “ vuelos”
+c) Completar programa, con las funciones necesarias, para que el usuario vea en pantalla un
+menú operativo con las siguientes opciones (botones de acción):
+1) Ver todos los vuelos
+2) Ver vuelos de un destino determinado.
+3) Ver vuelos que llegan más tarde que una hora determinada (números enteros) -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 12</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+        .menu {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #busquedaContainer {
+            margin-top: 10px;
+            margin-bottom: 20px;
+            display: none;
+        }
+        #salidaDatos {
+            border: 1px solid #ddd;
+            padding: 15px;
+            border-radius: 5px;
+            min-height: 200px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #f5f5f5;
+        }
+        .hidden {
+            display: none;
+        }
+
+        #busquedaHora.hidden, .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sistema de Gestión de Vuelos</h1>
+    
+    <div class="menu">
+        <button onclick="mostrarTodosVuelos()">Ver todos los vuelos</button>
+        <button onclick="mostrarBusquedaDestino()">Ver vuelos por destino</button>
+        <button onclick="mostrarBusquedaHora()">Ver vuelos después de una hora</button>
+        <div id="busquedaDestino" class="hidden">
+    
+    <div id="busquedaContainer">
+        <div id="busquedaDestino" class="hidden">
+            <label for="destino">Introduce el destino:</label>
+        <div id="busquedaHora" class="hidden">
+        <div id="busquedaHora" class="hidden">
+        </div>
+        
+        <div id="busquedaHora" class="hidden">
+            <label for="hora">Introduce la hora (formato 24h):</label>
+            <input type="number" id="hora" min="0" max="23">
+            <button onclick="buscarPorHora()">Buscar</button>
+        </div>
+    </div>
+    
+    <div id="salidaDatos"></div>
+
+<script type="text/javascript">
+var arrayVuelos = [
+    {
+        "origen": "Palma",
+        "destino": "Oslo",
+        "url": "http://www.ibserveis.com/vuelo1.html",
+        "horaSalida": 9,
+        "horaLlegada": 12
+    },
+    {
+        "origen": "Lugo",
+        "destino": "Madrid",
+        "url": "http://www.ibserveis.com/vuelo2.html",
+        "horaSalida": 10,
+        "horaLlegada": 11
+    },
+    {
+        "origen": "Barna",
+        "destino": "Paris",
+        "url": "http://www.ibserveis.com/vuelo3.html",
+        "horaSalida": 14,
+        "horaLlegada": 16
+    },
+    {
+        "origen": "Palma",
+        "destino": "Madrid",
+        "url": "http://www.ibserveis.com/vuelo4.html",
+        "horaSalida": 8,
+        "horaLlegada": 9
+    },
+    {
+        "origen": "Palma",
+        "destino": "Paris",
+        "url": "http://www.ibserveis.com/vuelo5.html",
+        "horaSalida": 15,
+        "horaLlegada": 17
+    },
+    {
+        "origen": "Madrid",
+        "destino": "Berlín",
+        "url": "http://www.ibserveis.com/vuelo6.html",
+        "horaSalida": 7,
+        "horaLlegada": 10
+    },
+    {
+        "origen": "Barcelona",
+        "destino": "Londres",
+        "url": "http://www.ibserveis.com/vuelo7.html",
+        "horaSalida": 12,
+        "horaLlegada": 14
+    },
+    {
+        "origen": "Valencia",
+        "destino": "Roma",
+        "url": "http://www.ibserveis.com/vuelo8.html",
+        "horaSalida": 18,
+        "horaLlegada": 20
+    },
+    {
+        "origen": "Sevilla",
+        "destino": "Amsterdam",
+        "url": "http://www.ibserveis.com/vuelo9.html",
+        "horaSalida": 13,
+        "horaLlegada": 16
+    },
+    {
+        "origen": "Bilbao",
+        "destino": "Praga",
+        "url": "http://www.ibserveis.com/vuelo10.html",
+        "horaSalida": 6,
+        "horaLlegada": 9
+    }
+];
+
+function mostrarArray(datos) {
+    if (datos.length === 0) {
+        document.getElementById("salidaDatos").innerHTML = "<p>No se encontraron vuelos que coincidan con los criterios de búsqueda.</p>";
+        return;
+    }
+
+    var texto = "<table>";
+    texto += "<tr><th>Origen</th><th>Destino</th><th>Hora Salida</th><th>Hora Llegada</th><th>Enlace</th></tr>";
+    
+    for (let i = 0; i < datos.length; i++) {
+        texto += `<tr>
+            <td>${datos[i].origen}</td>
+            <td>${datos[i].destino}</td>
+            <td>${datos[i].horaSalida}:00</td>
+            <td>${datos[i].horaLlegada}:00</td>
+            <td><a href="${datos[i].url}" target="_blank">Ver detalles</a></td>
+        </tr>`;
+    }
+    
+    texto += "</table>";
+    document.getElementById("salidaDatos").innerHTML = texto;
+}
+
+function mostrarTodosVuelos() {
+    ocultarContenedoresBusqueda();
+    mostrarArray(arrayVuelos);
+}
+
+function mostrarBusquedaDestino() {
+    document.getElementById("busquedaContainer").style.display = "block";
+    document.getElementById("busquedaDestino").style.display = "block";
+    document.getElementById("busquedaHora").style.display = "none";
+    document.getElementById("destino").focus();
+}
+
+function mostrarBusquedaHora() {
+    document.getElementById("busquedaContainer").style.display = "block";
+    document.getElementById("busquedaDestino").style.display = "none";
+    document.getElementById("busquedaHora").style.display = "block";
+    document.getElementById("hora").focus();
+}
+
+function ocultarContenedoresBusqueda() {
+    document.getElementById("busquedaContainer").style.display = "none";
+    document.getElementById("busquedaDestino").style.display = "none";
+    document.getElementById("busquedaHora").style.display = "none";
+}
+
+function buscarPorDestino() {
+    const destino = document.getElementById("destino").value.trim().toLowerCase();
+    
+    if (destino === "") {
+        alert("Por favor, introduce un destino");
+        return;
+    }
+    
+    const vuelosDestino = arrayVuelos.filter(function(vuelo) {
+        return vuelo.destino.toLowerCase().includes(destino);
+    });
+    
+    mostrarArray(vuelosDestino);
+}
+
+function buscarPorHora() {
+    const hora = parseInt(document.getElementById("hora").value);
+    
+    if (isNaN(hora) || hora < 0 || hora > 23) {
+        alert("Por favor, introduce una hora válida (0-23)");
+        return;
+    }
+    
+    const vuelosHora = arrayVuelos.filter(function(vuelo) {
+        return vuelo.horaLlegada > hora;
+    });
+    
+    mostrarArray(vuelosHora);
+}
+
+window.onload = function() {
+    mostrarTodosVuelos();
+};
+</script>
+</body>
+</html>

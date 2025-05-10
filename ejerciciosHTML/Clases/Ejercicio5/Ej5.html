@@ -1,0 +1,41 @@
+<!-- Programa que crea un objeto "Rectángulo" con ls funciones propias para calcular su
+area y su perímetro-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 5</title>
+    <script type="text/javascript">
+        function Rectangulo() {
+            var resultado;
+            this.calculaArea = function (A, B) {
+                resultado = A * B;
+            }
+            this.calculaPerimetro = function (A, B) {
+                resultado = 2 * (A + B);
+            }
+            this.resultadofinal = function () {
+                return resultado;
+            }
+        }
+        function programa() {
+            var num1 = parseFloat(document.fdatos.entradaA.value);
+            var num2 = parseFloat(document.fdatos.entradaB.value);
+            var obj = new Rectangulo();
+            obj.calculaArea(num1, num2);
+            document.writeln("El area es " + obj.resultadofinal() + "<br>");
+            obj.calculaPerimetro(num1, num2);
+            document.writeln("El perimetro es " + obj.resultadofinal());
+        }
+    </script>
+</head>
+<body>
+    <h2>Calculo Area y perimetro rectangulo</h2>
+    <form name="fdatos">
+        Escribe Base: <input type="text" size="2" name="entradaA" title="a"/>
+        Escribe Altura: <input type="text" size="2" name="entradaB" title="b"/>
+        <input type="button" value="Pulsa aquí" onclick="programa()" />
+    </form>
+</body>
+</html>

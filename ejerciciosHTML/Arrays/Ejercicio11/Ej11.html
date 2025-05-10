@@ -1,0 +1,45 @@
+<!-- Crear programa con dos Arrays, el primero llamado DatosIniciales con 10 números
+entre el 0 y el 50 elegidos al azar. El segundo Array se llama DatosFinales, y se declara con 10
+posibles valores.
+A través de una función, se rellena el Array DatosFinales con los números mayores de 25 del
+Array DatosIniciales -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 10</title>
+    <script>
+        function rellenarDatosFinales() {
+            let datosIniciales = [];
+            let datosFinales = [];
+            let contador = 0;
+
+            // Rellenar el array DatosIniciales con números aleatorios entre 0 y 50
+            for (let i = 0; i < 10; i++) {
+                datosIniciales[i] = Math.floor(Math.random() * 51);
+            }
+
+            // Mostrar Datos Iniciales
+            document.write("<h2>Datos Iniciales</h2>");
+            document.write(datosIniciales.join(", ") + "<br>");
+
+            // Rellenar el array DatosFinales con números mayores de 25
+            for (let i = 0; i < datosIniciales.length; i++) {
+                if (datosIniciales[i] > 25) {
+                    datosFinales[contador] = datosIniciales[i];
+                    contador++;
+                }
+            }
+
+            // Mostrar Datos Finales
+            document.write("<h2>Datos Finales</h2>");
+            document.write(datosFinales.join(", ") + "<br>");
+        }
+
+        window.onload = rellenarDatosFinales;
+    </script>
+</head>
+<body>
+</body>
+</html>

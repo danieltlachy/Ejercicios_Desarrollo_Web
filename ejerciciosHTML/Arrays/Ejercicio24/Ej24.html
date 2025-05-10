@@ -1,0 +1,34 @@
+<!-- Crear programa con dos Arrays, utilizando '.map' conseguimos un segundo array
+con los valores duplicados del primero. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 24</title>
+    <script>
+        var inicial = [10, 20, 30, 40, 60, 70, 80];
+        var final = [];
+        function ver() {
+            document.getElementById("salida").innerHTML = (`${inicial}`);
+            if (final.length != 0)
+                document.getElementById("salida2").innerHTML = (`${final}`);
+        }
+        function efectuar(iniciales) {
+            return iniciales * 2
+        }
+        function modificar(valor) {
+            final = inicial.map(efectuar)
+            ver();
+        }
+    </script>
+</head>
+
+<body>
+    <div id="salida"></div>
+    <div id="salida2"></div>
+    <input type="button" onclick="ver()" value="Ver lista">
+    <input type="button" onclick="modificar(2)" value="Duplicar">
+</body>
+
+</html>

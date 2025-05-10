@@ -1,0 +1,26 @@
+<!-- Al hacer click sobre elemento <p> DENTRO de un
+elemento <div> , se ejecuta la función .append.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 3</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var saludo = "Hola mundo!";
+            $("div p").click(function () {
+                $("#salida").append(saludo);
+            });
+        });
+        // fin document.ready
+    </script>
+</head>
+<body>
+    <div>
+        <p> Pulsa aquí </p>
+    </div>
+    <div id="salida"></div>
+</body>
+</html>

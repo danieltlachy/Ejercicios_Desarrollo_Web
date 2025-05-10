@@ -1,0 +1,19 @@
+<!-- Crear un programa que solicite un número del 0 al 6 y 
+ muestre el día de la semana correspondiente. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 3</title>
+    <script>
+        var dias = ["lunes", "martes", "miércoles", "jueves", "viernes", "sabado",
+            "domingo"];
+        document.write("<h2>Días de la semana</h2>");
+        dato = window.prompt("Introduce número del 0 al 6", "0");
+        num = parseInt(dato);
+        document.write(` <br> El dia introducido es: ${dias[num]} `);
+    </script>
+</head>
+
+</html>

@@ -1,0 +1,32 @@
+<!-- Programa que muestra el objeto "Persona" y que usa funciones propias de los objetos.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2</title>
+    <script type="text/javascript">
+        function evaluar(n) {
+            if (n >= 5)
+                this.nota = "Aprobado"
+            else
+                this.nota = "Suspendido"
+        }
+        function CreaObjeto(nom, n) {
+            this.nombre = nom;
+            this.edad = n;
+            this.asignarnota = evaluar;
+        }
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        var alumno = new CreaObjeto("Carlos", 18);
+        alumno.nota = 6;
+        document.write("La nota de " + alumno.nombre + ", ahora es: " + alumno.nota);
+        document.write("<br>");
+        alumno.asignarnota(alumno.nota);
+        document.write("La nota ahora es: " + alumno.nota + "<br>");
+    </script>
+</body>
+</html>

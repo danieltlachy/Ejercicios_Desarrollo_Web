@@ -1,0 +1,604 @@
+<!-- Crear programa TAMAGOTCHI , con todas las funciones necesarias para ver crecer y
+desarrollarse a tu mascota virtual.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 23</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 400px;
+            margin: 0 auto;
+        }
+        
+        .tamagotchi {
+            background-color: #ffd54f;
+            border-radius: 20px;
+            width: 300px;
+            margin: 0 auto 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border: 5px solid #ffb300;
+        }
+        
+        .screen {
+            background-color: #e6ffe6;
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            position: relative;
+            border: 3px solid #aaa;
+        }
+        
+        .pet {
+            position: absolute;
+            width: 80px;
+            height: 80px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+        .face {
+            width: 60px;
+            height: 60px;
+            background-color: #fff;
+            border-radius: 50%;
+            position: absolute;
+            left: 10px;
+            top: 10px;
+        }
+        
+        .eye {
+            width: 10px;
+            height: 10px;
+            background-color: #333;
+            border-radius: 50%;
+            position: absolute;
+            top: 25px;
+            animation: blink 3s infinite;
+        }
+        
+        .eye.left {
+            left: 15px;
+        }
+        
+        .eye.right {
+            right: 15px;
+        }
+        
+        .mouth {
+            width: 20px;
+            height: 8px;
+            border-radius: 0 0 10px 10px;
+            border-bottom: 2px solid #333;
+            position: absolute;
+            left: 20px;
+            top: 40px;
+        }
+        
+        .happy .mouth {
+            width: 20px;
+            height: 10px;
+            border-radius: 0 0 10px 10px;
+            background-color: #ff8989;
+        }
+        
+        .sad .mouth {
+            width: 20px;
+            height: 8px;
+            border-radius: 10px 10px 0 0;
+            border-top: 2px solid #333;
+            border-bottom: none;
+            top: 45px;
+        }
+        
+        .sleeping .eye {
+            height: 2px;
+            top: 30px;
+        }
+        
+        .sleeping .mouth {
+            width: 10px;
+            height: 8px;
+            border-radius: 50%;
+            border: none;
+            background-color: #ff9999;
+            top: 45px;
+            left: 25px;
+        }
+        
+        @keyframes blink {
+            0%, 45%, 55%, 100% { transform: scaleY(1); }
+            50% { transform: scaleY(0.1); }
+        }
+        
+        .controls {
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        
+        .control-btn {
+            width: 40px;
+            height: 40px;
+            background-color: #ff6f00;
+            border-radius: 50%;
+            margin: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            color: white;
+            border: none;
+        }
+        
+        .control-btn:hover {
+            background-color: #ff9800;
+        }
+        
+        .status-bar {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+            width: 100%;
+        }
+        
+        .status {
+            flex: 1;
+            background-color: white;
+            padding: 5px;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+        
+        .status-label {
+            font-size: 10px;
+            color: #666;
+        }
+        
+        .status-value {
+            background-color: #e0e0e0;
+            border-radius: 10px;
+            height: 8px;
+            margin-top: 2px;
+        }
+        
+        .status-fill {
+            height: 100%;
+            background-color: #4caf50;
+            width: 100%;
+            transition: width 0.3s ease;
+        }
+        
+        .low {
+            background-color: #f44336;
+        }
+        
+        .medium {
+            background-color: #ff9800;
+        }
+        
+        .info-panel {
+            background-color: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+        
+        .info-panel h2 {
+            color: #ff6f00;
+            margin-bottom: 10px;
+            text-align: center;
+            font-size: 18px;
+        }
+        
+        .pet-info {
+            display: flex;
+            justify-content: space-between;
+        }
+        
+        .info-item {
+            text-align: center;
+            flex: 1;
+        }
+        
+        .info-label {
+            font-size: 10px;
+            color: #666;
+        }
+        
+        .info-value {
+            font-weight: bold;
+            color: #333;
+        }
+        
+        .message {
+            background-color: #e8f5e9;
+            padding: 8px;
+            border-radius: 5px;
+            margin-top: 10px;
+            text-align: center;
+            color: #2e7d32;
+        }
+        
+        .dead-message {
+            color: #c62828;
+            background-color: #ffebee;
+        }
+        
+        .reset-btn {
+            display: block;
+            margin: 15px auto 0;
+            padding: 8px 15px;
+            background-color: #f44336;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 12px;
+        }
+        
+        .hidden {
+            display: none;
+        }
+        
+        .baby .face {
+            width: 50px;
+            height: 50px;
+            left: 15px;
+            top: 15px;
+        }
+        
+        .child .face {
+            width: 55px;
+            height: 55px;
+            left: 12px;
+            top: 12px;
+        }
+        
+        .adult .face {
+            width: 60px;
+            height: 60px;
+        }
+        
+        .senior .face {
+            width: 58px;
+            height: 58px;
+            left: 11px;
+            top: 11px;
+        }
+        
+        .food-menu {
+            display: none;
+            position: absolute;
+            bottom: 80px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: white;
+            border-radius: 5px;
+            padding: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+        }
+        
+        .food-menu.active {
+            display: block;
+        }
+        
+        .food-item {
+            display: flex;
+            align-items: center;
+            padding: 5px;
+            cursor: pointer;
+            border-radius: 3px;
+        }
+        
+        .food-item:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .food-emoji {
+            margin-right: 5px;
+            font-size: 16px;
+        }
+        
+        .food-info {
+            font-size: 10px;
+        }
+        
+        .food-name {
+            font-weight: bold;
+        }
+        
+        .food-effect {
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="tamagotchi">
+            <div class="screen">
+                <div class="pet">
+                    <div class="pet-face">
+                        <div class="face">
+                            <div class="eye left"></div>
+                            <div class="eye right"></div>
+                            <div class="mouth"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="controls">
+                <button class="control-btn" id="feedBtn">🍔</button>
+                <button class="control-btn" id="playBtn">🎮</button>
+                <button class="control-btn" id="cleanBtn">🧹</button>
+                <button class="control-btn" id="sleepBtn">💤</button>
+            </div>
+            
+            <div class="status-bar">
+                <div class="status">
+                    <div class="status-label">Hambre</div>
+                    <div class="status-value">
+                        <div class="status-fill" id="hungerBar"></div>
+                    </div>
+                </div>
+                <div class="status">
+                    <div class="status-label">Felicidad</div>
+                    <div class="status-value">
+                        <div class="status-fill" id="happinessBar"></div>
+                    </div>
+                </div>
+                <div class="status">
+                    <div class="status-label">Higiene</div>
+                    <div class="status-value">
+                        <div class="status-fill" id="cleanlinessBar"></div>
+                    </div>
+                </div>
+                <div class="status">
+                    <div class="status-label">Energía</div>
+                    <div class="status-value">
+                        <div class="status-fill" id="energyBar"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="food-menu" id="foodMenu">
+                <div class="food-item" data-hunger="20" data-energy="-5">
+                    <div class="food-emoji">🍔</div>
+                    <div class="food-info">
+                        <div class="food-name">Hamburguesa</div>
+                        <div class="food-effect">+20 Hambre, -5 Energía</div>
+                    </div>
+                </div>
+                <div class="food-item" data-hunger="10" data-energy="10">
+                    <div class="food-emoji">🍎</div>
+                    <div class="food-info">
+                        <div class="food-name">Manzana</div>
+                        <div class="food-effect">+10 Hambre, +10 Energía</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="info-panel">
+            <h2>Mi Mascota</h2>
+            <div class="pet-info">
+                <div class="info-item">
+                    <div class="info-label">Nombre</div>
+                    <div class="info-value" id="petName">Tamy</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Edad</div>
+                    <div class="info-value"><span id="petAge">0</span> días</div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Etapa</div>
+                    <div class="info-value" id="petStage">Bebé</div>
+                </div>
+            </div>
+            <div class="message" id="message">¡Hola! ¡Cuídame!</div>
+            <button class="reset-btn hidden" id="resetBtn">Nueva Mascota</button>
+        </div>
+    </div>
+    
+    <script>
+        class Tamagotchi {
+            constructor(name) {
+                this.name = name;
+                this.hunger = 80;
+                this.happiness = 80;
+                this.cleanliness = 80;
+                this.energy = 80;
+                this.age = 0;
+                this.stage = 'baby';
+                this.isAlive = true;
+                this.isSleeping = false;
+                this.emotion = 'happy';
+            }
+            
+            startLife() {
+                this.lifeInterval = setInterval(() => this.updateStats(), 10000);
+                this.ageInterval = setInterval(() => this.updateAge(), 30000);
+                this.updateUI();
+            }
+            
+            stopLife() {
+                clearInterval(this.lifeInterval);
+                clearInterval(this.ageInterval);
+                if (this.sleepInterval) clearInterval(this.sleepInterval);
+            }
+            
+            updateStats() {
+                if (!this.isAlive) return;
+                
+                if (!this.isSleeping) {
+                    this.hunger -= 5;
+                    this.happiness -= 5;
+                    this.cleanliness -= 5;
+                    this.energy -= 5;
+                } else {
+                    this.energy += 10;
+                    this.hunger -= 2;
+                }
+                
+                this.hunger = Math.max(0, Math.min(100, this.hunger));
+                this.happiness = Math.max(0, Math.min(100, this.happiness));
+                this.cleanliness = Math.max(0, Math.min(100, this.cleanliness));
+                this.energy = Math.max(0, Math.min(100, this.energy));
+                
+                if (this.hunger <= 0 || this.happiness <= 0 || this.cleanliness <= 0 || this.energy <= 0) {
+                    this.isAlive = false;
+                    this.stopLife();
+                    this.showMessage('😢 He fallecido...');
+                    document.getElementById('resetBtn').classList.remove('hidden');
+                    this.emotion = 'sad';
+                }
+                
+                this.updateEmotion();
+                this.updateUI();
+            }
+            
+            updateAge() {
+                if (!this.isAlive) return;
+                this.age++;
+                
+                if (this.age === 2) this.stage = 'child';
+                else if (this.age === 4) this.stage = 'adult';
+                else if (this.age === 6) this.stage = 'senior';
+                
+                this.updateUI();
+            }
+            
+            feed(hungerValue, energyValue) {
+                if (!this.isAlive || this.isSleeping) return;
+                this.hunger += hungerValue;
+                this.energy += energyValue;
+                this.hunger = Math.max(0, Math.min(100, this.hunger));
+                this.energy = Math.max(0, Math.min(100, this.energy));
+                this.showMessage('¡Mmm, rico!');
+                this.updateEmotion();
+                this.updateUI();
+            }
+            
+            play() {
+                if (!this.isAlive || this.isSleeping || this.energy < 20) return;
+                this.happiness += 15;
+                this.energy -= 10;
+                this.happiness = Math.min(100, this.happiness);
+                this.energy = Math.max(0, this.energy);
+                this.showMessage('¡Qué divertido!');
+                this.updateEmotion();
+                this.updateUI();
+            }
+            
+            clean() {
+                if (!this.isAlive || this.isSleeping) return;
+                this.cleanliness = 100;
+                this.happiness += 10;
+                this.happiness = Math.min(100, this.happiness);
+                this.showMessage('¡Estoy limpio!');
+                this.updateEmotion();
+                this.updateUI();
+            }
+            
+            sleep() {
+                if (!this.isAlive || this.isSleeping) return;
+                this.isSleeping = true;
+                this.emotion = 'sleeping';
+                this.showMessage('Zzz...');
+                this.updateUI();
+                
+                this.sleepInterval = setInterval(() => {
+                    this.energy += 10;
+                    this.energy = Math.min(100, this.energy);
+                    this.updateUI();
+                    if (this.energy >= 100) {
+                        this.isSleeping = false;
+                        clearInterval(this.sleepInterval);
+                        this.showMessage('¡Despierto!');
+                        this.updateEmotion();
+                        this.updateUI();
+                    }
+                }, 5000);
+            }
+            
+            updateEmotion() {
+                if (!this.isAlive) {
+                    this.emotion = 'sad';
+                } else if (!this.isSleeping) {
+                    const avg = (this.hunger + this.happiness + this.cleanliness + this.energy) / 4;
+                    this.emotion = avg >= 60 ? 'happy' : 'sad';
+                }
+                document.querySelector('.pet-face').className = 'pet-face ' + this.stage + ' ' + this.emotion;
+            }
+            
+            updateUI() {
+                document.getElementById('hungerBar').style.width = `${this.hunger}%`;
+                document.getElementById('happinessBar').style.width = `${this.happiness}%`;
+                document.getElementById('cleanlinessBar').style.width = `${this.cleanliness}%`;
+                document.getElementById('energyBar').style.width = `${this.energy}%`;
+                
+                [hungerBar, happinessBar, cleanlinessBar, energyBar].forEach(bar => {
+                    const value = parseInt(bar.style.width);
+                    bar.classList.remove('low', 'medium');
+                    if (value < 30) bar.classList.add('low');
+                    else if (value < 60) bar.classList.add('medium');
+                });
+                
+                document.getElementById('petName').textContent = this.name;
+                document.getElementById('petAge').textContent = this.age;
+                document.getElementById('petStage').textContent = this.stage.charAt(0).toUpperCase() + this.stage.slice(1);
+            }
+            
+            showMessage(text) {
+                const messageDiv = document.getElementById('message');
+                messageDiv.textContent = text;
+                messageDiv.classList.toggle('dead-message', !this.isAlive);
+            }
+        }
+        
+        const tamagotchi = new Tamagotchi('Tamy');
+        tamagotchi.startLife();
+        
+        document.getElementById('feedBtn').addEventListener('click', () => {
+            document.getElementById('foodMenu').classList.toggle('active');
+        });
+        
+        document.querySelectorAll('.food-item').forEach(item => {
+            item.addEventListener('click', () => {
+                tamagotchi.feed(parseInt(item.dataset.hunger), parseInt(item.dataset.energy));
+                document.getElementById('foodMenu').classList.remove('active');
+            });
+        });
+        
+        document.getElementById('playBtn').addEventListener('click', () => tamagotchi.play());
+        document.getElementById('cleanBtn').addEventListener('click', () => tamagotchi.clean());
+        document.getElementById('sleepBtn').addEventListener('click', () => tamagotchi.sleep());
+        document.getElementById('resetBtn').addEventListener('click', () => {
+            tamagotchi.stopLife();
+            const newTamagotchi = new Tamagotchi('Tamy');
+            Object.assign(tamagotchi, newTamagotchi);
+            tamagotchi.startLife();
+            document.getElementById('resetBtn').classList.add('hidden');
+        });
+    </script>
+</body>
+</html>

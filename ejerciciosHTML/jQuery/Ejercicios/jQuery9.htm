@@ -1,0 +1,39 @@
+<!-- Realizar programa para que pulsando una
+  de las 3 <div> inferiores, cambie el color de la <div> superior. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 9</title>
+<head>
+    <style>
+        #miDiv {
+            width: 100px;
+            height: 100px;
+            background-color: teal; /* Color inicial */
+            margin: 20px;
+        }
+        button {
+            padding: 10px;
+            margin: 5px;
+            cursor: pointer;
+        }
+        #rojo { background-color: red; color: white; }
+        #verde { background-color: green; color: white; }
+        #azul { background-color: cyan; }
+    </style>
+</head>
+<body>
+    <div id="miDiv"></div>
+    <button id="rojo" onclick="cambiarColor('red')">ROJO</button>
+    <button id="verde" onclick="cambiarColor('green')">VERDE</button>
+    <button id="azul" onclick="cambiarColor('blue')">AZUL</button>
+
+    <script>
+        function cambiarColor(color) {
+            document.getElementById("miDiv").style.backgroundColor = color;
+        }
+    </script>
+</body>
+</html>

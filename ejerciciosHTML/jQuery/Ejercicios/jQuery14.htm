@@ -1,0 +1,26 @@
+<!-- Evento ‘click’ sobre Id provoca cambio en las propiedades CSS del mismo objeto.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 14</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#titulo1").click(presionTitulo1)
+        });
+        function presionTitulo1() {
+            var obj;
+            obj = $("#titulo1");
+            obj.css("color", "#ff0000");
+            obj.css("background-color", "#ffff00");
+            obj.css("font-family", "Courier");
+        }
+    </script>
+</head>
+<body>
+    <h1 id="titulo1">Primer título</h1>
+    <h1 id="titulo2">Segundo título</h1>
+</body>
+</html>

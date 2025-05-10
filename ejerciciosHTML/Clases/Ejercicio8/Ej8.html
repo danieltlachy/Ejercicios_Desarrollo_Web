@@ -1,0 +1,43 @@
+<!-- Se crea un array de objetos "Persona" y se inicializa con los miembros de la familia
+Añadir función al siguiete programa para agregar objetos al array-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 8</title>
+    <script type="text/javascript">
+        var family = new Array();
+        family[0] = new Person("alice", 40);
+        family[1] = new Person("bob", 42);
+        family[2] = new Person("michelle", 8);
+        family[3] = new Person("timmy", 6);
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        function PasoTiempo(n) {
+            for (i = 0; i < 4; i++) {
+                family[i].age = family[i].age + n;
+            }
+        }
+        function Mostrar(inicio, final) {
+            for (i = inicio; i < final; i++) {
+                document.writeln(family[i].name + "-" + family[i].age);
+            }
+        }
+        function Agregar(nombre, edad) {
+            family[family.length] = new Person(nombre, edad);
+        }
+        document.writeln("My family:");
+        Mostrar(0, 4)
+        PasoTiempo(5);
+        document.writeln("<br><br>En 5 años:");
+        Mostrar(0, 4);
+        document.writeln("<br><br>Agregando a la familia:");
+        Agregar("Juan", 20);
+        Agregar("Pedro", 30);
+        Mostrar(4, 6);
+    </script>
+</head>
+</html>

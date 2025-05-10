@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login System</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let users = [];
+
+            $.ajax({
+                url: "users.json",
+                dataType: "json",
+                success: function (data) {
+                    users = data;
+                    showLoginForm();
+                },
+                error: function () {
+                    $("#output").html("<p>Error loading user data.</p>");
+                }
+            });
+
+            function showLoginForm() {
+                const formHtml = `
+                    <h2>Login</h2>
+                    <p>Please enter your credentials:</p>
+                    <input type="text" id="username" placeholder="Username"><br><br>
+                    <input type="password" id="password" placeholder="Password"><br><br>
+                    <button id="loginBtn">Login</button>
+                `;
+                $("#form").html(formHtml);
+
+                $("#loginBtn").click(function () {
+                    const username = $("#username").val().trim();
+                    const password = $("#password").val().trim();
+                    if (username && password) {
+                        const user = users.find(u => u.username === username && u.password === password);
+                        if (user) {
+                            $("#output").html(`<p>Welcome, ${username}! You have access to the system.</p>`);
+                            $("#form").html("");
+                        } else {
+                            $("#output").html("<p>Invalid username or password.</p>");
+                        }
+                    } else {
+                        $("#output").html("<p>Please fill both fields.</p>");
+                    }
+                });
+            }
+        });
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            max-width: 400px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        input {
+            margin: 5px;
+            padding: 8px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        button {
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="form"></div>
+    <div id="output">
+        <p>Loading user data...</p>
+    </div>
+</body>
+</html>

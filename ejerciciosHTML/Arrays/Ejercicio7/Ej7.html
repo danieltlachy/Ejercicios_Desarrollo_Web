@@ -1,0 +1,33 @@
+<!-- Crear un programa que pida el número de un alumno (0-5) y su nueva nota 
+usando dos arrays, uno para los nombres y otro para las notas. 
+El programa mostrará la nota inicial y la final de cada alumno. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 7</title>
+    <script>
+        var alum = ["Andres", "Angela", "Bernat", "Carol", "Maria", "Joan"];
+        var notas = [];
+        //Bucle que añade seis elementos a "notas", todos con el valor: 5.
+        for (let i = 0; i < 6; i++) {
+            notas.push(5);
+        }
+        document.write(`<h2>Notas de la asignatura</h2>`);
+        numero = window.prompt(`Introduzca el número del alumno (0-5)`, `0`);
+        numero = parseInt(numero);
+        document.write(`<br>Nota de ${alum[numero]} inicial ${notas[numero]}`);
+        datoNota = window.prompt(`Introduce su nueva nota`, `0`);
+        valorNota = parseInt(datoNota);
+        //Elemento de "notas" cuyo índice es "lista" toma el valor "valorNota".
+        notas[numero] = valorNota;
+        document.write(`<br><h2>Notas finales:</h2>`);
+        //Bucle donde se imprimime el número del alumno, su nombre y su nota.
+        for (let i = 0; i < alum.length; i++) {
+            document.write(`alum num: ${i} nombre:${alum[i]} nota:${notas[i]} <br>`);
+        }
+    </script>
+</head>
+<body></body>
+</html>

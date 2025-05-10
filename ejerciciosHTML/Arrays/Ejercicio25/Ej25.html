@@ -1,0 +1,46 @@
+<!-- Array bidimensional: 3 asignaturas, 5 alumnos (15 notas en total) -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 25</title>
+    <script type="text/javascript">
+        var notas = new Array(6);
+        for (i = 1; i < 6; i++)
+            notas[i] = new Array(4); // 3 asignaturas cada alumno.
+        function inicializar() {
+            for (var i = 1; i < 6; i++) // Cada Alumno
+                for (var j = 1; j < 4; j++) // 3 notas
+                    notas[i][j] = 0;
+        }
+        function mostrar() {
+            document.write("<h3>Los datos ahora son: </h3>");
+            for (var i = 1; i < 6; i++) // Cada Alumno
+                for (var j = 1; j < 4; j++)
+                    document.write("Alumno " + i + " , nota : " + notas[i][j] + "<br>");
+        }
+        function modificar(numalumno) {
+            dato = window.prompt("Introduce asignatura para cambiar nota", "0");
+            asignatura = parseInt(dato);
+            nuevanota = window.prompt("Introduce su nueva nota", "0");
+            valornota = parseInt(nuevanota);
+            notas[numalumno][asignatura] = nuevanota;
+        }
+    </script>
+</head>
+
+<body>
+    <script type="text/javascript">
+        document.write("<h2> Inicio Programa Notas </h2>");
+        inicializar();
+        mostrar();
+        dato = window.prompt("Dime el número del alumno (1-5)", "0");
+        x = parseInt(dato);
+        modificar(x);
+        mostrar();
+    </script>
+    <p><br>Final Programa</p>
+</body>
+
+</html>

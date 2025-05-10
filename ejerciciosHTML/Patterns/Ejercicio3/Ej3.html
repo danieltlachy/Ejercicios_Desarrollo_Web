@@ -1,0 +1,36 @@
+<!-- Crear una clase llamada ficha que contenga un objeto alumno con las propiedades nombre y edad usando el patron ObjetcInterface.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 3</title>
+</head>
+<head>
+    <script>
+        var ficha = (function () {
+            var alumno = {
+                nombre: "Caterina",
+                edad: 18
+            };
+            return {
+                verNombre() {
+                    return alumno.nombre;
+                },
+                verEdad() {
+                    var resultado = alumno.edad;
+                    return resultado;
+                }
+            } // fin return
+        })(); //fin 'clase' ficha
+        function programa() {
+            document.writeln("El nombre es " + ficha.verNombre() + "<br>");
+            document.writeln("La edad es " + ficha.verEdad() + "<br>");
+        }
+    </script>
+</head>
+<body>
+    <h3>Clase ficha </h3>
+    <input type="button" value="Pulsa aquí" onclick="programa()" />
+</body>
+</html>

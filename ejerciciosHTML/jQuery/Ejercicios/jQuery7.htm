@@ -1,0 +1,21 @@
+<!-- Programa que muestra un mensaje de alerta al entrar en el área del <div> pulsador1. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 7</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#pulsador1").mouseenter(function () {
+                alert("Has entrado en el pulsador1!");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="pulsador1" style="border-style: solid; background-color: #AA80BB; width:
+        100px;">Entra en este espacio</div>
+</body>
+</html>

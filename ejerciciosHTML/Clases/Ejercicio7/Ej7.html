@@ -1,0 +1,39 @@
+<!-- Se crea un array de objetos "Persona" y se inicializa con los miembros de la familia
+a) Añadir función al ejercicio que añade x años a cada elemento del array.
+b) Añadir función al ejercicio que muestre los objetos del array.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 7</title>
+    <script type="text/javascript">
+        function Person(name, age) {
+            this.name = name;
+            this.age = age;
+        }
+        var family = new Array();
+        family[0] = new Person("alice", 40);
+        family[1] = new Person("bob", 42);
+        family[2] = new Person("michelle", 8);
+        family[3] = new Person("timmy", 6);
+        document.writeln("My family:");
+        for (i = 0; i < 4; i++) {
+            document.writeln(family[i].name);
+        }
+        addYears(5);
+        document.writeln("<br>After 5 years:");
+        showFamily();
+        function addYears(years) {
+            for (i = 0; i < family.length; i++) {
+                family[i].age += years;
+            }
+        }
+        function showFamily() {
+            for (i = 0; i < family.length; i++) {
+                document.writeln(family[i].name + " is " + family[i].age + " years old.");
+            }
+        }
+    </script>
+</head>
+</html>

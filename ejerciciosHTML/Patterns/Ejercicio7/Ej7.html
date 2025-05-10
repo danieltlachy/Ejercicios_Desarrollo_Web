@@ -1,0 +1,48 @@
+<!-- Crear una clase llamada Calculadora que realice las operaciones de suma y resta que se introduzcan por teclado.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 7</title>
+</head>
+<head>
+    <script type="text/javascript">
+        var objCalculadora = (function (inicio) {
+            // variables privadas (solo accesibles desde el mismo objeto)
+            var resultado = 0;
+            var num1 = 0; var num2 = 0;
+            // función privada
+            salirpantalla = function () {
+                var cadena = "El resultado es: " + resultado;
+                document.getElementById("salida").innerHTML = cadena;
+            };
+            return {
+                // funciones públicas
+                introduce: function (dato1, dato2) {
+                    num1 = parseInt(dato1);
+                    num2 = parseInt(dato2);
+                },
+                suma: function () {
+                    resultado = num1 + num2;
+                    salirpantalla();
+                }
+            }; //fin return
+        })(); // fin objCalcula
+        function calcula(var1, var2) {
+            objCalculadora.introduce(var1, var2);
+            var final = objCalculadora.suma();
+        }
+    </script>
+</head>
+<body>
+    <div id="contenedor">
+        <form name="formDatos">
+            <input type="text" name="txtValor1" value="0" placeholder="Tu valor"/>
+            + <input type="text" name="txtValor2" value="0" placeholder="Tu valor" />
+            <input type="button" value="Suma" onclick="calcula(txtValor1.value, txtValor2.value)" />
+        </form>
+        <div id="salida"></div>
+    </div>
+</body>
+</html>

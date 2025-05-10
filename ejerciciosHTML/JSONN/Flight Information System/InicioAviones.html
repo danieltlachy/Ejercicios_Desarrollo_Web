@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 4 - Flight Information System</title>
+    <!-- Using jQuery CDN for reliability -->
+    <script src="jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            let arrayVuelos = [];
+
+            // Load flights data
+            $.ajax({
+                url: "aviones.txt",
+                dataType: "json",
+                success: function(data) {
+                    console.log("Data loaded successfully:", data);
+                    arrayVuelos = data;
+                    showMenu();
+                },
+                error: function(jqXHR, textStatus, errorThrown) {
+                    console.error("Error loading aviones.txt:", textStatus, errorThrown);
+                    $("#salidaDatos").html("<p>Error loading flight data. Please check if 'aviones.txt' is in the correct directory and accessible.</p>");
+                }
+            });
+
+            function showMenu() {
+                const menuHtml = `
+                    <h2>Flight Information System</h2>
+                    <p>Select an option:</p>
+                    <button id="showAll">1) Show all flights</button><br><br>
+                    <button id="showByDestination">2) Show flights by destination</button>
+                    <input type="text" id="destinationInput" placeholder="Enter destination (e.g., Paris)"><br><br>
+                    <button id="showByArrival">3) Show flights arriving after</button>
+                    <input type="number" id="hourInput" placeholder="Enter hour (0-23)" min="0" max="23"><br><br>
+                `;
+                $("#content").html(menuHtml);
+                console.log("Menu rendered");
+
+                // Event handlers
+                $("#showAll").click(function() {
+                    console.log("Showing all flights");
+                    displayFlights(arrayVuelos);
+                });
+
+                $("#showByDestination").click(function() {
+                    const destination = $("#destinationInput").val().trim();
+                    console.log("Filtering by destination:", destination);
+                    if (destination) {
+                        const filtered = arrayVuelos.filter(flight =>
+                            flight.destino.toLowerCase() === destination.toLowerCase()
+                        );
+                        displayFlights(filtered);
+                    } else {
+                        $("#salidaDatos").html("<p>Please enter a destination.</p>");
+                    }
+                });
+
+                $("#showByArrival").click(function() {
+                    const hour = parseInt($("#hourInput").val());
+                    console.log("Filtering by arrival hour:", hour);
+                    if (!isNaN(hour) && hour >= 0 && hour <= 23) {
+                        const filtered = arrayVuelos.filter(flight => {
+                            const arrivalHour = parseInt(flight.horaLlegada.split(":")[0]);
+                            return arrivalHour > hour;
+                        });
+                        displayFlights(filtered);
+                    } else {
+                        $("#salidaDatos").html("<p>Please enter a valid hour (0-23).</p>");
+                    }
+                });
+            }
+
+            function displayFlights(flights) {
+                let out = "";
+                if (flights.length === 0) {
+                    out = "<p>No flights found.</p>";
+                } else {
+                    for (let flight of flights) {
+                        out += `
+                            <p>
+                                Origin: ${flight.origen} |
+                                <a href="${flight.url}" target="_blank">Destination: ${flight.destino}</a> |
+                                Departure: ${flight.horaSalida} |
+                                Arrival: ${flight.horaLlegada}
+                            </p><br>
+                        `;
+                    }
+                }
+                $("#salidaDatos").html(out);
+                console.log("Displayed flights:", flights);
+            }
+        });
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            max-width: 800px;
+        }
+        h2 {
+            color: #333;
+        }
+        #content {
+            margin-bottom: 20px;
+        }
+        button {
+            margin-right: 10px;
+            padding: 8px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        input {
+            margin: 5px;
+            padding: 8px;
+            width: 200px;
+        }
+        #salidaDatos {
+            border-top: 1px solid #ccc;
+            padding-top: 15px;
+        }
+        p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="content"></div>
+    <div id="salidaDatos">
+        <p>Loading flight data...</p>
+    </div>
+</body>
+</html>

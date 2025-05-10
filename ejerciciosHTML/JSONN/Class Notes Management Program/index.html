@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Class Notes Manager</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            let notes = [];
+
+            $.ajax({
+                url: "notes.json",
+                dataType: "json",
+                success: function (data) {
+                    notes = data;
+                    showMenu();
+                },
+                error: function () {
+                    $("#output").html("<p>Error loading notes. Using empty list.</p>");
+                    notes = [];
+                    showMenu();
+                }
+            });
+
+            function showMenu() {
+                const menuHtml = `
+                    <h2>Class Notes Manager</h2>
+                    <p>Select an option:</p>
+                    <button id="addNote">1) Add Note</button><br><br>
+                    <input type="text" id="subjectInput" placeholder="Subject"><br>
+                    <input type="date" id="dateInput"><br>
+                    <textarea id="contentInput" placeholder="Note content"></textarea><br><br>
+                    <button id="viewAll">2) View All Notes</button><br><br>
+                    <button id="viewBySubject">3) View Notes by Subject</button>
+                    <input type="text" id="subjectFilter" placeholder="Enter subject"><br><br>
+                    <button id="deleteNote">4) Delete Note</button>
+                    <input type="number" id="noteId" placeholder="Enter note ID" min="0"><br><br>
+                `;
+                $("#menu").html(menuHtml);
+
+                $("#addNote").click(function () {
+                    const subject = $("#subjectInput").val().trim();
+                    const date = $("#dateInput").val();
+                    const content = $("#contentInput").val().trim();
+                    if (subject && date && content) {
+                        const newNote = {
+                            id: notes.length > 0 ? Math.max(...notes.map(n => n.id)) + 1 : 1,
+                            subject: subject,
+                            date: date,
+                            content: content
+                        };
+                        notes.push(newNote);
+                        displayNotes([newNote]);
+                        saveNotes();
+                    } else {
+                        $("#output").html("<p>Please fill all fields.</p>");
+                    }
+                });
+
+                $("#viewAll").click(function () {
+                    displayNotes(notes);
+                });
+
+                $("#viewBySubject").click(function () {
+                    const subject = $("#subjectFilter").val().trim();
+                    if (subject) {
+                        const filtered = notes.filter(note => note.subject.toLowerCase() === subject.toLowerCase());
+                        displayNotes(filtered);
+                    } else {
+                        $("#output").html("<p>Please enter a subject.</p>");
+                    }
+                });
+
+                $("#deleteNote").click(function () {
+                    const id = parseInt($("#noteId").val());
+                    if (!isNaN(id)) {
+                        const index = notes.findIndex(note => note.id === id);
+                        if (index !== -1) {
+                            const deleted = notes.splice(index, 1);
+                            displayNotes(deleted);
+                            saveNotes();
+                        } else {
+                            $("#output").html("<p>Note ID not found.</p>");
+                        }
+                    } else {
+                        $("#output").html("<p>Please enter a valid ID.</p>");
+                    }
+                });
+            }
+
+            function displayNotes(notesToShow) {
+                let out = "";
+                if (notesToShow.length === 0) {
+                    out = "<p>No notes found.</p>";
+                } else {
+                    for (let note of notesToShow) {
+                        out += `
+                            <p>
+                                ID: ${note.id} |
+                                Subject: ${note.subject} |
+                                Date: ${note.date} |
+                                Content: ${note.content}
+                            </p><br>
+                        `;
+                    }
+                }
+                $("#output").html(out);
+            }
+
+            function saveNotes() {
+                // Note: Saving to server requires server-side support. This is a placeholder.
+                console.log("Saving notes:", notes);
+                // For demo, update notes.json manually or use a server-side script.
+            }
+        });
+    </script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            max-width: 800px;
+        }
+
+        h2 {
+            color: #333;
+        }
+
+        #menu {
+            margin-bottom: 20px;
+        }
+
+        button {
+            margin-right: 10px;
+            padding: 8px 15px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #218838;
+        }
+
+        input,
+        textarea {
+            margin: 5px;
+            padding: 8px;
+            width: 200px;
+        }
+
+        textarea {
+            height: 100px;
+        }
+
+        #output {
+            border-top: 1px solid #ccc;
+            padding-top: 15px;
+        }
+
+        p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div id="menu"></div>
+    <div id="output">
+        <p>Loading notes...</p>
+    </div>
+</body>
+</html>

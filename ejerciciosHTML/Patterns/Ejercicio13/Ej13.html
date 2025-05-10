@@ -1,0 +1,53 @@
+<!-- Crear una clase llamada Cuadrado cuando se le de click avance e imprime su valor en la posicion X usando Object Interface -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 13</title>
+    <style type="text/css">
+        #contenedor {
+            position: relative;
+            background-color: #C0C0C0;
+        }
+        #cuadrado1 {
+            background-color: #00FF00;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            left: 100px;
+            top: 100px;
+        }
+    </style>
+    <script>
+        var objCuadrado = (function () {
+            var posX1 = 100;
+            return {
+                incrementarposicion() {
+                    return posX1 = posX1 + 20;
+                },
+                getposicionX(name) {
+                    return (document.getElementById(name).style.left);
+                },
+                setposicionX(name) {
+                    document.getElementById(name).style.left = posX1 + "px";
+                },
+                salirpantalla(name) {
+                    let cadena = "Posición:" + posX1
+                    document.getElementById(name).innerHTML = cadena;
+                }
+            };
+        })();
+        function incrementar(nom) {
+            objCuadrado.incrementarposicion();
+            objCuadrado.setposicionX(nom);
+            objCuadrado.salirpantalla(nom);
+        }
+    </script>
+</head>
+<body>
+    <div id="contenedor">
+        <div id="cuadrado1" onclick="incrementar('cuadrado1')"></div>
+    </div>
+</body>
+</html>

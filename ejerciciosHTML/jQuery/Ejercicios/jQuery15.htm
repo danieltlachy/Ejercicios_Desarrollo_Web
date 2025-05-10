@@ -1,0 +1,26 @@
+<!-- Evento ‘mouseenter’ sobre Id provoca cambio de propiedad CSS del mismo objeto.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 14</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#zonaX").click(function () {
+                $("#zonaX").css("background-color", "#bbaa00");
+            });
+            $("#zonaX").dblclick(function () {
+                $("#zonaX").css("background-color", "#aaffaa");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="zonaX" style="border-style: solid; background-color: #008080; width:
+300px;">
+        Pulsa 1 o 2 veces en este espacio
+    </div>
+</body>
+</html>

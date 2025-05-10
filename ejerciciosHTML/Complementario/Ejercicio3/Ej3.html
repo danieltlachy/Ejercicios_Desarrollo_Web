@@ -1,0 +1,46 @@
+<!-- Crear programa, en una pàgina web, donde el usuario introduce su altura (cm), edad, sexo y peso actual.
+El programa responde con el peso ideal. 
+Añadir código al programa de peso ideal para que la edad introducida sólo esté permitida
+entre 1 y 120 años.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 3</title>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("button").click(function () {
+                var dato1 = parseInt($("#entrada1").val());
+                var dato2 = parseInt($("#entrada2").val());
+                var dato3 = $("#entrada1").val();
+                Calcula(dato1, dato2, dato3);
+            });
+            function Calcula(altura, edad, sexo) {
+                if (edad < 1 || edad > 120) {
+                    alert("La edad introducida no es válida. Debe estar entre 1 y 120 años.");
+                    return;
+                }
+                var resultado = 0;
+                resultado = 50 + ((altura - 150) / 4) * 3 + (edad - 20) / 4;
+                if (sexo == "m") resultado = resultado * 0.9;
+                Pantalla(resultado);
+            }
+            function Pantalla(verfinal) {
+                $("#salida").append("Su peso ideal es: " + verfinal);
+            }
+        });
+    </script>
+</head>
+<body>
+    <br>
+    Introduce tu altura en cm: <input id="entrada1" type="text" title="a"/>
+    <br>
+    Edad en años: <input id="entrada2" type="text" title="b"/>
+    <br>
+    Hombre o Mujer (h/m): <input id="entrada3" type="text" title="c"/>
+    <br>
+    <button>Pulsa para calcular peso ideal</button>
+    <div id="salida"></div>
+</body>
+</html>

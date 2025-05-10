@@ -1,0 +1,139 @@
+<!-- Realizar programa donde el usuario introduce una palabra. El programa consta, de al menos,
+DOS FUNCIONES: la función f_vocales(variable) recibe la palabra y saca por pantalla el número
+total de vocales de esa palabra.
+La segunda función se llama f_total(variable), esta función recibe la palabra y saca por pantalla
+el número total de letras -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 23</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        input[type="text"] {
+            padding: 8px;
+            width: 50px;
+            text-align: center;
+            text-transform: uppercase;
+            margin: 10px;
+        }
+        button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #wordDisplay {
+            font-size: 2em;
+            letter-spacing: 5px;
+            margin: 20px 0;
+        }
+        #output {
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+        #guessesLeft {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Juego del Ahorcado</h3>
+        <div id="wordDisplay"></div>
+        <input type="text" id="letterInput" maxlength="1" placeholder="A-Z">
+        <button onclick="guessLetter()">Adivinar</button>
+        <div id="output"></div>
+        <div id="guessesLeft"></div>
+        <button onclick="startGame()" >Jugar de Nuevo</button>
+    </div>
+
+    <script>
+        const words = ["SOL", "LUNA", "CASA", "ARBOLES", "RIO"];
+        let word = "";
+        let guessedLetters = [];
+        let guessesLeft = 6;
+        let gameOver = false;
+
+        function startGame() {
+            word = words[Math.floor(Math.random() * words.length)];
+            guessedLetters = [];
+            guessesLeft = 6;
+            gameOver = false;
+            document.getElementById('letterInput').value = '';
+            document.getElementById('letterInput').disabled = false;
+            updateDisplay();
+            document.getElementById('output').innerHTML = '';
+            document.getElementById('guessesLeft').innerHTML = `Intentos restantes: ${guessesLeft}`;
+        }
+
+        function updateDisplay() {
+            let display = '';
+            let won = true;
+            for (let letter of word) {
+                if (guessedLetters.includes(letter)) {
+                    display += letter + ' ';
+                } else {
+                    display += '_ ';
+                    won = false;
+                }
+            }
+            document.getElementById('wordDisplay').innerHTML = display;
+            if (won && !gameOver) {
+                gameOver = true;
+                document.getElementById('output').innerHTML = '¡Ganaste! La palabra era: ' + word;
+                document.getElementById('letterInput').disabled = true;
+            }
+        }
+
+        function guessLetter() {
+            if (gameOver) return;
+
+            const input = document.getElementById('letterInput').value.toUpperCase();
+            document.getElementById('letterInput').value = '';
+
+            if (!input || !/^[A-Z]$/.test(input)) {
+                document.getElementById('output').innerHTML = 'Por favor, introduce una letra válida (A-Z).';
+                return;
+            }
+
+            if (guessedLetters.includes(input)) {
+                document.getElementById('output').innerHTML = 'Ya has intentado esa letra.';
+                return;
+            }
+
+            guessedLetters.push(input);
+            document.getElementById('output').innerHTML = '';
+
+            if (!word.includes(input)) {
+                guessesLeft--;
+                document.getElementById('guessesLeft').innerHTML = `Intentos restantes: ${guessesLeft}`;
+                if (guessesLeft === 0) {
+                    gameOver = true;
+                    document.getElementById('output').innerHTML = '¡Perdiste! La palabra era: ' + word;
+                    document.getElementById('letterInput').disabled = true;
+                }
+            }
+
+            updateDisplay();
+        }
+
+        // Iniciar el juego al cargar la página
+        startGame();
+    </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!-- Formulario con array de radio botones. -->
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 18</title>
+    <script>
+        function GetData(radioName) {
+            var radi = document.getElementsByName(radioName);
+            for (var i = 0; i < radi.length; i++) {
+                if (radi[i].checked) return radi[i].value;
+            }
+        }
+        function Discount() {
+            var desc = 0, preu = 100, rest;
+            let curs = GetData('curs');
+            let menj = GetData('menjador');
+            let germ = GetData('germans');
+            if (curs == 'FP') {
+                if (germ == 'true') desc = 0.1;
+                else if (menj == 'true') desc = 0.05;
+            }
+            else {
+                if (menj == 'true') desc = 0.08;
+                else desc = 0.06;
+            }
+            rest = preu * desc;
+            preu = preu - rest;
+            alert("El preu final és " + preu);
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <h4>Curs</h4>
+        <input type="radio" name="curs" value="FP" title="a">FP<br>
+        <input type="radio" name="curs" value="BATX" title="b">BATX<br>
+        <h4>Menjador</h4>
+        <input type="radio" name="menjador" value="true" title="c">Sí<br>
+        <input type="radio" name="menjador" value="false" title="d">No<br>
+        <h4>Germans</h4>
+        <input type="radio" name="germans" value="true" title="e">Sí<br>
+        <input type="radio" name="germans" value="false" title="f">No<br>
+        <input type="button" onclick="Discount()" placeholder="Descompte" title="Descompte"/>
+    </form>
+</body>
+</html>

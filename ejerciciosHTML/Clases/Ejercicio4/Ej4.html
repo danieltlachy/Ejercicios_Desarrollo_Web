@@ -1,0 +1,28 @@
+<!-- Programa que muestra el objeto "Persona" y que usa funciones propias de los objetos.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 4</title>
+    <script type="text/javascript">
+        var paciente = {
+            "nombre": "Norat",
+            "apellido": "Puig",
+            "edad": 25,
+            "direccion": [{
+                "calle": "Avenida Rossello",
+                "ciudad": "Palma",
+                "codigo": "08011"
+            }]
+        }
+        document.write("El paciente es : " + paciente.apellido + "<br><br>");
+        document.write("Su dirección : " + paciente.direccion[0].calle);
+        document.write(", la ciudad es " + paciente.direccion[0].ciudad);
+    </script>
+</head>
+<body>
+    <br><br>
+    <p>Las variables en formato JSON pueden ser tratadas como objetos.</p>
+</body>
+</html>

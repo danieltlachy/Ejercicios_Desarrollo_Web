@@ -1,0 +1,33 @@
+<!-- Evento ‘hover’ sobre párrafos <p> provoca cambio de propiedad CSS del mismo objeto.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 13</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var obj;
+            obj = $("p");
+            obj.hover(entraMouse, saleMouse);
+        });
+        function entraMouse() {
+            $(this).css("background-color", "#ff0");
+            $(this).css("font-size", "28");
+        }
+        function saleMouse() {
+            $(this).css("background-color", "#fff");
+            $(this).css("font-size", "24");
+        }
+    </script>
+</head>
+<body>
+    <p> Ya no pienso que soy un artista, lo soy </p>
+    <br>
+    <p> El problema de este mundo, es que los sabios dudan </p>
+    <br>
+    <p> La solución más sencilla es la más cierta</p>
+    <br>
+</body>
+</html>

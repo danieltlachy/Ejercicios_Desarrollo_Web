@@ -1,0 +1,31 @@
+<!-- Cuando se hace click sobre la <div> boton,
+se imprime el contenido de la variable
+saludo en la <div> salida
+Cambiar el id de la <div> "salida" por otro nombre y hacer que funcione el programa (cambiar
+también otra instrucción -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2</title>
+    <script src="jquery-3.7.1.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            var saludo = "Hola mundo!";
+            $("#boton1").click(function () {
+                $("#nosalida").append(saludo);
+            });
+            $("#boton2").click(function () {
+                $("#salida").append(saludo);
+            });
+        }); // fin document.ready
+    </script>
+</head>
+<body>
+    <div id="boton1"> Pulsa aquí v1 </div>
+    <div id="salida"></div>
+    <div id="boton2"> Pulsa aquí v2</div>
+    <div id="nosalida"></div>
+</body>
+</html>

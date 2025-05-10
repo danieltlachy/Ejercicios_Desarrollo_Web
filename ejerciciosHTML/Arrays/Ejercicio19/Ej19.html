@@ -1,0 +1,33 @@
+<!-- Uso de protoype para añadir funcionalidad al objeto Array. -->
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 19</title>
+    <script>
+        var Alumnos = ["Joan", " Ana", " Juana", " Mario"];
+        //Creamos una nueva propiedad para el objeto Array
+        Array.prototype.pasarMayusculas = function () {
+            for (let i = 0; i < this.length; i++) {
+                this[i] = this[i].toUpperCase();
+            }
+        }
+        function Transformar() {
+            //Utilizamos la nueva propiedad "pasarMayusculas"
+            Alumnos.pasarMayusculas();
+        }
+        function Mostrar() {
+            var objVer = document.getElementById("iniciar");
+            objVer.innerHTML = `${Alumnos}`;
+        }
+    </script>
+</head>
+<body>
+    <p id="iniciar">Primero puedes ver, luego pasar a mayúsculas y volver a ver</p>
+    <br>
+    <button onclick="Mostrar()">Ver Alumnos</button>
+    <button onclick="Transformar()">Pasar a mayúsculas</button>
+</body>
+</html>

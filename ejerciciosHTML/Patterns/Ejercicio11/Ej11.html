@@ -1,0 +1,45 @@
+<!-- Crear un programa donde introduciendo la edad de un niño y su altura, el programa
+indica la estatura aproximada que tendrá de adulto-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 11</title>
+</head>
+<head>
+    <script>
+        var nino = (function () {
+            var numero = 0;
+            return {
+                altura: function (edad, altura) {
+                    var resultado = 0;
+                    if (edad < 18) {
+                        resultado = (altura * 2) + 10;
+                    } else {
+                        resultado = altura + 10;
+                    }
+                    numero++;
+                    return resultado + " cm";
+                },
+                numeroveces: function () {
+                    return numero;
+                }
+            }
+        })();
+        function programa() {
+            var num1 = parseFloat(document.fdatos.entradaA.value);
+            var num2 = parseFloat(document.fdatos.entradaB.value);
+            document.writeln("Tu altura estimada cuando seas adulto será de: " + nino.altura(num1, num2) + "<br>");
+        }
+    </script>
+</head>
+<body>
+    <h2>Calculo Area y perimetro rectangulo</h2>
+    <form name="fdatos">
+        Escribe Edad: <input type="text" name="entradaA" title="entrada" />
+        Escribe Altura: <input type="text" name="entradaB" title="entrada"/>
+        <input type="button" value="Calcula" onclick="programa()" />
+    </form>
+</body>
+</html>

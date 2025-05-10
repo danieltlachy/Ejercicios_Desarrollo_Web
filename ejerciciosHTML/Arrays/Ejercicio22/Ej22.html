@@ -1,0 +1,22 @@
+<!-- Función “rollover” -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 22</title>
+    <script type="text/javascript">
+        imagen01 = new Image()
+        imagen01.src = "prueba1.jpg"
+        imagen02 = new Image()
+        imagen02.src = "prueba2.jpg"
+        function rollover(nombreimagen, nova) {
+            document.images[nombreimagen].src = nova.src
+        }
+    </script>
+</head>
+<body>
+    <a href="#" onmouseover="rollover('flecha', imagen02)" onmouseout="rollover('flecha', imagen01)">
+        <img src="prova1.gif" id="flecha" alt="imagen"> </a>
+</body>
+</html>

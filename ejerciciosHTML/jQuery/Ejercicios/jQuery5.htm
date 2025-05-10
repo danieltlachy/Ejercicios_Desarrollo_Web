@@ -1,0 +1,29 @@
+<!-- Programa que muestra el uso de jQuery para cambiar el estilo de un elemento -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 5</title>
+    <style>
+        div {
+            width: 90px;
+            height: 90px;
+            float: left;
+            padding: 5px;
+            margin: 5px;
+            background-color: #eee;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+    <div id="primera">
+        <p>id="primera"</p>
+    </div>
+    <div id="myDiv">id="myDiv"</div>
+    <script>
+        $("#myDiv").css("border", "3px solid red");
+    </script>
+</body>
+</html>

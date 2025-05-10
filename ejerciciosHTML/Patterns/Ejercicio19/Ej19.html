@@ -1,0 +1,55 @@
+<!-- Crear un programa conversor CELSIUS-FAHRENHEIT y viceversa , UTILIZANDO el
+objeto DISPLAY del ejercicio anterior para sacar resultado en pantalla.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 19</title>
+    <script>
+        class miDisplay {
+            constructor(inicio) {
+                this.miObj = document.getElementById('display');
+                this.miObjestilo = document.getElementById('display').style;
+                this.valor = inicio;
+            }
+            posiciona(x, y) {
+                this.miObjestilo.left = x + "px";
+                this.miObjestilo.top = y + "px";
+            }
+            asignaValor(result) {
+                this.valor = result;
+            }
+            muestraValor() {
+                let tam = document.formEntrada.txtTamano.value;
+                this.miObjestilo.fontSize = tam + "px";
+                this.miObj.innerHTML = this.valor;
+            }
+        }
+
+        function programa(num, tipo) {
+            let obj = new miDisplay(0);
+            obj.posiciona(500, 200);
+            if (tipo === 'C') {
+                obj.asignaValor((num * 9 / 5) + 32);
+            } else {
+                obj.asignaValor((num - 32) * 5 / 9);
+            }
+            obj.muestraValor();
+        }
+    </script>
+</head>
+<body>
+    <h3> Display </h3>
+    <div id="contenedor">
+        <form name="formEntrada">
+            Tamaño<input type="text" name="txtTamano" value="36" title="text" />
+            Valor <input type="text" name="txtValor" value="0" title="text" />
+            Tipo<input type="radio" name="tipo" value="C" title="a"> Celsius
+            <input type="radio" name="tipo" value="F" title="t"> Fahrenheit
+            <input type="button" value="Pulsa" onclick="programa(formEntrada.txtValor.value, formEntrada.tipo.value)" /></br>
+        </form>
+        <div id="display"></div>
+    </div>
+</body>
+</html>

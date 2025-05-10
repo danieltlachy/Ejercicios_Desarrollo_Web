@@ -1,0 +1,24 @@
+<!-- Realizar “Seguimiento de Variables” gracias a los puntos de Interrupción. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 4</title>
+    <script type="text/javascript">
+        function IntroducirDatos() {
+            var dato1, n1;
+            dato1 = window.prompt("Primer entero", "0");
+            n1 = parseInt(dato1);
+            Cuadrado(n1);
+        }
+        function Cuadrado(numero) {
+            var calculo = numero * numero;
+            document.write("<p/> Resultado = " + calculo + "</p>");
+        }
+    </script>
+</head>
+<body>
+    <p><input type="button" value=" PULSA " onclick="IntroducirDatos()" /></p>
+</body>
+</html>

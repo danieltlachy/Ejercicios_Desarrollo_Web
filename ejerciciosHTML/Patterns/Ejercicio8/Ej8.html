@@ -1,0 +1,47 @@
+<!-- Crear una funcion que calcule el area y el perimetro de un rectangulo.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 8</title>
+</head>
+<head>
+    <script>
+        class Rectangulo {
+            constructor() {
+                this.resultado = 0;
+            } 
+            calculaArea(A, B){
+                this.resultado = A * B;
+            }
+            calculaPerimetro(A, B){
+                this.resultado = 2 * (A + B);
+            }
+            resultadofinal(){
+                return this.resultado;
+            }
+        }
+        function programa() {
+            var num1 = parseFloat(document.fdatos.entradaA.value);
+            var num2 = parseFloat(document.fdatos.entradaB.value);
+            var obj = new Rectangulo();
+            obj.calculaArea(num1, num2);
+            document.writeln(`El area es ${obj.resultadofinal()} <br>`);
+            obj.calculaPerimetro(num1, num2);
+            document.writeln(`El perimetro es ${obj.resultadofinal()} `);
+        }
+    </script>
+</head>
+<body>
+    <h2>Calculo Area y perimetro rectangulo</h2>
+    <form name="fdatos">
+        Escribe Base: <input type="text" size="2" name="entradaA" placeholder="Tu entrada"/>
+        Escribe Altura: <input type="text" size="2" name="entradaB" placeholder="Tu entrada"/>
+        <input type="button" value="Pulsa aquí" onclick="programa()" />
+    </form>
+    <div id="Zona1"></div>
+    <div id="Zona2"></div>
+    <div id="Zona3"></div>
+</body>
+</html>

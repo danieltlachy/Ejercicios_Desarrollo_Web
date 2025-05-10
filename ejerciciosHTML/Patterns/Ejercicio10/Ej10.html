@@ -1,0 +1,82 @@
+<!-- Crear una funcion que calcule el area y el perimetro de un rectangulo, cuadrado y un triangulo-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 10</title>
+</head>
+<head>
+    <script>
+        var rectangulo = (function () {
+            var numero = 0;
+            return {
+                perimetro: function (altura, base) {
+                    var calculoperimetro = 2 * (altura + base);
+                    return calculoperimetro;
+                },
+                area: function (altura, base) {
+                    var calculoarea = altura * base;
+                    numero++;
+                    return calculoarea;
+                },
+                numeroveces: function () {
+                    return numero;
+                }
+            }
+        })();
+        var cuadrado = (function () {
+            var numero = 0;
+            return {
+                perimetro: function (lado) {
+                    var calculoperimetro = 4 * lado;
+                    return calculoperimetro;
+                },
+                area: function (lado) {
+                    var calculoarea = lado * lado;
+                    numero++;
+                    return calculoarea;
+                },
+                numeroveces: function () {
+                    return numero;
+                }
+            }
+        })();
+        var triangulo = (function () {
+            var numero = 0;
+            return {
+                perimetro: function (lado1, lado2, lado3) {
+                    var calculoperimetro = lado1 + lado2 + lado3;
+                    return calculoperimetro;
+                },
+                area: function (base, altura) {
+                    var calculoarea = (base * altura) / 2;
+                    numero++;
+                    return calculoarea;
+                },
+                numeroveces: function () {
+                    return numero;
+                }
+            }
+        })();
+        function programa() {
+            var num1 = parseFloat(document.fdatos.entradaA.value);
+            var num2 = parseFloat(document.fdatos.entradaB.value);
+            document.writeln("El area del rectangulo es " + rectangulo.area(num1, num2) + "<br>");
+            document.writeln("El perimetro del rectangulo es " + rectangulo.perimetro(num1, num2) + "<br>");
+            document.writeln("El area del cuadrado es " + cuadrado.area(num1) + "<br>");
+            document.writeln("El perimetro del cuadrado es " + cuadrado.perimetro(num1) + "<br>");
+            document.writeln("El area del triangulo es " + triangulo.area(num1, num2) + "<br>");
+            document.writeln("El perimetro del triangulo es " + triangulo.perimetro(num1, num2, num1) + "<br>");
+        }
+    </script>
+</head>
+<body>
+    <h2>Calculo Area y perimetro rectangulo</h2>
+    <form name="fdatos">
+        Escribe Base: <input type="text" name="entradaA" title="entrada" />
+        Escribe Altura: <input type="text" name="entradaB" title="entrada"/>
+        <input type="button" value="Calcula" onclick="programa()" />
+    </form>
+</body>
+</html>

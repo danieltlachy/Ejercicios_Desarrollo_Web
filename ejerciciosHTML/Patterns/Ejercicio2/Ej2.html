@@ -1,0 +1,37 @@
+<!-- Crear una clase llamada ficha que contenga un objeto alumno con las propiedades nombre y edad usando el patron COMMONJS.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 2</title>
+</head>
+<head>
+    <!-- https://medium.freecodecamp.com/javascript-modules-a-beginner-s-guide-783f7d7a5fcc#.dcganpttg -->
+    <script>
+        function ficha() {
+            var alumno = {
+                nombre: "Caterina",
+                edad: 18
+            };
+            this.verNombre = function () {
+                return alumno.nombre;
+            }
+            this.verEdad = function () {
+                var resultado = alumno.edad;
+                return resultado;
+            }
+        }
+        function programa() {
+            var obj = new ficha();
+            document.writeln("El nombre es " + obj.verNombre() + "<br>");
+            document.writeln("La edad es " + obj.verEdad() + "<br>");
+        }
+    </script>
+</head>
+<body>
+    <h3>Clase ficha </h3>
+    <input type="button" value="Pulsa aquí" onclick="programa()" />
+    </form>
+</body>
+</html>

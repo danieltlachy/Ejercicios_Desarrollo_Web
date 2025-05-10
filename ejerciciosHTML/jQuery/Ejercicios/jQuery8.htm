@@ -1,0 +1,38 @@
+<!-- Programa que muestra una alerta al hacer click en un párrafo
+  y otra alerta al hacer click en una <div> con un contador de clicks. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 8</title>
+<head>
+    <script src="jQuery.js"></script>
+    <style type="text/css">
+        #central {
+            background-color: #AA0080;
+            width: 100px;
+            height: 100px;
+        }
+    </style>
+    <script type="text/javascript">
+        var cuenta = 1;
+        $(document).ready(function () {
+            $("p").click(function () {
+                alert('se presionó el párrafo');
+            });
+            $("#central").click(function () {
+                var cadena = "se presionó <div> " + cuenta + " veces";
+                alert(cadena);
+                cuenta = cuenta + 1;
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <p>Esto es un párrafo</p><br /><br />
+    <div id="central"> Pulsa aqui </div>
+</body>
+
+</html>

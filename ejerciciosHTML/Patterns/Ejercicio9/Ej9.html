@@ -1,0 +1,46 @@
+<!-- Crear una funcion que calcule el area y el perimetro de un rectangulo.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 9</title>
+</head>
+<head>
+    <script>
+        var rectangulo = (function () {
+            // Variable privada interna
+            var numero = 0;
+            return {
+                perimetro: function (altura, base) {
+                    var calculoperimetro = 2 * (altura + base);
+                    return 'El perimetro es ' + calculoperimetro;
+                },
+                area: function (altura, base) {
+                    var calculoarea = altura * base;
+                    numero++;
+                    return 'El area es ' + calculoarea;
+                },
+                numeroveces: function () {
+                    return numero;
+                }
+            } // fin return
+        })(); //fin function
+        function programa() {
+            var num1 = parseFloat(document.fdatos.entradaA.value);
+            var num2 = parseFloat(document.fdatos.entradaB.value);
+            document.writeln("El area es " + rectangulo.area(num1, num2) + "<br>");
+            document.writeln("El perimetro es " + rectangulo.perimetro(num1, num2) + "<br>");
+            document.writeln("número veces " + rectangulo.numeroveces());
+        }
+    </script>
+</head>
+<body>
+    <h2>Calculo Area y perimetro rectangulo</h2>
+    <form name="fdatos">
+        Escribe Base: <input type="text" name="entradaA" title="entrada" />
+        Escribe Altura: <input type="text" name="entradaB" title="entrada"/>
+        <input type="button" value="Calcula" onclick="programa()" />
+    </form>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!-- Programa que muestra el objeto "Persona" y que usa funciones propias de los objetos.-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 3</title>
+    <script type="text/javascript">
+        function FichaDatos() {
+            var nombre;
+            var edad;
+            var peso;
+            this.inicio = function Cargar() {
+                this.nombre = "Pedro";
+                this.edad = 29;
+                this.peso = 75.5;
+            }
+            this.ver = function Mostrar() {
+                var mensaje1 = "El nombre es " + this.nombre;
+                document.writeln(mensaje1);
+                var mensaje2 = "su peso es " + this.peso + " y su edad " + this.edad;
+                document.writeln(mensaje2);
+            }
+        }
+    </script>
+</head>
+<body>
+    <script type="text/javascript">
+        var Paciente = new FichaDatos();
+        Paciente.inicio();
+        Paciente.ver();
+    </script>
+</body>
+</html>

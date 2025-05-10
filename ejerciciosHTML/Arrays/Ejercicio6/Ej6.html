@@ -1,0 +1,48 @@
+<!-- Selección de valores en un array (mayores o menores) con ECMA6 -->
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 5</title>
+    <script>
+        class ficha {
+            constructor() {
+                this.arrayNumeros = [10, 20, 30, 40, 50, 60, 70, 80, 90]
+            }
+            arrayMenoresX() {
+                let arrayMenores = [];
+                let cota = parseInt(document.getElementById("txtMenor").value);
+                let datos = this.arrayNumeros;
+                for (let i = 0; i < datos.length; i++) {
+                    if (datos[i] < cota) arrayMenores[i] = datos[i];
+                }
+                document.getElementById("salidaDatos").innerHTML = arrayMenores;
+            }
+            mostrarMayorX(cota) {
+                var texto = "";
+                let datos = this.arrayNumeros;
+                datos.forEach(function (item, index) {
+                    if (item > cota) texto += `<p> dato Mayor50: ${item}`;
+                });
+                document.getElementById("salidaDatos").innerHTML = texto;
+            }
+        }
+        function programa(valor) {
+            var obj = new ficha();
+            if (valor == 2) obj.arrayMenoresX();
+        } if (valor == 3) obj.mostrarMayorX(50)
+    </script>
+</head>
+
+<body>
+    <h3>Menores o Mayores </h3>
+    <form>Ver menores que:<input type="text" size="10" id="txtMenor" title="valor"/>
+        <input type="button" value="Menores" onclick="programa(2)" />
+    </form>
+    <input type="button" value="Mayores50" onclick="programa(3)" />
+    <div id="salidaDatos"></div>
+</body>
+
+</html>

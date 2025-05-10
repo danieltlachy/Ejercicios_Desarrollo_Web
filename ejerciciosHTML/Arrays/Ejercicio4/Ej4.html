@@ -1,0 +1,21 @@
+<!-- Uso del foreach para recorrer un array y mostrar sus elementos en un documento HTML .-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 4</title>
+    <script>
+        /* forEach utiliza elementos de la Array que tengan un índice,
+        de esta manera evitamos problemas con índices vacios.*/
+        var nuevosCoches = ["Seat", "Renault", "Alfa Romeo", "Peugeot"];
+        document.write("<h2>Marcas de Coches</h2>");
+        nuevosCoches.forEach(function (item, index) {
+            document.write(`${item} <br>`);
+        });
+    </script>
+</head>
+
+<body></body>
+
+</html>

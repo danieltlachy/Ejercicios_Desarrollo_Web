@@ -1,0 +1,229 @@
+<!-- Crear un programa donde usuario maneja un gráfico de comecocos por toda la
+pantalla , derecha-izquierda y arriba-abajo. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 14</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+        
+        #contenedor {
+            position: relative;
+            background-color: #000;
+            width: 600px;
+            height: 400px;
+            margin: 0 auto;
+            overflow: hidden;
+            border: 5px solid #2121DE;
+            border-radius: 10px;
+        }
+        
+        #pacman {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 100px;
+            top: 100px;
+        }
+        
+        .punto {
+            width: 10px;
+            height: 10px;
+            background-color: #FFFF00;
+            border-radius: 50%;
+            position: absolute;
+        }
+        
+        #score {
+            font-size: 24px;
+            margin-top: 20px;
+            color: #333;
+        }
+        
+        #instrucciones {
+            margin-top: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Juego de Comecocos</h1>
+    <div id="contenedor">
+        <svg id="pacman" viewBox="0 0 100 100">
+            <!-- Pacman básico -->
+            <path id="pacmanShape" d="M50,50 L100,20 A50,50 0 1,1 100,80 Z" fill="#FFFF00" />
+        </svg>
+    </div>
+    <div id="score">Puntuación: 0</div>
+    <div id="instrucciones">Usa las flechas del teclado para mover al comecocos.</div>
+
+    <script>
+        class Pacman {
+            constructor() {
+                this.posX = 100;
+                this.posY = 100;
+                this.velocidad = 10;
+                this.elemento = document.getElementById("pacman");
+                this.rotacion = 0;
+                this.puntuacion = 0;
+                this.scoreElement = document.getElementById("score");
+                this.contenedor = document.getElementById("contenedor");
+                this.contenedorWidth = this.contenedor.clientWidth;
+                this.contenedorHeight = this.contenedor.clientHeight;
+                this.abierto = true;
+                this.puntos = [];
+                
+                // Inicializar los puntos
+                this.crearPuntos(20);
+                
+                // Iniciar la animación de la boca
+                setInterval(() => this.animarBoca(), 150);
+                
+                // Actualizar dimensiones si cambia el tamaño de la ventana
+                window.addEventListener('resize', () => {
+                    this.contenedorWidth = this.contenedor.clientWidth;
+                    this.contenedorHeight = this.contenedor.clientHeight;
+                });
+            }
+            
+            moverDerecha() {
+                this.posX += this.velocidad;
+                if (this.posX > this.contenedorWidth - 40) {
+                    this.posX = this.contenedorWidth - 40;
+                }
+                this.rotacion = 0;
+                this.actualizarPosicion();
+                this.comprobarColisiones();
+            }
+            
+            moverIzquierda() {
+                this.posX -= this.velocidad;
+                if (this.posX < 0) {
+                    this.posX = 0;
+                }
+                this.rotacion = 180;
+                this.actualizarPosicion();
+                this.comprobarColisiones();
+            }
+            
+            moverArriba() {
+                this.posY -= this.velocidad;
+                if (this.posY < 0) {
+                    this.posY = 0;
+                }
+                this.rotacion = 270;
+                this.actualizarPosicion();
+                this.comprobarColisiones();
+            }
+            
+            moverAbajo() {
+                this.posY += this.velocidad;
+                if (this.posY > this.contenedorHeight - 40) {
+                    this.posY = this.contenedorHeight - 40;
+                }
+                this.rotacion = 90;
+                this.actualizarPosicion();
+                this.comprobarColisiones();
+            }
+            
+            actualizarPosicion() {
+                this.elemento.style.left = this.posX + "px";
+                this.elemento.style.top = this.posY + "px";
+                this.elemento.style.transform = `rotate(${this.rotacion}deg)`;
+            }
+            
+            animarBoca() {
+                const pacmanShape = document.getElementById("pacmanShape");
+                if (this.abierto) {
+                    pacmanShape.setAttribute("d", "M50,50 L100,30 A50,50 0 1,1 100,70 Z");
+                } else {
+                    pacmanShape.setAttribute("d", "M50,50 L100,20 A50,50 0 1,1 100,80 Z");
+                }
+                this.abierto = !this.abierto;
+            }
+            
+            crearPuntos(cantidad) {
+                for (let i = 0; i < cantidad; i++) {
+                    const punto = document.createElement("div");
+                    punto.className = "punto";
+                    
+                    // Posición aleatoria dentro del contenedor
+                    const randomX = Math.floor(Math.random() * (this.contenedorWidth - 20)) + 5;
+                    const randomY = Math.floor(Math.random() * (this.contenedorHeight - 20)) + 5;
+                    
+                    punto.style.left = randomX + "px";
+                    punto.style.top = randomY + "px";
+                    
+                    this.contenedor.appendChild(punto);
+                    this.puntos.push({
+                        elemento: punto,
+                        x: randomX,
+                        y: randomY,
+                        activo: true
+                    });
+                }
+            }
+            
+            comprobarColisiones() {
+                const pacmanCentroX = this.posX + 20;
+                const pacmanCentroY = this.posY + 20;
+                
+                this.puntos.forEach(punto => {
+                    if (punto.activo) {
+                        const puntoCentroX = punto.x + 5;
+                        const puntoCentroY = punto.y + 5;
+                        
+                        const distancia = Math.sqrt(
+                            Math.pow(pacmanCentroX - puntoCentroX, 2) + 
+                            Math.pow(pacmanCentroY - puntoCentroY, 2)
+                        );
+                        
+                        if (distancia < 25) {
+                            // Colisión detectada
+                            punto.activo = false;
+                            punto.elemento.style.display = "none";
+                            this.puntuacion += 10;
+                            this.scoreElement.textContent = `Puntuación: ${this.puntuacion}`;
+                            
+                            // Si todos los puntos han sido comidos, crear más
+                            if (this.puntos.filter(p => p.activo).length === 0) {
+                                this.crearPuntos(20);
+                            }
+                        }
+                    }
+                });
+            }
+        }
+        
+        const pacman = new Pacman();
+        
+        document.addEventListener("keydown", (event) => {
+            switch (event.key) {
+                case "ArrowRight":
+                    pacman.moverDerecha();
+                    event.preventDefault();
+                    break;
+                case "ArrowLeft":
+                    pacman.moverIzquierda();
+                    event.preventDefault();
+                    break;
+                case "ArrowUp":
+                    pacman.moverArriba();
+                    event.preventDefault();
+                    break;
+                case "ArrowDown":
+                    pacman.moverAbajo();
+                    event.preventDefault();
+                    break;
+            }
+        });
+    </script>
+</body>
+</html>

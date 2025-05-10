@@ -1,0 +1,14 @@
+[
+    {
+        "id": 1,
+        "subject": "Math",
+        "date": "2025-05-01",
+        "content": "Studied algebra and quadratic equations."
+    },
+    {
+        "id": 2,
+        "subject": "History",
+        "date": "2025-05-02",
+        "content": "Reviewed World War II events."
+    }
+]

@@ -1,0 +1,341 @@
+<!-- Crear programa del Juego "Mayor o menor", donde el usuario intenta adivinar el
+número elegido al azar por el ordenador y si no lo consigue un globo explota por elevarse
+demasiado. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 22</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f0f8ff;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+        
+        h1 {
+            color: #4682b4;
+            margin-bottom: 20px;
+        }
+        
+        .game-area {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .balloon-container {
+            position: relative;
+            height: 400px;
+            background-color: #add8e6;
+            border-radius: 10px;
+            overflow: hidden;
+            border: 2px solid #4682b4;
+        }
+        
+        #balloon {
+            width: 80px;
+            height: 100px;
+            background: radial-gradient(ellipse at center, #ff5e5e 0%, #ff0000 70%);
+            border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            transition: all 0.5s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        
+        #balloon::after {
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 15px;
+            background-color: #cc0000;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 0 0 5px 5px;
+        }
+        
+        .controls {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        .guess-input {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin-bottom: 15px;
+        }
+        
+        input {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            width: 100px;
+            text-align: center;
+        }
+        
+        button {
+            padding: 10px 20px;
+            background-color: #4682b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+        
+        button:hover {
+            background-color: #36648b;
+        }
+        
+        #message {
+            font-size: 18px;
+            margin-top: 10px;
+            min-height: 27px;
+        }
+        
+        #attempts {
+            font-weight: bold;
+            color: #4682b4;
+        }
+        
+        .explosion {
+            position: absolute;
+            width: 150px;
+            height: 150px;
+            background: radial-gradient(circle, #ff4500, #ff8c00, #ffd700);
+            border-radius: 50%;
+            animation: explode 0.5s forwards;
+            display: none;
+        }
+        
+        @keyframes explode {
+            0% {
+                transform: scale(0);
+                opacity: 1;
+            }
+            100% {
+                transform: scale(3);
+                opacity: 0;
+            }
+        }
+        
+        .game-info {
+            background-color: #e6f2ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            border: 1px solid #add8e6;
+        }
+        
+        .game-info h3 {
+            color: #4682b4;
+            margin-bottom: 10px;
+        }
+        
+        .game-stats {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 15px;
+        }
+        
+        .stat-item {
+            background-color: white;
+            padding: 10px;
+            border-radius: 5px;
+            min-width: 120px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mayor o Menor</h1>
+        <div class="game-area">
+            <div class="balloon-container">
+                <div id="balloon"></div>
+                <div id="explosion" class="explosion"></div>
+            </div>
+            <div class="controls">
+                <p>Adivina un número entre 1 y 100</p>
+                <div class="guess-input">
+                    <input type="number" id="guess" min="1" max="100" placeholder="?" autofocus>
+                    <button id="checkButton">Comprobar</button>
+                    <button id="newGameButton">Nuevo juego</button>
+                </div>
+                <div id="message"></div>
+            </div>
+            <div class="game-info">
+                <h3>Información del juego</h3>
+                <p>El ordenador ha elegido un número aleatorio. ¡Intenta adivinarlo!</p>
+                <p>Con cada intento fallido, el globo subirá más. Si fallas demasiadas veces, ¡el globo explotará!</p>
+                
+                <div class="game-stats">
+                    <div class="stat-item">
+                        <p>Intentos: <span id="attempts">0</span></p>
+                    </div>
+                    <div class="stat-item">
+                        <p>Nivel: <span id="level">Fácil</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        class MayorMenorJuego {
+            constructor() {
+                this.targetNumber = this.generateRandomNumber();
+                this.attempts = 0;
+                this.maxAttempts = 7;
+                this.balloonPosition = 20;
+                this.balloonSize = 80;
+                this.gameOver = false;
+            }
+            generateRandomNumber() {
+                return Math.floor(Math.random() * 100) + 1;
+            }
+            checkGuess(guess) {
+                this.attempts++;
+                document.getElementById('attempts').textContent = this.attempts;
+                if (guess === this.targetNumber) {
+                    return {
+                        result: "correct",
+                        message: `¡Correcto! Has adivinado el número ${this.targetNumber} en ${this.attempts} intentos.`
+                    };
+                } else {
+                    this.moveBalloon();
+                    if (this.attempts >= this.maxAttempts) {
+                        this.explodeBalloon();
+                        return {
+                            result: "exploded",
+                            message: `¡El globo explotó! El número era ${this.targetNumber}.`
+                        };
+                    } else if (guess < this.targetNumber) {
+                        return {
+                            result: "higher",
+                            message: "El número es MAYOR. ¡Sigue intentando!"
+                        };
+                    } else {
+                        return {
+                            result: "lower",
+                            message: "El número es MENOR. ¡Sigue intentando!"
+                        };
+                    }
+                }
+            }
+            moveBalloon() {
+                const balloon = document.getElementById('balloon');
+                this.balloonPosition += 50;
+                this.balloonSize += 10;
+                balloon.style.bottom = this.balloonPosition + 'px';
+                balloon.style.width = this.balloonSize + 'px';
+                balloon.style.height = (this.balloonSize + 20) + 'px';
+            }
+            explodeBalloon() {
+                const balloon = document.getElementById('balloon');
+                const explosion = document.getElementById('explosion');
+                explosion.style.bottom = this.balloonPosition + 'px';
+                explosion.style.left = '50%';
+                explosion.style.transform = 'translateX(-50%)';
+                explosion.style.display = 'block';
+                balloon.style.display = 'none';
+
+                this.gameOver = true;
+
+                setTimeout(() => {
+                    explosion.style.animation = 'explode 0.5s forwards';
+                }, 50);
+            }
+            resetGame() {
+                this.targetNumber = this.generateRandomNumber();
+                this.attempts = 0;
+                this.gameOver = false;
+
+                const balloon = document.getElementById('balloon');
+                const explosion = document.getElementById('explosion');
+                
+                document.getElementById('attempts').textContent = '0';
+                document.getElementById('message').textContent = '';
+                document.getElementById('guess').value = '';
+                
+                explosion.style.display = 'none';
+                explosion.style.animation = 'none';
+                
+                balloon.style.display = 'block';
+                this.balloonPosition = 20;
+                this.balloonSize = 80;
+                balloon.style.bottom = this.balloonPosition + 'px';
+                balloon.style.width = this.balloonSize + 'px';
+                balloon.style.height = (this.balloonSize + 20) + 'px';
+                
+                document.getElementById('guess').focus();
+            }
+        }
+        
+        let game = new MayorMenorJuego();
+        
+        document.getElementById('checkButton').addEventListener('click', checkGuess);
+        document.getElementById('newGameButton').addEventListener('click', newGame);
+        document.getElementById('guess').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                checkGuess();
+            }
+        });
+        
+        function checkGuess() {
+            if (game.gameOver) {
+                document.getElementById('message').textContent = "El juego ha terminado. Haz clic en 'Nuevo juego' para volver a jugar.";
+                return;
+            }
+            
+            const guessInput = document.getElementById('guess');
+            const guessValue = parseInt(guessInput.value);
+            
+            if (isNaN(guessValue) || guessValue < 1 || guessValue > 100) {
+                document.getElementById('message').textContent = "Por favor, introduce un número válido entre 1 y 100.";
+                return;
+            }
+            
+            const result = game.checkGuess(guessValue);
+            document.getElementById('message').textContent = result.message;
+            
+            const messageElement = document.getElementById('message');
+            if (result.result === 'correct') {
+                messageElement.style.color = 'green';
+            } else if (result.result === 'exploded') {
+                messageElement.style.color = 'red';
+            } else {
+                messageElement.style.color = 'blue';
+            }
+            
+            guessInput.value = '';
+            guessInput.focus();
+        }
+        
+        function newGame() {
+            game.resetGame();
+        }
+    </script>
+</body>
+</html>

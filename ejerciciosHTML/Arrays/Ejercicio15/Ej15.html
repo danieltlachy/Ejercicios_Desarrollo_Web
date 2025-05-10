@@ -1,0 +1,114 @@
+<!-- Realizar programa para gestionar notas de clase dese un menú
+con botones en pantalla. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 15</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 20px; }
+    .menu { margin-bottom: 20px; }
+    .menu button { 
+        padding: 10px 20px; 
+        margin-right: 10px; 
+        cursor: pointer;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 4px;
+    }
+    .menu button:hover { background-color: #45a049; }
+    #output { margin-top: 20px; }
+</style>
+<script>
+var alumnos = [];
+
+function Inicio() {
+    let n_alum = parseInt(window.prompt(`¿Cuántos alumnos desea dar de alta?`, `0`));
+    if (isNaN(n_alum) || n_alum < 0) {
+        alert("Número de alumnos inválido");
+        return;
+    }
+    for (let i = 0; i < n_alum; i++) {
+        let nom = window.prompt(`Introduzca el nombre del alumno (nº ${i+1})`, ``);
+        if (!nom || nom.trim() === "") {
+            alert("El nombre no puede estar vacío");
+            i--;
+            continue;
+        }
+        alumnos.push({ nombre: nom.trim(), nota: " " });
+    }
+    Ver();
+}
+
+function Ver() {
+    let output = document.getElementById('output');
+    output.innerHTML = '<h3>Listado de Alumnos</h3>';
+    if (alumnos.length === 0) {
+        output.innerHTML += 'No hay alumnos registrados.<br>';
+        return;
+    }
+    alumnos.forEach(function (item, index) {
+        output.innerHTML += `Nombre: ${item.nombre} | Nota: ${item.nota}<hr>`;
+    });
+}
+
+function IntroModificar() {
+    let num = window.prompt(`Introduzca el número del alumno (0-${alumnos.length-1})`, `0`);
+    num = parseInt(num);
+    if (isNaN(num) || num < 0 || num >= alumnos.length) {
+        alert("Número de alumno inválido");
+        return null;
+    }
+    let nota = window.prompt(`Introduzca la nueva nota para ${alumnos[num].nombre}`, `0`);
+    nota = parseInt(nota);
+    if (isNaN(nota) || nota < 0 || nota > 10) {
+        alert("Nota inválida (debe ser entre 0 y 10)");
+        return null;
+    }
+    return { num, nota };
+}
+
+function Modificar() {
+    if (alumnos.length === 0) {
+        alert("No hay alumnos para modificar");
+        return;
+    }
+    let data = IntroModificar();
+    if (data) {
+        alumnos[data.num].nota = data.nota;
+        alert(`Nota de ${alumnos[data.num].nombre} actualizada a ${data.nota}`);
+        Ver();
+    }
+}
+
+function AnadirAlumno() {
+    let nombre = window.prompt("Introduzca el nombre del nuevo alumno", "");
+    if (!nombre || nombre.trim() === "") {
+        alert("El nombre no puede estar vacío");
+        return;
+    }
+    alumnos.push({ nombre: nombre.trim(), nota: " " });
+    alert(`Alumno ${nombre} añadido`);
+    Ver();
+}
+
+function MostrarMenu() {
+    document.getElementById('output').innerHTML = `
+        <h3>Programa Notas</h3>
+        <div class="menu">
+            <button onclick="Inicio()">Iniciar Alumnos</button>
+            <button onclick="Ver()">Ver Listado</button>
+            <button onclick="Modificar()">Modificar Nota</button>
+            <button onclick="AnadirAlumno()">Añadir Alumno</button>
+        </div>
+        <div id="output-content"></div>
+    `;
+}
+</script>
+</head>
+<body onload="MostrarMenu()">
+    <div id="output"></div>
+</body>
+</html>

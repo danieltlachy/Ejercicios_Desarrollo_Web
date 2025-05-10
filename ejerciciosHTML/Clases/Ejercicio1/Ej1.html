@@ -1,0 +1,25 @@
+<!-- Programa que muestra el objeto "Persona" tiene dos propiedades y una función propia (método)-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 1</title>
+    <script type="text/javascript">
+        function Persona(nom, ape) {
+            this.nombre = nom;
+            this.apellido = ape;
+            this.cadena = function () {
+                return this.nombre + " " + this.apellido;
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="divPersona">&nbsp;</div>
+    <script>
+        var p1 = new Persona("Mat", "Salave");
+        document.getElementById("divPersona").innerHTML = p1.cadena();
+    </script>
+</body>
+</html>

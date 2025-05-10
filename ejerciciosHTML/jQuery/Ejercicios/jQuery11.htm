@@ -1,0 +1,60 @@
+<!-- Programa que cuando se hace click sobre la <div> "cuadrado2",
+mueve la <div> "cuadrado1" 10 píxeles a la derecha. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 11</title>
+
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <style type="text/css">
+            #contenedor {
+                position: relative;
+                background-color: #C0C0C0;
+            }
+
+            #cuadrado1 {
+                background-color: #00FF00;
+                width: 100px;
+                height: 100px;
+                position: relative;
+                left: 10px
+            }
+
+            #cuadrado2 {
+                background-color: #AA00FF;
+                width: 100px;
+                height: 100px;
+                position: relative;
+                left: 10px;
+            }
+        </style>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $("div").click(function () {
+                    posx = $(this).css("left");
+                    if (posx == "") posx = "20";
+                    num = parseInt(posx)
+                    num = num + 10;
+                    $(this).css("left", num);
+                    if ($(this).attr('id') == "cuadrado1")
+                        mueve("#cuadrado1", num)
+                });
+                function mueve(objeto, pos) {
+                    pos = pos + 30;
+                    $(objeto).css("left", pos)
+                }
+            });
+        </script>
+    </head>
+
+<body>
+    <div id="contenedor">
+        <div id="cuadrado1"> No me toques </div>
+        <div id="cuadrado2"> A mi si </div>
+    </div>
+</body>
+
+</html>

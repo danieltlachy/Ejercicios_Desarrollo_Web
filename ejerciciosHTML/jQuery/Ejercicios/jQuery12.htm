@@ -1,0 +1,202 @@
+<!-- Realizar una aplicación “Apuestas en las carreras”
+El usuario escoje un participante de 5 posibles (imágenes diferentes dentro de <divs>) y realiza 
+una apuesta. Empieza una carrera aleatoria entre los participantes para llegar al final de la pantalla.
+Si el corredor del usuario ha ganado, se le suma al total de su dinero, el doble de lo apostado. -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 12</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+        }
+        #participants {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .participant {
+            width: 80px;
+            height: 80px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: transform 0.2s;
+            background-color: #fff;
+            font-size: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .participant:hover {
+            transform: scale(1.1);
+        }
+        .participant.selected {
+            border-color: gold;
+            box-shadow: 0 0 10px gold;
+        }
+        #raceTrack {
+            width: 90%;
+            height: 300px;
+            border: 2px solid #333;
+            position: relative;
+            margin: 20px auto;
+            background-color: #e0e0e0;
+            overflow: hidden;
+        }
+        .racer {
+            position: absolute;
+            left: 0;
+            width: 50px;
+            height: 50px;
+            transition: left 0.1s linear;
+        }
+        #betSection, #result {
+            margin: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            margin: 5px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:disabled {
+            background-color: #cccccc;
+            cursor: not-allowed;
+        }
+        input {
+            padding: 10px;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <h1>Apuestas en las Carreras</h1>
+    <div id="betSection">
+        <p>Dinero disponible: $<span id="money">100</span></p>
+        <label>Elige tu corredor:</label>
+        <div id="participants">
+            <button class="participant" onclick="selectParticipant(0)">🐶 Perro</button>
+            <button class="participant" onclick="selectParticipant(1)">🐱 Gato</button>
+            <button class="participant" onclick="selectParticipant(2)">🐴 Caballo</button>
+            <button class="participant" onclick="selectParticipant(3)">🐰 Conejo</button>
+            <button class="participant" onclick="selectParticipant(4)">🐢 Tortuga</button>
+        </div>
+        <div>
+            <label>Cantidad a apostar: $</label>
+            <input type="number" id="betAmount" min="1" max="100" value="10" title="a">
+        </div>
+        <button onclick="startRace()">¡Iniciar Carrera!</button>
+    </div>
+
+    <div id="raceTrack">
+        <div class="racer" id="racer0">🐶 Perro</div>
+        <div class="racer" id="racer1">🐱 Gato</div>
+        <div class="racer" id="racer2">🐴 Caballo</div>
+        <div class="racer" id="racer3">🐰 Conejo</div>
+        <div class="racer" id="racer4">🐢 Tortuga</div>
+    </div>
+
+    <div id="result"></div>
+
+    <script>
+        let selectedParticipant = null;
+        let money = 100;
+        let raceInProgress = false;
+
+        function selectParticipant(index) {
+            if (raceInProgress) return;
+            selectedParticipant = index;
+            const participants = document.querySelectorAll('.participant');
+            participants.forEach((p, i) => {
+                p.classList.toggle('selected', i === index);
+            });
+        }
+
+        function startRace() {
+            if (raceInProgress) return;
+            if (selectedParticipant === null) {
+                alert("Por favor, selecciona un corredor antes de iniciar la carrera.");
+                return;
+            }
+
+            const betAmount = parseInt(document.getElementById('betAmount').value);
+            if (isNaN(betAmount) || betAmount <= 0 || betAmount > money) {
+                alert("Ingresa una cantidad válida para apostar (máximo $" + money + ").");
+                return;
+            }
+
+            raceInProgress = true;
+            document.querySelector('button').disabled = true;
+            document.getElementById('result').innerHTML = '';
+
+            // Reset racers position
+            const racers = document.querySelectorAll('.racer');
+            racers.forEach(racer => racer.style.left = '0px');
+
+            // Calculate race track width
+            const trackWidth = document.getElementById('raceTrack').offsetWidth - 50; // Adjust for racer width
+            const speeds = Array(5).fill(0).map(() => Math.random() * 5 + 2); // Random speed between 2 and 7
+
+            let raceInterval = setInterval(() => {
+                let raceFinished = false;
+                let winner = null;
+
+                racers.forEach((racer, index) => {
+                    if (parseInt(racer.style.left) < trackWidth) {
+                        const newPosition = parseInt(racer.style.left || 0) + speeds[index];
+                        racer.style.left = newPosition + 'px';
+
+                        if (newPosition >= trackWidth) {
+                            if (!winner) {
+                                winner = index;
+                                raceFinished = true;
+                            }
+                        }
+                    }
+                });
+
+                if (raceFinished) {
+                    clearInterval(raceInterval);
+                    endRace(winner, betAmount);
+                }
+            }, 50);
+        }
+
+        function endRace(winner, betAmount) {
+            const resultDiv = document.getElementById('result');
+            if (winner === selectedParticipant) {
+                money += betAmount * 2;
+                resultDiv.innerHTML = `<p>¡Ganaste! El corredor ${winner + 1} llegó primero. Ganaste $${betAmount * 2}.</p>`;
+            } else {
+                money -= betAmount;
+                resultDiv.innerHTML = `<p>Perdiste. El corredor ${winner + 1} llegó primero. Perdiste $${betAmount}.</p>`;
+            }
+
+            document.getElementById('money').textContent = money;
+            raceInProgress = false;
+            document.querySelector('button').disabled = false;
+
+            if (money <= 0) {
+                alert("¡Te quedaste sin dinero! El juego se reiniciará.");
+                money = 100;
+                document.getElementById('money').textContent = money;
+            }
+
+            // Reset selection
+            selectedParticipant = null;
+            const participants = document.querySelectorAll('.participant');
+            participants.forEach(p => p.classList.remove('selected'));
+        }
+    </script>
+</body>
+</html>

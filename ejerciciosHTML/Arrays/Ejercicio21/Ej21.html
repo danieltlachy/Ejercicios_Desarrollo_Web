@@ -1,0 +1,90 @@
+<!-- Realizar programa donde el usuario introduce una palabra. El programa consta, de al menos,
+DOS FUNCIONES: la función f_vocales(variable) recibe la palabra y saca por pantalla el número
+total de vocales de esa palabra.
+La segunda función se llama f_total(variable), esta función recibe la palabra y saca por pantalla
+el número total de letras -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ejercicio 21</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        input[type="text"] {
+            padding: 8px;
+            width: 200px;
+            margin: 10px;
+        }
+        button {
+            padding: 8px 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #output {
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h3>Analizador de Palabras</h3>
+        <input type="text" id="wordInput" placeholder="Introduce una palabra">
+        <button onclick="analizarPalabra()">Analizar</button>
+        <div id="output"></div>
+    </div>
+
+    <script>
+        function f_vocales(palabra) {
+            const vocales = ['a', 'e', 'i', 'o', 'u'];
+            let contador = 0;
+            palabra = palabra.toLowerCase();
+            for (let letra of palabra) {
+                if (vocales.includes(letra)) {
+                    contador++;
+                }
+            }
+            return contador;
+        }
+
+        function f_total(palabra) {
+            return palabra.replace(/[^a-zA-Z]/g, '').length;
+        }
+
+        function analizarPalabra() {
+            const input = document.getElementById('wordInput').value;
+            const output = document.getElementById('output');
+
+            if (!input || input.trim() === "") {
+                output.innerHTML = "Por favor, introduce una palabra válida.";
+                return;
+            }
+
+            const palabra = input.trim();
+            const numVocales = f_vocales(palabra);
+            const numLetras = f_total(palabra);
+
+            output.innerHTML = `
+                Palabra: ${palabra}<br>
+                Número de vocales: ${numVocales}<br>
+                Número total de letras: ${numLetras}
+            `;
+        }
+    </script>
+</body>
+</html>
