@@ -1,0 +1,21 @@
+{
+  "name": "DIVISAS",
+  "version": "1.0.0",
+  "description": "An Oracle JavaScript Extension Toolkit(JET) web app",
+  "dependencies": {
+    "@oracle/oraclejet": "~18.1.0",
+    "@oracle/oraclejet-core-pack": "~18.1.0"
+  },
+  "devDependencies": {
+    "@oracle/ojet-cli": "~18.1.0",
+    "extract-zip": "^1.7.0",
+    "fs-extra": "^8.1.0",
+    "glob": "10.4.5",
+    "sass": "^1.80.5",
+    "underscore": "^1.10.2"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "private": true
+}

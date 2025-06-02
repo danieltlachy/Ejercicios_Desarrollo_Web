@@ -1,0 +1,195 @@
+<!--
+ Copyright (c) 2014, 2025, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<style>
+  .oj-hybrid-padding {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+  }
+
+  h1 {
+    color: #2e6da4;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+
+  .oj-flex-item {
+    margin: 15px 0;
+  }
+
+  oj-label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 5px;
+    display: block;
+  }
+
+  oj-input-text,
+  oj-input-date,
+  oj-input-password,
+  oj-text-area {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    padding: 8px;
+    background-color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  oj-input-text:focus,
+  oj-input-date:focus,
+  oj-input-password:focus,
+  oj-text-area:focus {
+    border-color: #2e6da4;
+    box-shadow: 0 0 5px rgba(46, 109, 164, 0.3);
+    outline: none;
+  }
+
+  oj-radioset,
+  oj-combobox-one {
+    width: 100%;
+  }
+
+  oj-option {
+    padding: 5px 10px;
+  }
+
+  oj-switch {
+    margin-top: 10px;
+  }
+
+  oj-button {
+    background-color: #2e6da4;
+    color: #ffffff; /* Explicitly set to white */
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    text-align: center;
+  }
+
+  oj-button:hover {
+    background-color: #245580;
+    color: #ffffff; /* Ensure hover state also has white text */
+  }
+
+  oj-dialog {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  oj-dialog div[slot="body"] p {
+    padding: 15px;
+    color: #333;
+  }
+
+  oj-dialog div[slot="footer"] oj-button {
+    background-color: #2e6da4;
+    color: #ffffff; /* Explicitly set dialog buttons to white text */
+    padding: 8px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  oj-dialog div[slot="footer"] oj-button:hover {
+    background-color: #245580;
+    color: #ffffff; /* Ensure dialog button hover state has white text */
+  }
+
+  @media (max-width: 600px) {
+    .oj-hybrid-padding {
+      margin: 10px;
+      padding: 10px;
+    }
+
+    h1 {
+      font-size: 20px;
+    }
+
+    oj-input-text,
+    oj-input-date,
+    oj-input-password,
+    oj-text-area {
+      padding: 6px;
+    }
+  }
+</style>
+<div class="oj-hybrid-padding">
+  <h1>Formulario</h1>
+  <div>
+    <div class="oj-flex-item oj-sm-margin-2x">
+      <oj-label for="txt_nombre">Nombre:</oj-label>
+      <oj-input-text id="txt_nombre" value="{{var_nombre}}" placeholder="Ingrese su nombre:" required>
+        <oj-messages for="txt_nombre"></oj-messages>
+      </oj-input-text>
+      <oj-label for="txt_apellidoPaterno">Apellido Paterno:</oj-label>
+      <oj-input-text id="txt_apellidoPaterno" value="{{var_apellidoPaterno}}" placeholder="Ingrese su apellido paterno:" required>
+        <oj-messages for="txt_apellidoPaterno"></oj-messages>
+      </oj-input-text>
+      <oj-label for="txt_apellidoMaterno">Apellido Materno:</oj-label>
+      <oj-input-text id="txt_apellidoMaterno" value="{{var_apellidoMaterno}}" placeholder="Ingrese su apellido materno:" required>
+        <oj-messages for="txt_apellidoMaterno"></oj-messages>
+      </oj-input-text>
+      <oj-label for="dp_fechaNacimiento">Fecha de Nacimiento:</oj-label>
+      <oj-form-layout max-columns="3" direction="row" class="oj-sm-padding-2x-bottom">
+        <oj-input-date id="dp_fechaNacimiento" value="{{var_fechaNacimiento}}" required label-hint="Selecciona su fecha de nacimiento:"></oj-input-date>
+      </oj-form-layout>
+      <oj-label for="rd_genero">Género:</oj-label>
+      <oj-radioset id="rd_genero" value="{{var_genero}}" label-hint="Selecciona tu género:">
+        <oj-option value="No Especificado">No Especificado</oj-option>
+        <oj-option value="Masculino">Masculino</oj-option>
+        <oj-option value="Femenino">Femenino</oj-option>
+      </oj-radioset>
+      <oj-label for="cb_carrera">Carrera:</oj-label>
+      <oj-combobox-one id="cb_carrera" value="{{var_carrera}}" label-hint="Selecciona tu carrera:" class="oj-form-control-max-width-md">
+        <oj-option value="Ingeniería de Software">Ingeniería de Software</oj-option>
+        <oj-option value="Redes y Servicios de Cómputo">Redes y Servicios de Cómputo</oj-option>
+        <oj-option value="Ingeniería en Ciberseguridad">Ingeniería en Ciberseguridad</oj-option>
+        <oj-option value="Tecnologías Computacionales">Tecnologías Computacionales</oj-option>
+      </oj-combobox-one>
+      <oj-label for="txt_anioIngreso">Año de ingreso:</oj-label>
+      <oj-input-text id="txt_anioIngreso" value="{{var_anioIngreso}}" placeholder="Ingrese tu año de ingreso:" required>
+        <oj-messages for="txt_anioIngreso"></oj-messages>
+      </oj-input-text>
+      <oj-label for="txt_correoInstitucional">Correo Institucional:</oj-label>
+      <oj-input-text id="txt_correoInstitucional" value="{{var_correoInstitucional}}" placeholder="Ingrese su correo institucional:" required>
+        <oj-messages for="txt_correoInstitucional"></oj-messages>
+      </oj-input-text>
+      <oj-label for="txt_password">Contraseña:</oj-label>
+      <oj-input-password id="txt_password" value="{{var_password}}" label-hint="Ingrese su contraseña:" required></oj-input-password>
+      <oj-label for="sw_estudianteExtranjero">¿Eres un estudiante extranjero?:</oj-label>
+      <oj-switch id="sw_estudianteExtranjero" value="{{var_estudianteExtranjero}}"></oj-switch>
+      <oj-label for="txtArea_observaciones">Comentarios adicionales:</oj-label>
+      <oj-text-area id="txtArea_observaciones" value="{{var_observaciones}}" label-hint="Comentarios:" rows="3"></oj-text-area>
+      <oj-button id="btnValidar" class="oj-button-confirm buttonfull" on-oj-action="[[actionValidar]]">Registrar</oj-button>
+      <oj-dialog id="dg_resumen" dialog-title="Datos ingresados:" data-bind="ojComponent: { opened: dialogOpened }">
+        <div slot="body">
+          <p data-bind="html: dialogContent"></p>
+        </div>
+        <div slot="footer">
+          <oj-button id="btn_Aceptar" on-oj-action="[[closeDialog]]">Aceptar</oj-button>
+        </div>
+      </oj-dialog>
+      <oj-dialog id="dg_errores" dialog-title="Errores de Validación:" data-bind="ojComponent: { opened: errorDialogOpened }">
+        <div slot="body">
+          <p data-bind="html: dialogContent"></p>
+        </div>
+        <div slot="footer">
+          <oj-button id="btn_ErrorAceptar" on-oj-action="[[function(event) { closeDialog(event, { element: { id: 'dg_errores' }}) }]]">Aceptar</oj-button>
+        </div>
+      </oj-dialog>
+    </div>
+  </div>
+</div>
