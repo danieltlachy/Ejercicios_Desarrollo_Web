@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="icon" type="image/x-icon" href="/resources/images/calculadora.png">
+    <link rel="stylesheet" href="css/style.css">
+    <script type="text/javascript" src="js/calculadora.js"></script>
+</head>
+<body>
+    <header>
+        <img src="/resources/images/uvLogo.png" alt="Logo" class="logo">
+        <h1>Calculadora Basica</h1>
+    </header>
+    <br><br>
+    <div class="contenido">
+        <table>
+            <tr>
+                <td colspan="4"><input id="txt_resultado" type="text" readonly title="resultado"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td></td>
+                <td><input id="b_lim" type="button" onclick="limpiar()" title="Limpiar"></td>
+                <td><input id="b_bor" type="button" onclick="borrar()" title="Borrar"></td>
+            </tr>
+            <tr>
+                <td><input id="b07" type="button" onclick="clicTecla(this)" value="7"></td>
+                <td><input id="b08" type="button" onclick="clicTecla(this)" value="8"></td>
+                <td><input id="b09" type="button" onclick="clicTecla(this)" value="9"></td>
+                <td><input id="b_div" type="button" onclick="clicTecla(this)" value="/"></td>
+            </tr>
+            <tr>
+                <td><input id="b04" type="button" onclick="clicTecla(this)" value="4"></td>
+                <td><input id="b05" type="button" onclick="clicTecla(this)" value="5"></td>
+                <td><input id="b06" type="button" onclick="clicTecla(this)" value="6"></td>
+                <td><input id="b_mul" type="button" onclick="clicTecla(this)" value="x"></td>
+            </tr>
+            <tr>
+                <td><input id="b01" type="button" onclick="clicTecla(this)" value="1"></td>
+                <td><input id="b02" type="button" onclick="clicTecla(this)" value="2"></td>
+                <td><input id="b03" type="button" onclick="clicTecla(this)" value="3"></td>
+                <td><input id="b_res" type="button" onclick="clicTecla(this)" value="-"></td>
+            </tr>
+            <tr>
+                <td><input id="b00" type="button" onclick="clicTecla(this)" value="0"></td>
+                <td><input id="b_pun" type="button" onclick="clicTecla(this)" value="."></td>
+                <td><input id="b_sum" type="button" onclick="clicTecla(this)" value="+"></td>
+            </tr>
+            <tr>
+                <td colspan="4"><input id="b_ig" type="button" onclick="clicTecla(this)" value="="></td>
+            </tr>
+        </table>
+    </div>
+    <footer>
+        <marquee behavior="scroll" direction="left">
+            <p>Universidad Veracruzana - 2025</p>
+        </marquee>
+    </footer>
+</body>
+</html>

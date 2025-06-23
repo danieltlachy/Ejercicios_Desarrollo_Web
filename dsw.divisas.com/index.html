@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Conversor de Divisas (AXIOS)</title>
+        <link rel="stylesheet" href="css/style.css">
+        <!-- Incluir la biblioteca Axios desde CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script type="text/javascript" src="js/divisas.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1 id="h1_titulo"></h1>
+        </header>
+        <br><br>
+        <div class="contenido">
+            <div class="contenedormonedas">
+                <img id="img1" class="imagen_moneda">
+                <button class="botonswitch" title="Intercambiar" 
+                        onclick="intercambiarTipoConversion()"></button>
+                <img id="img2" class="imagen_moneda">
+            </div>
+            <form onsubmit="return convertir(event)">
+                <label for="txt_importe">Importe: *</label>
+                <input class="entrada" type="number" id="txt_importe" 
+                       placeholder="Introduce el importe a convertir" step="any" required>
+                <br>
+                <label for="txt_tasa">Tasa de cambio:</label>
+                <input class="resultado" type="text" id="txt_tasa" readonly>
+                <br>
+                <label for="txt_resultado">Resultado:</label>
+                <input class="resultado" type="text" id="txt_resultado" readonly>
+                <br><br>
+                <input class="btn_convertir" type="submit" value="Convertir" />
+            </form>
+        </div>
+        <footer>
+            <p>Universidad Veracruzana - Lic. en Ingeniería de Software</p>
+        </footer>
+    </body>
+</html>

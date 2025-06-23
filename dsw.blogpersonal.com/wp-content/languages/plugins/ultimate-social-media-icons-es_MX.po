@@ -1,0 +1,3411 @@
+# Translation of Plugins - Social Media Share Buttons &amp; Social Sharing Icons - Stable (latest release) in Spanish (Mexico)
+# This file is distributed under the same license as the Plugins - Social Media Share Buttons &amp; Social Sharing Icons - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-11-25 18:05:55+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: es_MX\n"
+"Project-Id-Version: Plugins - Social Media Share Buttons &amp; Social Sharing Icons - Stable (latest release)\n"
+
+#: libs/sfsi_widget.php:2080
+msgid "URL has been copied successfully!"
+msgstr "¡La URL se copió con exitosamente!"
+
+#: views/sfsi_option_view5.php:1493
+msgid "IncreasingHappiness:"
+msgstr "IncreasingHappiness:"
+
+#: views/sfsi_option_view5.php:1487
+msgid "RateItAll:"
+msgstr "RateItAll:"
+
+#: views/sfsi_option_view1.php:258
+msgid " IncreasingHappiness.org. "
+msgstr " IncreasingHappiness.org. "
+
+#: views/sfsi_option_view1.php:256
+msgid "If you're a charity or contributor for good causes, link here to your profile on "
+msgstr "Si eres una organización benéfica o contribuyes a buenas causas, enlaza aquí con tu perfil en "
+
+#: views/sfsi_option_view1.php:249 views/sfsi_option_view2.php:424
+msgid "IncreasingHappiness"
+msgstr "IncreasingHappiness"
+
+#: views/sfsi_option_view1.php:224 views/sfsi_option_view2.php:412
+msgid "RateItAll"
+msgstr "RateItAll"
+
+#. Author URI of the plugin
+#: ultimate_social_media_icons.php
+msgid "https://inisev.com"
+msgstr "https://inisev.com"
+
+#. Author of the plugin
+#: ultimate_social_media_icons.php
+msgid "Inisev"
+msgstr "Inisev"
+
+#: views/sfsi_option_view2.php:803
+msgid "Copies the link of the webpage to clipboard."
+msgstr "Copia el enlace de la web al portapapeles."
+
+#: views/sfsi_option_view1.php:428
+msgid "Show this icon if you want to allow visitors to copy the url address of the page with a single click."
+msgstr "Muestra este icono si quieres permitir a los visitantes copiar la dirección url de la página con un solo clic."
+
+#: views/sfsi_option_view1.php:423 views/sfsi_option_view2.php:801
+msgid "Copy link"
+msgstr "Copiar enlace"
+
+#: views/sfsi_option_view5.php:1570
+msgid "Show the USM support widget on the front-end?"
+msgstr "¿Mostrar el widget de soporte de USM en el front-end?"
+
+#: views/sfsi_option_view5.php:1569
+msgid "Support widget"
+msgstr "Widget de soporte"
+
+#: views/sfsi_option_view5.php:1521
+msgid "Mastodon:"
+msgstr "Mastodon:"
+
+#: views/sfsi_option_view5.php:1505
+msgid "Snapchat:"
+msgstr "Snapchat:"
+
+#: views/sfsi_option_view5.php:1501
+msgid "Tiktok:"
+msgstr "Tiktok:"
+
+#: views/sfsi_option_view5.php:1480
+msgid "Fb Messenger:"
+msgstr "Fb Messenger:"
+
+#: views/sfsi_option_view5.php:1476
+msgid "Reddit:"
+msgstr "Reddit:"
+
+#: views/sfsi_option_view2.php:789
+msgid "Share my blog on Mastodon"
+msgstr "Compartir mi blog en Mastodon"
+
+#: views/sfsi_option_view2.php:778
+msgid "Visit my Mastodon profile at:"
+msgstr "Visita mi perfil de Mastodon en:"
+
+#: views/sfsi_option_view2.php:774
+msgid "The Mastodon icon can perform two actions. Pick below which actions it should perform"
+msgstr "El icono Mastodon puede realizar dos acciones. Elige a continuación qué acciones debe realizar"
+
+#: views/sfsi_option_view1.php:441
+msgid "Mastodon is the largest decentralized social network on the internet that functions much like X (Twitter)."
+msgstr "Mastodon es la mayor red social descentralizada de Internet que funciona de forma muy parecida a X (Twitter)."
+
+#: views/sfsi_option_view1.php:438 views/sfsi_option_view2.php:772
+msgid "Mastodon"
+msgstr "Mastodon"
+
+#: views/subviews/que4/banner.php:65
+msgid "See all %1$sfeatures%2$s Premium Plugin"
+msgstr "Conoce todas las %1$scaracterísticas%2$s del plugin Premium"
+
+#: views/subviews/que4/animatethem.php:38
+msgid "Combo (Fade In , Scale)"
+msgstr "Combinado (aparecer, escala)"
+
+#: views/sfsi_section_for_premium.php:19
+msgid "Premium"
+msgstr "Premium"
+
+#: views/sfsi_section_for_premium.php:11
+msgid "...and much more is possible with"
+msgstr "...y mucho más solo posible con el"
+
+#: views/sfsi_option_view9.php:34
+msgid "Go to forum"
+msgstr "Ir al foro"
+
+#: views/sfsi_option_view9.php:27
+msgid "This review is %1$s100&#37; free%2$s and offered to you as courtesy of Ultimatelysocial.com"
+msgstr "Esta valoración es %1$s100&#37; gratis%2$s y se te ofrece como cortesía de Ultimatelysocial.com"
+
+#: views/sfsi_option_view9.php:21
+msgid "3. State where you currently placed the icons (URL), and what your goals are, e.g. more shares etc."
+msgstr "3. Indica dónde tienes ubicados tus íconos (URL), y cuáles son tus objetivos, por ejemplo más compartidos, etc."
+
+#: views/sfsi_option_view9.php:16
+msgid "2. Add a new topic titled e.g. %1$s“Advice for Your-website-url.com”%2$s"
+msgstr "2. Añade un nuevo tema titulado, por ejemplo, %1$s“Consejo para tu URL-de-tu-sitio.com”%2$s"
+
+#: views/sfsi_option_view9.php:9
+msgid "1. Go to the %1$ssupport forum%2$s"
+msgstr "1. Ve al %1$sforo del soporte%2$s"
+
+#: views/sfsi_option_view9.php:5
+msgid "Simply:"
+msgstr "Simplemente:"
+
+#: views/sfsi_option_view9.php:3
+msgid "Let us consult you if you placed the icons in the best possible way for most shares & traffic."
+msgstr "Permítenos consultarte si has puesto los íconos del mejor modo posible para más compartidos y tráfico"
+
+#: views/sfsi_option_view5.php:927 views/sfsi_option_view5.php:935
+#: views/sfsi_option_view5.php:947 views/sfsi_option_view5.php:955
+#: views/sfsi_option_view5.php:963 views/sfsi_option_view5.php:971
+#: views/sfsi_option_view5.php:979 views/sfsi_option_view5.php:987
+#: views/sfsi_option_view5.php:999 views/sfsi_option_view5.php:1007
+#: views/sfsi_option_view5.php:1015 views/sfsi_option_view5.php:1023
+#: views/sfsi_option_view5.php:1031 views/sfsi_option_view5.php:1039
+#: views/sfsi_option_view5.php:1047 views/sfsi_option_view5.php:1055
+msgid "Visit us"
+msgstr "Visítanos"
+
+#: views/sfsi_option_view5.php:923 views/sfsi_option_view5.php:931
+#: views/sfsi_option_view5.php:943 views/sfsi_option_view5.php:951
+#: views/sfsi_option_view5.php:959 views/sfsi_option_view5.php:967
+#: views/sfsi_option_view5.php:975 views/sfsi_option_view5.php:983
+#: views/sfsi_option_view5.php:995 views/sfsi_option_view5.php:1003
+#: views/sfsi_option_view5.php:1011 views/sfsi_option_view5.php:1019
+#: views/sfsi_option_view5.php:1027 views/sfsi_option_view5.php:1035
+#: views/sfsi_option_view5.php:1043 views/sfsi_option_view5.php:1051
+msgid "Visit me"
+msgstr "Visítame"
+
+#: views/sfsi_options_view.php:239
+msgid "Get advice for more shares & traffic (FREE!)"
+msgstr "Recibe consejos para más compartidos y tráfico (¡GRATIS!)"
+
+#: ultimate_social_media_icons.php:1556
+msgid "Have issues? %1$sAsk us in the forum%2$s - %3$sit's FREE and quick!"
+msgstr "¿Tienes problemas? %1$sPregúntanos en el foro%2$s - %3$s¡es GRATIS y rápido!"
+
+#: libs/controllers/sfsi_forum_notification_popup.php:124
+msgid "By Ultimatelysocial"
+msgstr "Por Ultimatelysocial"
+
+#: libs/controllers/sfsi_forum_notification_popup.php:116
+msgid "This widget is %1$sonly visible to you as admin%2$s. You can %3$shide it forever.%4$s"
+msgstr "Este widget %1$ssolo es visible para ti como administrador%2$s. Puedes %3$socultarlo para siempre.%4$s"
+
+#: views/sfsi_option_view9.php:49
+msgid "Your account on Wordpress.org (where you open a new support thread) is different to the one you login to your WordPress dashboard (where you are now). If you don't have a WordPress.org account yet, please sign up at the top right on the Support Forum page, and then scroll down on that page . It only takes a minute:)"
+msgstr "Tu cuenta en WordPress.org (cuando abres un nuevo debate de soporte) es distinta a con la que accedes al escritorio de tu WordPress (donde estás ahora). Si no tienes aún una cuenta en WordPress.org, por favor, regístrate en la parte superior derecha de la página del foro de soporte, y luego haz scroll en esa página. Solo lleva un minuto :)"
+
+#: libs/controllers/sfsi_forum_notification_popup.php:101
+msgid "Trouble logging in?"
+msgstr "¿Problemas para acceder?"
+
+#: libs/controllers/sfsi_forum_notification_popup.php:93
+msgid "Ask in forum"
+msgstr "Pregunta en el foro"
+
+#: libs/controllers/sfsi_forum_notification_popup.php:91
+msgid "We can also consult you how to place them for maximum effect & assist with anything else."
+msgstr "También podemos preguntarte cómo colocarlos para un máximo efecto y ayudarte con todo lo demás."
+
+#: libs/controllers/sfsi_forum_notification_popup.php:84
+msgid "If not, ask us in the %1$sforum%2$s, we're happy to help – %3$squickly & for free!%4$s"
+msgstr "En caso contrario, pregúntanos en el %1$sforo%2$s, nos encanta ayudar - %3$s¡rápido y gratis!%4$s"
+
+#: views/sfsi_section_for_premium.php:112
+msgid "..only 29.98 USD (includes support and updates for six months, and after that it will not be deactivated, so you can just keep using it!)"
+msgstr "...solo USD 29.98 (incluye soporte y actualizaciones por seis meses, y luego no será desactivado, ¡lo podrás seguir utilizando!)"
+
+#: views/sfsi_option_view6.php:230
+msgid "*All icons have «sharing» feature enabled by default. If you want to give them a different function (e.g link to your Facebook page) then please click on «Define url» next to the icon."
+msgstr "*Todos los íconos tienen la característica de \"compartir\" activa por defecto. Si quieres darles una función diferente (por ejemplo, un enlace a tu página de Facebook), entonces por favor haz clic en \"Definir URL\" al lado del ícono. "
+
+#: views/sfsi_option_view2.php:681
+msgid "When clicked on, users will get directed to your Snapchat page."
+msgstr "Cuando se le hace clic, los usuarios serán dirigidos a tu página de Snapchat."
+
+#: views/sfsi_option_view2.php:154
+msgid "Learn more."
+msgstr "Aprende más."
+
+#: views/sfsi_options_view.php:204
+msgid "Optional"
+msgstr "Opcional"
+
+#: views/sfsi_options_view.php:130
+msgid "Learn More"
+msgstr "Aprende más"
+
+#: views/sfsi_options_view.php:109 views/sfsi_options_view.php:165
+msgid "If you want %1$smore likes & shares%2$s, more placement options, better sharing features (eg: define the text and image that gets shared), optimization for mobile, %3$smore icon design styles,%4$sanimated icons,%5$sthemed icons,%6$s and %7$smuch more%8$s, then %9$sgo premium%10$s."
+msgstr "Si quieres %1$smás me gusta y compartidos%2$s, más opciones de ubicación, mejores características para compartir (por ejemplo, definir el texto e imagen que se comparte), optimización para móviles, %3$smás estilos de diseño para íconos,%4$síconos animados,%5$síconos con temas,%6$s y %7$smucho más%8$s, entonces %9$shazte premium%10$s."
+
+#: views/sfsi_options_view.php:100
+msgid "If you face any issue, please ask in %1$sSupport Forum%2$s. We'll try to respond quickly. Thank you!"
+msgstr "Si descubres algún problema, por favor, pregunta en el %1$sForo de soporte%2$s. Intentaremos responder rápidamente. ¡Gracias!"
+
+#: views/sfsi_options_view.php:87
+msgid "Welcome to the Ultimate Social Icons and Share Plugin!"
+msgstr "¡Bienvenido al plugin Ultimate Social Icons and Share!"
+
+#: views/subviews/que4/banner.php:5
+msgid "%1$sNew%2$s In our Premium Plugin we added:"
+msgstr "%1$sNuevo%2$s En el plugin Premium añadimos:"
+
+#: views/subviews/que3/sfsi_que3_place_via_widget.php:32
+msgid "Go to the widget area and drag & drop it where you want to have it!"
+msgstr "¡Ve al área de widget y arrastra y suéltalo donde lo quieras dejar!"
+
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:222
+msgid "Bottom"
+msgstr "Inferior"
+
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:219
+msgid "Top"
+msgstr "Superior"
+
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:215
+msgid "Placement of (horizontal) sticky bar:"
+msgstr "Ubicación de la barra fija (horizontal):"
+
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:207
+msgid "Definition of “Mobile”: Screens smaller than"
+msgstr "Definición de \"Móviles\": Pantallas más pequeñas que"
+
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:185
+msgid "The sticky bar is always aligned centrally (vertically). If you want to move it higher or lower, please fill the above. "
+msgstr "La barra fija siempre está alineada al centro (verticalmente). Si quieres moverla más arriba o abajo, por favor, completa lo anterior."
+
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:177
+msgid "down"
+msgstr "abajo"
+
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:174
+msgid "up"
+msgstr "arriba"
+
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:170
+msgid "more"
+msgstr "más"
+
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:167
+msgid "Adjust positioning: move the bar… "
+msgstr "Ajusta la posición: mueve la barra..."
+
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:150
+msgid "Placement of (vertical) sticky bar:"
+msgstr "Ubicación de la barra fija (vertical):"
+
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:144
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:209
+msgid "pixels (width)"
+msgstr "píxeles (ancho)"
+
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:142
+msgid "Definition of “Desktop”: Screens larger than"
+msgstr "Definición de \"Escritorio\": Pantallas más grandes que"
+
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:125
+msgid "Show the bar on:"
+msgstr "Mostrar la barra en:"
+
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:78
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:94
+msgid "Define url*"
+msgstr "Definir URL*"
+
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:61
+msgid "Select icons:"
+msgstr "Seleccionar íconos:"
+
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:55
+msgid "This is independent from the icons selected elsewhere in the plugin."
+msgstr "Esto es independiente de los íconos que seleccionaste en otro lugar en el plugin."
+
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:53
+msgid "Sticky bar"
+msgstr "Barra fija"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:174
+msgid "Need different selections for mobile?"
+msgstr "¿Necesitas diferentes selecciones para móviles?"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:160
+#: views/subviews/que3/sfsi_que3_place_via_shortcode.php:44
+#: views/subviews/que3/sfsi_que3_place_via_widget.php:50
+msgid "Horizontally"
+msgstr "Horizontalmente"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:155
+#: views/subviews/que3/sfsi_que3_place_via_shortcode.php:40
+#: views/subviews/que3/sfsi_que3_place_via_widget.php:46
+msgid "Show icons"
+msgstr "Mostrar íconos"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:148
+#: views/subviews/que3/sfsi_que3_place_via_shortcode.php:34
+#: views/subviews/que3/sfsi_que3_place_via_widget.php:40
+msgid "Alignments:"
+msgstr "Alineaciones:"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:138
+msgid "(still visible if a user scrolls down)"
+msgstr "(será visible si el usuario se desplaza hacia abajo)"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:137
+msgid "Stay at the same place B"
+msgstr "Se mantengan en el mismo lugar B"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:126
+msgid "(not visible if a user scrolls down)"
+msgstr "(no será visible si el usuario se desplaza hacia abajo)"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:125
+msgid "Stay at the same place A"
+msgstr "Se mantengan en el mismo lugar A"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:117
+msgid "Float"
+msgstr "Floten"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:112
+msgid "Make icons…"
+msgstr "Hacer que los íconos..."
+
+#: views/sfsi_question3.php:117
+msgid "Show icons on all except the following pages (Exclusion rules)"
+msgstr "Mostrar los íconos en todas las páginas excepto en las siguientes (Reglas de exclusión)"
+
+#: views/sfsi_question3.php:104
+msgid "Only show icons on certain pages (Inclusion rules)"
+msgstr "Solo mostrar los íconos en ciertas páginas (Reglas de inclusión)"
+
+#: views/sfsi_question3.php:92
+msgid "No restrictions"
+msgstr "Sin restricciones"
+
+#: views/sfsi_question3.php:82
+msgid "Include or exclude pages where icons should show"
+msgstr "Incluir o excluir páginas donde se deberían mostrar los íconos"
+
+#: views/sfsi_pop_content.php:638
+msgid "Still have questions? Please ask!"
+msgstr "¿Aún tienes preguntas? ¡Consúltanos!\t"
+
+#: views/sfsi_pop_content.php:632
+msgid "We provide a %1$s14 day money-back guarantee%2$s if you‘re not satisfied for any reason"
+msgstr "Contamos con una %1$sgarantía de devolución de dinero de 14 días%2$s si por cualquier razón no estás satisfecho"
+
+#: views/sfsi_pop_content.php:625
+msgid "One license is valid for one site (as support is included), but we offer %1$s20&#37; discounts%2$s for all your following purchases"
+msgstr "Una licencia es válida por un sitio (ya que incluye soporte), pero ofrecemos %1$s20&#37;descuentos%2$s para todas tus compras posteriores"
+
+#: views/sfsi_pop_content.php:618
+msgid "%1$sUse it for lifetime:%2$s Support and updates are limited to 6 months, however after that it will not be disabled, you can keep using the plugin"
+msgstr "%1$sÚsalo de por vida:%2$s El soporte y las actualizaciones se limitan a 6 meses, pero pasado ese tiempo no será desactivado, podrás seguir usando el plugin"
+
+#: views/sfsi_pop_content.php:614
+msgid "The plugin is priced really fairly - click on the payment options above to see the price"
+msgstr "El plugin tiene un muy buen precio - haz clic en las opciones de pago para conocerlo"
+
+#: views/sfsi_pop_content.php:608
+msgid "You‘ll get access to %1$sall premium features%2$s"
+msgstr "Obtendrás acceso a %1$stodas las características premium%2$s"
+
+#: views/sfsi_pop_content.php:603
+msgid "Key points"
+msgstr "Puntos clave"
+
+#: views/sfsi_pop_content.php:292 views/sfsi_pop_content.php:296
+#: views/sfsi_pop_content.php:308 views/sfsi_pop_content.php:309
+#: views/sfsi_pop_content.php:313 views/sfsi_pop_content.php:325
+#: views/sfsi_pop_content.php:326 views/sfsi_pop_content.php:330
+#: views/sfsi_pop_content.php:342 views/sfsi_pop_content.php:343
+#: views/sfsi_pop_content.php:347 views/sfsi_pop_content.php:361
+#: views/sfsi_pop_content.php:362 views/sfsi_pop_content.php:368
+#: views/sfsi_pop_content.php:381 views/sfsi_pop_content.php:382
+#: views/sfsi_pop_content.php:388 views/sfsi_pop_content.php:401
+#: views/sfsi_pop_content.php:402 views/sfsi_pop_content.php:408
+#: views/sfsi_pop_content.php:421 views/sfsi_pop_content.php:422
+#: views/sfsi_pop_content.php:428 views/sfsi_pop_content.php:441
+#: views/sfsi_pop_content.php:442 views/sfsi_pop_content.php:448
+#: views/sfsi_pop_content.php:461 views/sfsi_pop_content.php:462
+#: views/sfsi_pop_content.php:468 views/sfsi_pop_content.php:481
+#: views/sfsi_pop_content.php:482 views/sfsi_pop_content.php:488
+#: views/sfsi_pop_content.php:501 views/sfsi_pop_content.php:502
+#: views/sfsi_pop_content.php:508 views/sfsi_pop_content.php:521
+#: views/sfsi_pop_content.php:522 views/sfsi_pop_content.php:528
+#: views/sfsi_pop_content.php:541 views/sfsi_pop_content.php:542
+#: views/sfsi_pop_content.php:548
+msgid "Delete"
+msgstr "Borrar"
+
+#: views/sfsi_pop_content.php:291
+msgid "Update"
+msgstr "Actualizar"
+
+#: views/sfsi_pop_content.php:278
+msgid "3. Click on"
+msgstr "3. Haz clic en"
+
+#: views/sfsi_pop_content.php:260
+msgid "Ok, Review it"
+msgstr "Bien, valorarlo"
+
+#: views/sfsi_other_banners.php:311
+msgid "%1$sGet more visibility on Twitter%2$s by displaying more information than a standard Tweet. Attach images and automatically pull the titles & links of the posts to make them much more attractive and visual with the Ultimate Social Media %3$sPremium Plugin.%4$s"
+msgstr "%1$sObtén más visibilidad en Twitter%2$s mostrando más información que un Tuit estándar. Adjunta imágenes y acerca los títulos y enlaces de las entradas para hacerlas mucho más atractivas y visuales con el %3$splugin Premium%4$s Ultimate Social Media"
+
+#: views/sfsi_other_banners.php:269
+msgid "%1$sGet more sales%2$s with the Ultimate Social Media %3$sPremium Plugin%4$s by adding social share icons to your product pages. More shares equals more publicity, and more publicity means more new customers."
+msgstr "%1$sObtén más ventas%2$s con el %3$splugin Premium%4$s Ultimate Social Media añadiendo íconos de compartir en redes a tus páginas de productos. Más compartidos significa más publicidad, y más publicidad atrae nuevos clientes."
+
+#: views/sfsi_other_banners.php:183
+msgid "%1$sMake sure your site is GDPR compliant.%2$s As part of the Ultimate Social Media Premium Plugin you can request a review (at no extra charge) to check if your sharing icons are GDPR compliant."
+msgstr "%1$sAsegúrate de que tu sitio se ajuste al RGPD.%2$s Como parte del plugin Premium Ultimate Social Media puedes solicitar una revisión (sin cargo adicional) para comprobar si tus íconos se ajustan al RGPD."
+
+#: views/sfsi_other_banners.php:93
+msgid "%1$sGet more traffic from your pictures –%2$s the %3$sUltimate Social Media Premium Plugin%4$s works excellently in conjunction with the %5$s plugin and allows to show a %6$sPinterest save-icon%7$s after users move over your pictures. This increases sharing activity significantly."
+msgstr "%1$sObtén más trafico a través de tus imágenes -%2$s el %3$splugin Premium Ultimate Social Media%4$s funciona muy bien en conjunto con el plugin %5$s y permite mostrar un %6$sícono de guardar de Pinterest%7$s luego de que los usuarios se muevan sobre tus imágenes. Esto aumenta significativamente la actividad de compartir."
+
+#: views/sfsi_other_banners.php:47
+msgid "%1$sYou’re on https,%2$s that’s great! However: we noticed that you still have share & like counts (from social media) on your old (http://) urls. If you don’t want to lose them, check out this plugin which has a share count recovery feature."
+msgstr "%1$sEstás en https,%2$s ¡genial! Sin embargo: notamos que aún tienes los recuentos de compartidos y me gusta (de redes sociales) en tus URL anteriores (http://). Si no quieres perderlos, echa un vistazo a este plugin que cuenta con una característica de recuperación de recuentos."
+
+#: views/sfsi_option_view7.php:642
+msgid "Do you want to set a limit on how often the pop-up is shown?"
+msgstr "¿Quieres limitar la cantidad de veces que se muestra la ventana emergente?"
+
+#: views/sfsi_option_view7.php:633
+msgid "When the user clicks outside of the pop-up area"
+msgstr "Cuando el usuario hace clic fuera del área de la ventana emergente"
+
+#: views/sfsi_option_view7.php:620
+msgid "When user scrolls"
+msgstr "Cuando el usuario se desplaza"
+
+#: views/sfsi_option_view7.php:612
+msgid "After showing the pop-up, when shall it disappear again?"
+msgstr "Luego de mostrar la ventana emergente, ¿cuándo debería desaparecer de nuevo?"
+
+#: views/sfsi_option_view7.php:600
+msgid "When the user leaves the page (i.e. moves over the top part in their browser)"
+msgstr "Cuando el usuario abandona la página (esto es, cuando se desplaza a la parte superior de su navegador)"
+
+#: views/sfsi_option_view7.php:560
+#: views/subviews/que3/sfsi_que3_place_via_shortcode.php:87
+#: views/subviews/que3/sfsi_que3_place_via_widget.php:97
+msgid "Show on:"
+msgstr "Mostrar:"
+
+#: views/sfsi_option_view7.php:514
+msgid "Selected pages"
+msgstr "Páginas seleccionadas"
+
+#: views/sfsi_option_view7.php:511
+msgid "All blog posts"
+msgstr "Todas las entradas de blog"
+
+#: views/sfsi_option_view6.php:692
+msgid "Share count text:"
+msgstr "Texto del recuento de compartidos:"
+
+#: views/sfsi_option_view6.php:688
+msgid "Font color (of counts):"
+msgstr "Color de la fuente (de los recuentos):"
+
+#: views/sfsi_option_view6.php:671
+msgid "Show the total share count on the left of your icons. It will only be visible if the individual counts are set up under <a href=\"#\" onclick=\"event.preventDefault();sfsi_scroll_to_div('ui-id-9')\" >question 5</a>."
+msgstr "Mostrar el recuento total de compartidos a la izquierda de tus íconos. Solo será visible si los recuentos individuales están establecidos en la <a href=\"#\" onclick=\"event.preventDefault();sfsi_scroll_to_div('ui-id-9')\" >pregunta 5</a>."
+
+#: views/sfsi_option_view6.php:669
+msgid "Share count"
+msgstr "Recuento de compartidos"
+
+#: views/sfsi_option_view6.php:645
+msgid "Below Icon"
+msgstr "Debajo del ícono"
+
+#: views/sfsi_option_view6.php:640
+msgid "Above Icon"
+msgstr "Arriba del ícono"
+
+#: views/sfsi_option_view6.php:526
+msgid "You can also show the icon by using the shortcode [DISPLAY_RESPONSIVE_ICONS] (or place the string &lt;?php echo DISPLAY_RESPONSIVE_ICONS(); ?&gt; into your theme codes)."
+msgstr "También puedes mostrar el ícono usando el shortcode [DISPLAY_RESPONSIVE_ICONS] (o colocar la cadena &lt;?php echo DISPLAY_RESPONSIVE_ICONS(); ?&gt; en tus códigos de temas)."
+
+#: views/sfsi_option_view6.php:514 views/sfsi_option_view7.php:575
+#: views/subviews/que3/sfsi_que3_place_via_shortcode.php:109
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:200
+#: views/subviews/que3/sfsi_que3_place_via_widget.php:119
+msgid "Mobile"
+msgstr "Móviles"
+
+#: views/sfsi_option_view6.php:501 views/sfsi_option_view7.php:568
+#: views/subviews/que3/sfsi_que3_place_via_shortcode.php:96
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:135
+#: views/subviews/que3/sfsi_que3_place_via_widget.php:106
+msgid "Desktop"
+msgstr "Escritorio"
+
+#: views/sfsi_option_view6.php:490
+msgid "Devices to show icons:"
+msgstr "Dispositivos para mostrar los íconos:"
+
+#: views/sfsi_option_view6.php:481
+msgid "After product descriptions"
+msgstr "Después de las descripciones de los productos"
+
+#: views/sfsi_option_view6.php:471
+msgid "Before product descriptions"
+msgstr "Antes de las descripciones de los productos"
+
+#: views/sfsi_option_view6.php:462
+msgid "On WooComerce Product Pages"
+msgstr "En las páginas de producto de WooCommerce"
+
+#: views/sfsi_option_view6.php:458
+msgid "At bottom of pages"
+msgstr "Al final de las páginas"
+
+#: views/sfsi_option_view6.php:446
+msgid "At top of pages"
+msgstr "En la parte superior de las páginas"
+
+#: views/sfsi_option_view6.php:437
+msgid "Other pages"
+msgstr "Otras páginas"
+
+#: views/sfsi_option_view6.php:412
+msgid "Posts overview pages (blog homepage)"
+msgstr "Páginas de resumen de entradas (página de inicio del blog)"
+
+#: views/sfsi_option_view6.php:408 views/sfsi_option_view6.php:432
+msgid "After posts"
+msgstr "Después de las entradas"
+
+#: views/sfsi_option_view6.php:396 views/sfsi_option_view6.php:421
+msgid "Before posts"
+msgstr "Antes de las entradas"
+
+#: views/sfsi_option_view6.php:387
+msgid "Single post pages"
+msgstr "Páginas de entrada individual"
+
+#: views/sfsi_option_view6.php:385
+msgid "Pages to show icons:"
+msgstr "Páginas para mostrar los íconos:"
+
+#: views/sfsi_option_view6.php:383
+msgid "Display options"
+msgstr "Opciones de visualización"
+
+#: views/sfsi_option_view5.php:1087
+msgid "Automatic (Using WPML)"
+msgstr "Automático (utilizando WPML)"
+
+#: views/sfsi_option_view5.php:906
+msgid "Linkedin «Visit»-icon:"
+msgstr "Ícono de \"Visita\" LinkedIn:"
+
+#: views/sfsi_option_view5.php:714
+msgid "Youtube «Visit»-icon:"
+msgstr "Ícono de \"Visita\" YouTube:"
+
+#: views/sfsi_option_view5.php:685
+msgid "Facebook «Visit»-icon:"
+msgstr "Ícono de \"Visita\" Facebook:"
+
+#: views/sfsi_option_view5.php:678
+msgid "Follow"
+msgstr "Seguir"
+
+#: views/sfsi_option_view5.php:665
+msgid "Follow-button:"
+msgstr "Botón de seguir:"
+
+#: views/sfsi_option_view5.php:661
+msgid "Language & Button-text"
+msgstr "Texto del botón e idioma"
+
+#: views/sfsi_option_view5.php:457 views/sfsi_option_view5.php:726
+#: views/sfsi_option_view5.php:918
+msgid "Automatic (<< Visit me >>)"
+msgstr "Automático (<< Visítame >>)"
+
+#: views/sfsi_option_view5.php:453 views/sfsi_option_view5.php:723
+#: views/sfsi_option_view5.php:914
+msgid "Automatic (<< Visit us >>)"
+msgstr "Automático (<< Visítanos >>)"
+
+#: views/sfsi_option_view5.php:385
+#: views/subviews/que3/sfsi_que3_place_via_shortcode.php:57
+#: views/subviews/que3/sfsi_que3_place_via_widget.php:63
+msgid "Need different selection for mobile ?"
+msgstr "¿Necesitas diferentes selecciones para móviles?"
+
+#: views/sfsi_option_view4.php:665
+msgid "Retrieve the number of pinterest followers"
+msgstr "Recupera el número de seguidores de Pinterest"
+
+#: views/sfsi_option_view4.php:652
+msgid "Retrieve the number of pins of board from your pinterest account"
+msgstr "Recupera el número de pines de los tableros de tu cuenta de Pinterest"
+
+#: views/sfsi_option_view4.php:639
+msgid "Retrieve the number of Pinterest (+1) (on your blog)"
+msgstr "Recupera el número de Pinterest (+1) (en tu blog)"
+
+#: views/sfsi_option_view3.php:917
+msgid "Icons Only"
+msgstr "Solo íconos"
+
+#: views/sfsi_option_view3.php:511
+msgid "Flat Squared"
+msgstr "Cuadrado plano"
+
+#: views/sfsi_option_view3.php:484
+msgid "Flat Square"
+msgstr "Cuadrado plano"
+
+#: views/sfsi_option_view3.php:98
+msgid "Animated Icons"
+msgstr "Íconos animados"
+
+#: views/sfsi_option_view2.php:763
+msgid "Visit me on Tiktok:"
+msgstr "Visitarme en TikTok:"
+
+#: views/sfsi_option_view2.php:746
+msgid "Contact us (on FB Messenger)"
+msgstr "Contactarnos (en Messenger de FB)"
+
+#: views/sfsi_option_view2.php:737
+msgid "Share my site with friends (on FB Messenger)"
+msgstr "Compartir mi sitio con amigos (en Messenger de FB)"
+
+#: views/sfsi_option_view2.php:733
+msgid "The Facebook Messenger icon can perform the following actions:"
+msgstr "El ícono de Facebook Messenger puede realizar las siguientes acciones:"
+
+#: views/sfsi_option_view2.php:717
+msgid "Allow users to visit my Reddit Page"
+msgstr "Permitir a los usuarios visitar mi página de Reddit"
+
+#: views/sfsi_option_view2.php:706
+msgid "Allow users to share the page via Reddit"
+msgstr "Permitir a los usuarios compartir la página a través de Reddit"
+
+#: views/sfsi_option_view2.php:666
+msgid "Subscribe to me (on OK)"
+msgstr "Suscribirse (en OK)"
+
+#: views/sfsi_option_view2.php:653
+msgid "Like my site (on OK)"
+msgstr "Dar Me gusta a mi sitio (en OK)"
+
+#: views/sfsi_option_view2.php:628
+msgid "Share my blog with friends (on VK)"
+msgstr "Compartir mi blog con amigos (en VK)"
+
+#: views/sfsi_option_view2.php:622
+msgid "Visit my VK page at:"
+msgstr "Visitar mi página de VK en:"
+
+#: views/sfsi_option_view2.php:604
+msgid "Like my page with Sina Weibo"
+msgstr "Darle me gusta a mi página con Sina Weibo"
+
+#: views/sfsi_option_view2.php:591
+msgid "Share my blog on Sina Weibo"
+msgstr "Compartir mi blog en Sina Weibo"
+
+#: views/sfsi_option_view2.php:581
+msgid "Visit my Sina Weibo page at:"
+msgstr "Visitar mi página de Sina Weibo en:"
+
+#: views/sfsi_option_view2.php:577
+msgid "The Weibo icon can perform several actions:"
+msgstr "El ícono de Weibo permite realizar varias acciones:"
+
+#: views/sfsi_option_view2.php:561
+msgid "Allow users to send me a Whatsapp message"
+msgstr "Permitir a los usuarios enviarme mensaje de WhatsApp"
+
+#: views/sfsi_option_view2.php:550
+msgid "Allow users to share the page via Whatsapp"
+msgstr "Permitir a los usuarios compartir mi página a través de WhatsApp"
+
+#: views/sfsi_option_view2.php:528
+msgid "Follow me on WeChat"
+msgstr "Seguirme en WeChat"
+
+#: views/sfsi_option_view2.php:519
+msgid "Share my page on WeChat"
+msgstr "Compartir mi página en WeChat"
+
+#: views/sfsi_option_view2.php:515
+msgid "The WeChat icon can perform the following actions:"
+msgstr "El ícono de WeChat puede realizar las siguientes acciones:"
+
+#: views/sfsi_option_view2.php:501
+msgid "Share my blog on Telegram"
+msgstr "Compartir mi blog en Telegram"
+
+#: views/sfsi_option_view2.php:478
+msgid "Message me on Telegram:"
+msgstr "Enviarme un mensaje por Telegram:"
+
+#: views/sfsi_option_view2.php:474
+msgid "The Telegram icon can perform the following actions:"
+msgstr "El ícono de Telegram puede realizar las siguientes acciones:"
+
+#: views/sfsi_option_view2.php:289
+msgid "Follow me on Facebook"
+msgstr "Seguirme en Facebook"
+
+#: views/sfsi_option_view2.php:282
+msgid "Share my blog with friends (on Facebook)"
+msgstr "Compartir mi blog con amigos (en Facebook)"
+
+#: views/sfsi_option_view2.php:196
+msgid "Pick which icon you want to use:"
+msgstr "Elegir el ícono que quieras usar:"
+
+#: views/sfsi_option_view2.php:191
+msgid "Share by email"
+msgstr "Compartir por correo electrónico"
+
+#: views/sfsi_option_view2.php:179
+msgid "(e.g. contact us or subscription page)"
+msgstr "(por ejemplo, página para contactarnos o suscribirse)"
+
+#: views/sfsi_option_view2.php:177
+msgid "Link it to a certain page "
+msgstr "Enlazar a cierta página"
+
+#: views/sfsi_option_view2.php:165
+msgid "If people click on the icon an email will open with your email address already entered. This makes sense to use if you don’t offer a contact option anywhere else."
+msgstr "Si las personas le hacen clic al ícono, se abrirá un correo electrónico con tu dirección ya introducida. Esto sirve si no ofreces una opción de contacto en ningún otro lugar."
+
+#: views/sfsi_option_view2.php:163
+msgid "Contact me: "
+msgstr "Contáctame:"
+
+#: views/sfsi_option_view2.php:152
+msgid "It also makes sense if you already offer an email newsletter."
+msgstr "También sirve si ya ofreces un boletín de noticias por correo electrónico."
+
+#: views/sfsi_option_view2.php:151
+msgid "Get full access now."
+msgstr "Obtén acceso completo ahora."
+
+#: views/sfsi_option_view2.php:150
+msgid "If people subscribe they will receive your new posts automatically by email. The service is FREE and you get full access to your subscriber’s emails and interesting statistics: "
+msgstr "Si las personas se suscriben recibirán tus entradas nuevas automáticamente por correo electrónico. El servicio es GRATUITO y obtienes acceso completo a los correos electrónicos de tus suscriptores y a estadísticas interesantes:"
+
+#: views/sfsi_option_view2.php:149
+msgid "Automatic updates for subscribers: "
+msgstr "Actualizaciones automáticas para suscriptores:"
+
+#: views/sfsi_option_view2.php:141
+msgid "Which action should the email icon perform?"
+msgstr "¿Qué acción debería realizar el ícono del correo electrónico?"
+
+#: views/sfsi_option_view1.php:761
+msgid "...and&nbsp;%1$smany more!%2$s&nbsp;See them&nbsp;%3$shere%4$s"
+msgstr "...y&nbsp;%1$s¡mucho más!%2$s&nbsp;Échales un vistazo&nbsp;%3$saquí%4$s"
+
+#: views/sfsi_option_view1.php:744 views/sfsi_option_view1.php:745
+msgid "TripAdvisor"
+msgstr "TripAdvisor"
+
+#: views/sfsi_option_view1.php:740 views/sfsi_option_view1.php:741
+msgid "Phone"
+msgstr "Teléfono"
+
+#: views/sfsi_option_view1.php:728 views/sfsi_option_view1.php:729
+msgid "Spotify"
+msgstr "Spotify"
+
+#: views/sfsi_option_view1.php:700 views/sfsi_option_view1.php:701
+msgid "Yum"
+msgstr "Yum"
+
+#: views/sfsi_option_view1.php:672 views/sfsi_option_view1.php:673
+msgid "Steem"
+msgstr "Steem"
+
+#: views/sfsi_option_view1.php:667 views/sfsi_option_view1.php:668
+msgid "Behance"
+msgstr "Behance"
+
+#: views/sfsi_option_view1.php:657 views/sfsi_option_view1.php:658
+msgid "Parler"
+msgstr "Parler"
+
+#: views/sfsi_option_view1.php:648 views/sfsi_option_view1.php:649
+msgid "iHeart"
+msgstr "iHeart"
+
+#: views/sfsi_option_view1.php:644 views/sfsi_option_view1.php:645
+msgid "Mix.com"
+msgstr "Mix.com"
+
+#: views/sfsi_option_view1.php:640 views/sfsi_option_view1.php:641
+msgid "iTalki"
+msgstr "iTalki"
+
+#: views/sfsi_option_view1.php:635 views/sfsi_option_view1.php:636
+msgid "Shopping cart"
+msgstr "Carrito de compra"
+
+#: views/sfsi_option_view1.php:631 views/sfsi_option_view1.php:632
+msgid "Skyrock"
+msgstr "Skyrock"
+
+#: views/sfsi_option_view1.php:623
+msgid "%1$sNew%2$sIn our Premium Plugin we added icons for:"
+msgstr "%1$sNew%2$sEn nuestro plugin Premium hemos añadido íconos para:"
+
+#: views/sfsi_option_view1.php:412
+msgid "Show this icon if you have a TikTok account."
+msgstr "Mostrar este ícono si tienes una cuenta de TikTok."
+
+#: views/sfsi_option_view1.php:409 views/sfsi_option_view2.php:758
+msgid "TikTok"
+msgstr "TikTok"
+
+#: views/sfsi_option_view1.php:400
+msgid "Show this icon if you have a Facebook account."
+msgstr "Mostrar este ícono si tienes una cuenta de Facebook."
+
+#: views/sfsi_option_view1.php:397 views/sfsi_option_view2.php:730
+msgid "Facebook Messenger"
+msgstr "Facebook Messenger"
+
+#: views/sfsi_option_view1.php:388
+msgid "Show this icon if you have a Reddit account."
+msgstr "Mostrar este ícono si tienes una cuenta de Reddit."
+
+#: views/sfsi_option_view1.php:376
+msgid "Show this icon if you have a Snapchat account."
+msgstr "Mostrar este ícono si tienes una cuenta de Snapchat."
+
+#: views/sfsi_global_banners.php:302
+msgid "Apply it now"
+msgstr "Aplicarlo ahora"
+
+#: views/sfsi_global_banners.php:289
+msgid "You’ve been using the %1$sUltimate Social media plugin%2$s for %3$sover half a year.%4$s That’s a long time!<br> Why not give yourself a treat and upgrade to premium? It has tons of benefits. As a %5$sTHANK YOU%6$s for your loyalty we’re happy to give you a %7$s20&#37; discount.%8$s"
+msgstr "Has estado utilizando el %1$splugin Ultimate Social Media%2$s por %3$smás de medio año.%4$s ¡Bastante tiempo!<br> ¿Por qué no darte un gusto y actualizar a premium? Tiene muchísimas ventajas. Como %5$sAGRADECIMIENTO%6$s por tu lealtad, nos complace otorgarte un %7$sdescuento del 20&#37; %8$s"
+
+#: views/sfsi_global_banners.php:219
+msgid "%1$sMake sure your social media icons are GDPR compliant.%2$s You are using the %3$sUltimate Social Media Plugin%4$s – see more information about GDPR %5$shere.%6$s<br><br> If you don’t want to check GDPR compliance yourself: As part of the Ultimate Social Media Premium Plugin a GDPR review is done for you (at no extra charge)"
+msgstr "%1$sAsegúrate de que tus íconos de redes sociales se ajusten al RGPD.%2$s Estás utilizando el %3$splugin Ultimate Social Media%4$s – aprende más información sobre el RGPD %5$saquí.%6$s<br><br> Si no quieres comprobar el cumplimiento del RGPD tú mismo: Como parte del plugin Premium Ultimate Social Media, se realiza una revisión por ti (sin cargo adicional)"
+
+#: views/sfsi_global_banners.php:184 views/sfsi_other_banners.php:224
+msgid "%1$smore traffic%2$s from more likes & shares with the %3$sUltimatelysocial Premium Plugin.%4$s Or get a %5$srefund%6$s within 20 days."
+msgstr "%1$smás tráfico%2$s desde más Me gusta y compartidos con el %3$splugin Premium Ultimatelysocial.%4$s U obtén un %5$sreembolso%6$s dentro de 20 días."
+
+#: views/sfsi_global_banners.php:151 views/sfsi_other_banners.php:139
+msgid "%1$sMake your website load faster –%2$s the Ultimate Social Media %3$sPremium Plugin%4$s is the most optimized sharing plugin for speed. It also includes support to help you optimize it for minimizing loading time"
+msgstr "%1$sHaz que tu web cargue más rápido –%2$s el plugin Premium %3$sUltimate Social Media %4$s es el más optimizado para la velocidad. También incluye soporte para ayudarte a optimizarlo para minimizar el tiempo de carga."
+
+#: views/sfsi_global_banners.php:117
+msgid "Your social media & sharing icons %1$sdon’t seem to show on mobile.%2$s If you want to increase sharing & traffic to your site it is very important that they do (>50% of traffic is from mobile).<br><br> Please go to the %3$sUltimate Social Media plugin%4$s page and ensure you made the right selections. If they still don’t show it could be an issue with your theme. Our premium plugin allows to place the icons separately for mobile, which always fixes this issue."
+msgstr "Tus íconos de redes sociales y de compartir %1$sno parecen mostrarse en el móvil.%2$s Si quieres aumentar la cantidad de compartidos y el tráfico de tu sitio es muy importante que se muestren (>50% del tráfico es desde el móvil).<br><br> Por favor, ve a la página del %3$splugin Ultimate Social Media%4$s y asegúrate de que has hecho las selecciones correctas. Si todavía no se muestran podría ser un problema con tu tema. Nuestro plugin premium permite colocar los íconos por separado para móviles, lo que siempre soluciona este problema."
+
+#: views/sfsi_global_banners.php:86
+msgid "%1$sGet more traffic from your pictures%2$s – the Ultimate Social Media Premium Plugin allows to show a Pinterest save-icon after users move over your pictures. This increases sharing activity significantly."
+msgstr "%1$sObtén más tráfico desde tus imágenes%2$s – El plugin Premium Ultimate Social Media permite mostrar un ícono de guardar de Pinterest luego de que los usuarios se muevan sobre tus imágenes. Esto aumenta significativamente la actividad de compartir."
+
+#: ultimate_social_media_icons.php:1188
+msgid "Settings"
+msgstr "Ajustes"
+
+#: ultimate_social_media_icons.php:1177
+msgid "Need help?"
+msgstr "¿Necesitas ayuda?"
+
+#: libs/sfsi_install_uninstall.php:2057
+msgid "Dismiss this notice."
+msgstr "Descartar este aviso."
+
+#: libs/sfsi_install_uninstall.php:2055
+msgid "I already did (don't show this again)"
+msgstr "Ya lo hice (no volver a mostrar esto)"
+
+#: libs/sfsi_install_uninstall.php:2054
+msgid "No clue, let me give a 5-star rating instead"
+msgstr "Ni idea, en su lugar daré una valoración de 5 estrellas"
+
+#: libs/sfsi_install_uninstall.php:2053
+msgid "Yes, let me give feedback!"
+msgstr "¡Sí, dejaré mi comentario!"
+
+#: libs/sfsi_install_uninstall.php:2051
+msgid "You've been using the Ultimate Social Media Plugin for more than 40 days. Great! If you're happy, could you please do us a BIG favor and let us know ONE thing we can improve in it?"
+msgstr "Has estado utilizando el plugin Ultimate Social Media por más de 40 días. ¡Genial! Si estás satisfecho, ¿nos harías un GRAN favor y nos dirías UNA manera de mejorarlo?"
+
+#: libs/sfsi_install_uninstall.php:1999
+msgid "Thank you for installing the %1$sUltimate Social Media Icons%2$s Plugin. Please go to the %3$splugin's settings page%4$s to configure it."
+msgstr "Gracias por instalar el plugin %1$sUltimate Social Media Icons%2$s. Por favor, dirígete a la %3$spágina de ajustes del plugin%4$s para configurarlo."
+
+#: libs/sfsi_install_uninstall.php:1828
+msgid "Error: It seems that CURL is disabled on your server. Please contact your server administrator to install / enable CURL."
+msgstr "Error: Parece que CURL está desactivado en tu servidor. Por favor, contacta el administrador de tu servidor para instalar / activar CURL."
+
+#: libs/sfsi_custom_social_sharing_data.php:291
+msgid "Ultimate Social Media – Define which pictures & texts will get shared"
+msgstr "Ultimate Social Media – Definir qué imágenes y textos se compartirán"
+
+#: libs/sfsi_custom_social_sharing_data.php:272
+msgid "click to learn more"
+msgstr "hacer clic para conocer más"
+
+#: libs/sfsi_custom_social_sharing_data.php:271
+msgid "Available in premium – "
+msgstr "Disponible en versión premium – "
+
+#: libs/sfsi_custom_social_sharing_data.php:137
+#: libs/sfsi_custom_social_sharing_data.php:215
+msgid "Add Picture"
+msgstr "Añadir imagen"
+
+#: views/sfsi_option_view5.php:323
+msgid "%1$sNew:%2$s The Premium Plugin also allows you to define the vertical distance between the icons (and set this differently for mobile vs. desktop): %3$sGo premium now%4$s or learn more.%5$s"
+msgstr "%1$sNuevo:%2$s El plugin premium también te permite definir la distancia vertical entre los íconos (y configúralo de manera diferente para móvil y escritorio): %3$sHazte premium ahora%4$s o aprende más.%5$s"
+
+#: views/sfsi_option_view5.php:312
+msgid "(Drag &amp; Drop)"
+msgstr "(Arrastrar y soltar)"
+
+#: views/sfsi_option_view1.php:194 views/sfsi_option_view1.php:212
+#: views/sfsi_option_view1.php:230 views/sfsi_option_view1.php:276
+#: views/sfsi_option_view1.php:293 views/sfsi_option_view1.php:309
+#: views/sfsi_option_view1.php:328 views/sfsi_option_view1.php:344
+#: views/sfsi_option_view1.php:362 views/sfsi_option_view1.php:376
+#: views/sfsi_option_view1.php:388 views/sfsi_option_view1.php:400
+#: views/sfsi_option_view1.php:412
+msgid "It depends: "
+msgstr "Depende:"
+
+#: views/sfsi_option_view6.php:311
+msgid "%1$sNew:%2$s We also added a Linkedin share-icon in the Premium Plugin. %3$sGo premium now%4$s or learn more.%5$s"
+msgstr "%1$sNuevo:%2$s También hemos añadido un ícono de compartir en LinkedIn en el plugin premium. %3$sHazte premium ahora%4$s o aprende más.%5$s"
+
+#: views/sfsi_pop_content.php:639
+msgid "Close"
+msgstr "Cerrar."
+
+#: views/sfsi_pop_content.php:600
+msgid "Click will establish a connection to Sellcodes.com"
+msgstr "Hacer clic establecerá una conexión con Sellcodes.com"
+
+#: views/sfsi_pop_content.php:584
+msgid "How do you want to pay?"
+msgstr "¿Cómo deseas pagar?"
+
+#: views/sfsi_pop_content.php:557
+msgid "I'm done!"
+msgstr "¡Listo!"
+
+#: views/sfsi_option_view5.php:1068 views/sfsi_pop_content.php:394
+msgid "Linkedin"
+msgstr "LinkedIn"
+
+#: views/sfsi_option_view6.php:207 views/sfsi_pop_content.php:354
+msgid "Share"
+msgstr "Compartir"
+
+#: views/sfsi_pop_content.php:278
+msgid " Insert into post "
+msgstr " Insertar en la entrada"
+
+#: views/sfsi_pop_content.php:277
+msgid "2. Upload the icon into the media gallery"
+msgstr "2. Subir el icono a la galería de medios"
+
+#: views/sfsi_pop_content.php:276
+msgid " below"
+msgstr "debajo"
+
+#: views/sfsi_pop_content.php:276 views/sfsi_pop_content.php:295
+msgid "Upload"
+msgstr "Subir"
+
+#: views/sfsi_pop_content.php:276
+msgid "1. Click ons"
+msgstr "1. Hacer clic en"
+
+#: views/sfsi_pop_content.php:273
+msgid "Here you can upload custom icons which perform the same actions as the standard icons."
+msgstr "Aquí puedes subir iconos personalizados que realicen las mismas acciones que los iconos estándar."
+
+#: views/sfsi_pop_content.php:271
+msgid "Upload custom icons"
+msgstr "Subir íconos personalizados"
+
+#: views/sfsi_pop_content.php:261
+msgid "Don’t review and exit"
+msgstr "No valorar y salir"
+
+#: views/sfsi_pop_content.php:259
+msgid "You’re a toughie. Last try: As a minimum, could you please review this plugin (with 5 stars)? It only takes a minute. Thank you! "
+msgstr "Eres duro de roer. Último intento: Como mínimo, ¿podrías, por favor, valorar este plugin (con 5 estrellas)?"
+
+#: views/sfsi_pop_content.php:253
+msgid "Don’t activate link"
+msgstr "No activar el enlace"
+
+#: views/sfsi_pop_content.php:252
+msgid "Ok, activate link"
+msgstr "Ok, activar el enlace"
+
+#: views/sfsi_pop_content.php:250
+msgid "Ok, fine, however for using this plugin for FREE, please support us by activating a link back to our site:"
+msgstr "De acuerdo, está bien, pero por usar este plugin GRATIS, por favor, apóyanos activando un enlace de regreso a nuestro sitio:"
+
+#: views/sfsi_pop_content.php:244
+msgid "Deactivate it"
+msgstr "Desactivarlo"
+
+#: views/sfsi_pop_content.php:243
+msgid "I want to see how it works"
+msgstr "Quiero ver cómo funciona"
+
+#: views/sfsi_pop_content.php:242
+msgid "Ok, keep it active for the time being, "
+msgstr "Está bien, mantenlo activo por el momento,"
+
+#: views/sfsi_pop_content.php:213
+msgid "Move over the LinkedIn-icon… "
+msgstr "Muévete sobre el ícono de LinkedIn..."
+
+#: views/sfsi_pop_content.php:189
+msgid "Move over the Pinterest-icon…  "
+msgstr "Muévete sobre el ícono de Pinterest..."
+
+#: views/sfsi_pop_content.php:166
+msgid "Move over the YouTube-icon…  "
+msgstr "Muévete sobre el ícono de YouTube..."
+
+#: views/sfsi_pop_content.php:110
+msgid "Move over the Facebook-icon…"
+msgstr "Muévete sobre el ícono de Facebook..."
+
+#: views/sfsi_pop_content.php:59
+msgid "Insert into post "
+msgstr "Insertar en la entrada"
+
+#: views/sfsi_pop_content.php:59
+msgid "3. Click on "
+msgstr "3. Hacer clic en"
+
+#: views/sfsi_pop_content.php:58
+msgid "2. Upload the icon into the media gallery!"
+msgstr "2. ¡Subir el ícono a la galería de medios!"
+
+#: views/sfsi_pop_content.php:57
+msgid " below "
+msgstr "debajo"
+
+#: views/sfsi_pop_content.php:57
+msgid "Upload "
+msgstr "Subir"
+
+#: views/sfsi_pop_content.php:57
+msgid "1. Click on"
+msgstr "1. Hacer clic en"
+
+#: views/sfsi_pop_content.php:55
+msgid "Steps:"
+msgstr "Pasos:"
+
+#: views/sfsi_pop_content.php:43
+msgid "Note: Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+msgstr "Nota: Lorem Ipsum es simplemente un texto ficticio de la industria de impresión y de composición tipográfica. Lorem Ipsum ha sido el texto ficticio estándar de la industria desde los años 1,500, cuando un impresor desconocido tomó una galera tipográfica y la mezcló para crear un libro de muestras tipográficas. Ha sobrevivido no solo cinco siglos, sino también al salto a la composición electrónica, permaneciendo esencialmente sin cambios. Se popularizó en los años 1,960 con el lanzamiento de las hojas de Letraset que contenían pasajes de Lorem Ipsum y, más recientemente, con el software de publicación de escritorio, como Aldus PageMaker, que incluye versiones de Lorem Ipsum."
+
+#: views/sfsi_pop_content.php:32
+msgid "Privacy Policy"
+msgstr "Política de privacidad"
+
+#: views/sfsi_pop_content.php:32
+msgid "We will treat your data (and your subscribers’ data!) highly confidentially, see our "
+msgstr "Trataremos tus datos (¡y los de tus subscriptores!) de forma altamente confidencial, lee nuestra"
+
+#: views/sfsi_pop_content.php:32
+msgid "follow.it"
+msgstr "follow.it"
+
+#: views/sfsi_pop_content.php:32
+msgid "This will create your FREE acccount on"
+msgstr "Esto creará tu cuenta GRATIS en"
+
+#: views/sfsi_pop_content.php:28
+msgid "Give me access!"
+msgstr "¡Dame acceso!"
+
+#: views/sfsi_pop_content.php:21
+msgid "Enter the email you want to use"
+msgstr "Introduce el correo que quieres usar"
+
+#: views/sfsi_option_view4.php:1050
+msgid "Round icons"
+msgstr "Íconos redondeados"
+
+#: views/sfsi_option_view4.php:1042
+msgid "For which icons do you want to show the counts?"
+msgstr "¿Para qué iconos quieres mostrar el recuento?"
+
+#: views/sfsi_option_view4.php:806
+msgid " We cannot track this. So enter the figure here: "
+msgstr "No podemos seguirlo. Por eso, introduce aquí el número:"
+
+#: views/sfsi_option_view4.php:730
+msgid "Copy the access token, paste it into the plugin and click on “Save”."
+msgstr "Copia el token de acceso, pégalo en el plugin y haz clic en \"Guardar\"."
+
+#: views/sfsi_option_view4.php:729
+msgid "Now you will be redirected to the redirect url (which you entered during app creation) and find your access token at the end of this url(For example: http://your-website.com/#access_token=< your access token>)"
+msgstr "Ahora serás redirigido a la URL de redirección (que introdujiste durante la creación de la aplicación) y encontrarás tu token de acceso al final de esta URL (por ejemplo: http://tu-web.com/#access_token=<tu token de acceso>)"
+
+#: views/sfsi_option_view4.php:728
+msgid "Authorize your app to access your account info by clicking the “Authorize” button'."
+msgstr "Autoriza a tu aplicación a acceder a la información de tu cuenta haciendo clic en el botón \"Autorizar\"."
+
+#: views/sfsi_option_view4.php:727
+msgid "Copy the “Client id” and “Redirect url” you entered into the plugin. Also enter your Instagram User name. After that click on the “Generate token” button."
+msgstr "Copia la \"Identificación del cliente\" y \"URL de redirección\" que introdujiste en el plugin. También introduce tu nombre de usuario de Instagram. Luego haz clic en el botón \"Generar token\"."
+
+#: views/sfsi_option_view4.php:726
+msgid "Then click on “Register” button."
+msgstr "Luego haz clic en el botón \"Registrar\""
+
+#: views/sfsi_option_view4.php:725
+msgid "Fill out the form and make sure that the “Redirect url” is valid and uncheck the “Disable Implicit oAuth” under the security tab."
+msgstr "Completa el formulario y asegúrate de que la \"URL de redirección\" es válida y desmarca \"Desactivar autorización implícita\" en la pestaña de seguridad."
+
+#: views/sfsi_option_view4.php:724
+msgid "Login and then click on “Register Your Application” to get to the “Manage Clients” section. On there click on the “Register a new client” button "
+msgstr "Accede y haz clic en \"Registrar tu aplicación\" para ingresar a la sección \"Gestionar clientes\". Allí, haz clic en el botón \"Registrar un cliente nuevo\""
+
+#: views/sfsi_option_view4.php:723
+msgid "Go to "
+msgstr "Ve a"
+
+#: views/sfsi_option_view4.php:721
+msgid "To complete the process please follow these steps:"
+msgstr "Para completar el proceso, por favor, sigue estos pasos:"
+
+#: views/sfsi_option_view4.php:716
+msgid "Enter Instagram Token:"
+msgstr "Introduce el token de Instagram:"
+
+#: views/sfsi_option_view4.php:709
+msgid "For generate your app token you need to enter your \"Client Id\" and \"Redirect Url\".%1sGenerate Token%2s"
+msgstr "Para generar el token de tu aplicación necesitas introducir tu \"Identificación de cliente\" y \"URL de redirección\"%1sGenerar Token%2s"
+
+#: views/sfsi_option_view4.php:702
+msgid "Enter Instagram Redirect Url:"
+msgstr "Introduce la URL de redirección de Instagram:"
+
+#: views/sfsi_option_view4.php:698
+msgid "Enter Instagram Client Id:"
+msgstr "Introduce la identificación de cliente de Instagram:"
+
+#: views/sfsi_option_view4.php:694
+msgid "Enter Instagram User name:"
+msgstr "Introduce el Nombre de usuario de Instagram:"
+
+#: views/sfsi_option_view4.php:689
+msgid "Retrieve the number of Instagram followers"
+msgstr "Recupera el número de seguidores de Instagram"
+
+#: views/sfsi_option_view4.php:671
+msgid "Retrieve the number of Pins"
+msgstr "Recuperar el número de Pins"
+
+#: views/sfsi_option_view4.php:609
+msgid "Enter Youtube Channel Id:"
+msgstr "Introducir la identificación del canal de Youtube:"
+
+#: views/sfsi_option_view4.php:603
+msgid "Enter Youtube User name:"
+msgstr "Introducir el nombre de usuario de Youtube:"
+
+#: views/sfsi_option_view4.php:600
+msgid "Retrieve the number of Subscribers"
+msgstr "Recupera el número de suscriptores"
+
+#: views/sfsi_option_view4.php:538
+msgid "5: Then click on \"Test OAuth\" at the top right and you will see the 4 token key"
+msgstr "5: Luego haz clic en \"Prueba de autorización\" en la parte superior derecha y verás la clave de 4 tokens"
+
+#: views/sfsi_option_view4.php:537
+msgid "4: Go to \"Keys and Access Tokens\" tab and click on \"Generate Token\" in the \"Token actions\" section at the bottom"
+msgstr "4: Ve a la pestaña \"Claves y tokens de acceso\" y haz clic en \"Generar token\" en la sección de \"Acciones de los tokens\" en la parte inferior"
+
+#: views/sfsi_option_view4.php:536
+msgid "3: Enter a random Name , Descriptions and Website URL "
+msgstr "3: Introducir un nombre, descripciones y URL web aleatorios"
+
+#: views/sfsi_option_view4.php:535
+msgid "2: Click on \"Create new app\""
+msgstr "2: Haz clic en \"Crear nueva aplicación\""
+
+#: views/sfsi_option_view4.php:534
+msgid "1: Go to"
+msgstr "1: Ve a"
+
+#: views/sfsi_option_view4.php:532
+msgid "To get this information:"
+msgstr "Para conseguir esta información:"
+
+#: views/sfsi_option_view4.php:530
+msgid "for"
+msgstr "para"
+
+#: views/sfsi_option_view4.php:530
+msgid "Username"
+msgstr "Nombre de usuario"
+
+#: views/sfsi_option_view4.php:530
+msgid " Please make sure you have entered the"
+msgstr "Por favor, asegúrate de haber introducido el"
+
+#: views/sfsi_option_view4.php:525
+msgid "Enter Access Token Secret:"
+msgstr "Introducir el secreto del token de acceso:"
+
+#: views/sfsi_option_view4.php:521
+msgid "Enter Access Token:"
+msgstr "Introducir el token de acceso:"
+
+#: views/sfsi_option_view4.php:517
+msgid "Enter Consumer Secret:"
+msgstr "Introducir el secreto del consumidor:"
+
+#: views/sfsi_option_view4.php:513
+msgid "Enter Consumer Key:"
+msgstr "Introducir la Clave del consumidor:"
+
+#: views/sfsi_option_view4.php:455
+msgid "-tab on your facebook page)"
+msgstr "en tu página de Facebook)"
+
+#: views/sfsi_option_view4.php:454
+msgid "About"
+msgstr "pestaña Acerca de"
+
+#: views/sfsi_option_view4.php:453
+msgid "(You'll find it at the bottom of the "
+msgstr "(La encontrarás en la parte inferior de la"
+
+#: views/sfsi_option_view4.php:447
+msgid "of your Facebook page "
+msgstr "de tu página de Facebook"
+
+#: views/sfsi_option_view4.php:439 views/sfsi_option_view4.php:447
+msgid "Retrieve the number of likes "
+msgstr "Recuperar el número de me gusta"
+
+#: views/sfsi_option_view4.php:439
+msgid "of your blog"
+msgstr "de tu blog"
+
+#: views/sfsi_option_view4.php:420 views/sfsi_option_view4.php:542
+#: views/sfsi_option_view4.php:584 views/sfsi_option_view4.php:615
+#: views/sfsi_option_view4.php:672 views/sfsi_option_view4.php:735
+msgid "Enter the figure manually:"
+msgstr "Introducir el número manualmente:"
+
+#: views/sfsi_option_view4.php:419
+msgid "Retrieve the number of subscribers automatically"
+msgstr "Recuperar el número de suscriptores automáticamente"
+
+#: views/sfsi_option_view4.php:396 views/sfsi_option_view4.php:760
+#: views/sfsi_option_view4.php:783 views/sfsi_option_view4.php:829
+#: views/sfsi_option_view4.php:852 views/sfsi_option_view4.php:875
+#: views/sfsi_option_view4.php:898 views/sfsi_option_view4.php:921
+#: views/sfsi_option_view4.php:944 views/sfsi_option_view4.php:967
+#: views/sfsi_option_view4.php:990 views/sfsi_option_view4.php:1013
+#: views/sfsi_option_view4.php:1036
+msgid "We cannot track this. So enter the figure here:"
+msgstr "No podemos seguirlo. Por eso, introduce el número aquí:"
+
+#: views/sfsi_option_view4.php:377
+msgid "Please specify which counts should be shown:"
+msgstr "Por favor, especifica qué contadores deberían mostrarse:"
+
+#: views/sfsi_global_banners.php:131 views/sfsi_global_banners.php:165
+#: views/sfsi_global_banners.php:200 views/sfsi_global_banners.php:235
+#: views/sfsi_global_banners.php:269 views/sfsi_global_banners.php:307
+#: views/sfsi_option_view4.php:372 views/sfsi_option_view7.php:64
+#: views/sfsi_other_banners.php:59 views/sfsi_other_banners.php:153
+#: views/sfsi_other_banners.php:240 views/sfsi_other_banners.php:283
+msgid "Dismiss"
+msgstr "Descartar"
+
+#: views/sfsi_option_view4.php:360
+msgid ""
+"%1sImportant:%2sYour website used to be on http (before you enabled an SSL certificate to switch to https). We found share counts for your URLs on http which usually get lost\n"
+"                            after switch to https (because Facebook etc. provide the counts per url, and an url on https is a different url then one on http).%3s We found a solution for that%4s so that your share counts on http and https will\n"
+"                            be aggregated and your full number of share counts is restored. It is implemented in the Premium Plugin - %5sGet it now.%6s"
+msgstr ""
+"%1sImportante:%2sTu web solía estar en http (antes de que activaras un certificado SSL para cambiar a https). Descubrimos que los contadores de quienes compartieron tus URL en http generalmente se pierden\n"
+"                            luego de cambiarlas a https (porque Facebook, etcétera, proveen los contadores por cada URL, y la URL en https es diferente a la URL en http).%3s Descubrimos la solución para esto%4s para que los contadores en http y https se\n"
+"                            sumen y el número completo de compartidos se restaure. Está implementado en el plugin Premium - %5sObtenlo ahora.%6s"
+
+#: views/sfsi_option_view4.php:326
+msgid "Enough waffling. So do you want to display counts?"
+msgstr "Basta de divagar. ¿Entonces, quieres mostrar contadores?"
+
+#: views/sfsi_option_view4.php:320
+msgid "Of course, if you start at 0, you shoot yourself in the foot with that. So we suggest that you only turn this feature on once you have a good number of followers/likes/shares (min. of 20 – no worries if it’s not too many, it should just not be 0). %1sNew:%2s In the Premium Plugin you can define a threshold (min. number of counts) when it will automatically switch to showing the counts. %3sGo Premium%4s"
+msgstr "Claro, si comienzas en 0, te dispararás en el pie. Por esto sugerimos que solo actives esta característica una vez que tengas un buen número de seguidores/me gusta/compartidos (mínimo de 20 - no te preocupes si no son tantos, pero al menos no debería ser 0). %1sNuevo:%2s En el plugin Premium puedes definir un umbral (mínimo número de conteos) en el que cambiará automáticamente a mostrar el contador. %3sHazte Premium%4s"
+
+#: views/sfsi_option_view4.php:178
+msgid "Therefore, you can select to display the count next to your main icons, which will look like this (example for round icons):"
+msgstr "Por lo tanto, puedes seleccionar mostrar el contador al lado de tus iconos principales, que se verán así (ejemplo para iconos redondeados):"
+
+#: views/sfsi_option_view4.php:172
+msgid "It’s a psychological fact that people like to follow other people (as explained well in Robert Cialdini’s book “%1sInfluence%2s”), so when they see that your site has already a good number of Facebook likes, it’s more likely that they will subscribe/like/share your site than if it had 0."
+msgstr "Es un hecho psicológico que a las personas les gusta seguir a otras personas (como se explica bien en el libro de Robert Cialdini \"%1sInfluence%2s\"), por lo que cuando ven que tu web ya tiene un buen número de Me gusta en Facebook, es más factible que se suscriban/les guste/compartan tu web que si tuviera 0."
+
+#: views/sfsi_option_view7.php:591
+msgid "Every time user scrolls to the end of the page"
+msgstr "Cada vez que el usuario se desplace hasta el final de la página"
+
+#: views/sfsi_option_view7.php:588
+msgid "seconds after the user arrived on the site"
+msgstr "segundos después de que el usuario llegue al sitio"
+
+#: views/sfsi_option_view7.php:588
+msgid "Once"
+msgstr "Una vez"
+
+#: views/sfsi_option_view7.php:585
+msgid "When shall the pop-up be shown?"
+msgstr "¿Cuándo se debería mostrar la ventana emergente?"
+
+#: views/sfsi_option_view7.php:545
+msgid "Please hold the CTRL key to select multiple pages."
+msgstr "Por favor, mantén presionada la tecla CTRL para seleccionar varias páginas."
+
+#: views/sfsi_option_view7.php:506
+msgid "On some pages"
+msgstr "En algunas páginas"
+
+#: views/sfsi_option_view7.php:499
+msgid "On all pages"
+msgstr "En todas las páginas"
+
+#: views/sfsi_option_view7.php:492
+msgid "Nowhere"
+msgstr "En ningún lugar"
+
+#: views/sfsi_option_view7.php:488
+msgid "Where shall the pop-up be shown?"
+msgstr "¿Dónde se debería mostrar la ventana emergente?"
+
+#: views/sfsi_option_view7.php:480
+msgid "In the Premium Plugin you can choose to display the text on the pop-up in a font already present in your theme"
+msgstr "En el plugin Premium puedes elegir mostrar el texto en la ventana emergente con una fuente ya presente en tu tema"
+
+#: views/sfsi_option_view7.php:471
+msgid "Off"
+msgstr "Apagado"
+
+#: views/sfsi_option_view7.php:469
+msgid "On"
+msgstr "Encendido"
+
+#: views/sfsi_option_view7.php:465
+msgid "Shadow:"
+msgstr "Sombra:"
+
+#: views/sfsi_option_view7.php:453
+msgid "Thickness:"
+msgstr "Grosor:"
+
+#: views/sfsi_option_view7.php:453 views/sfsi_option_view7.php:465
+msgid "Border"
+msgstr "Borde"
+
+#: views/sfsi_option_view7.php:444
+msgid "Border Color:"
+msgstr "Color del borde:"
+
+#: views/sfsi_option_view7.php:435
+msgid "Color:"
+msgstr "Color:"
+
+#: views/sfsi_option_view7.php:435
+msgid "Background"
+msgstr "Fondo"
+
+#: views/sfsi_option_view7.php:431
+msgid "Icon Box Layout"
+msgstr "Layout de la caja del icono"
+
+#: views/sfsi_option_view7.php:339
+msgid "Text Options"
+msgstr "Opciones de texto"
+
+#: views/sfsi_option_view7.php:335
+msgid " Design"
+msgstr "Diseño"
+
+#: views/sfsi_option_view7.php:335
+msgid "Text "
+msgstr "Texto"
+
+#: views/sfsi_option_view4.php:186 views/sfsi_option_view4.php:192
+#: views/sfsi_option_view4.php:198 views/sfsi_option_view4.php:204
+#: views/sfsi_option_view4.php:211 views/sfsi_option_view4.php:217
+#: views/sfsi_option_view4.php:223 views/sfsi_option_view4.php:229
+#: views/sfsi_option_view4.php:235 views/sfsi_option_view4.php:241
+#: views/sfsi_option_view4.php:247 views/sfsi_option_view4.php:253
+#: views/sfsi_option_view4.php:259 views/sfsi_option_view4.php:265
+#: views/sfsi_option_view4.php:271 views/sfsi_option_view4.php:277
+#: views/sfsi_option_view4.php:283 views/sfsi_option_view7.php:90
+#: views/sfsi_option_view7.php:102 views/sfsi_option_view7.php:114
+#: views/sfsi_option_view7.php:126 views/sfsi_option_view7.php:138
+#: views/sfsi_option_view7.php:150 views/sfsi_option_view7.php:162
+#: views/sfsi_option_view7.php:174 views/sfsi_option_view7.php:186
+#: views/sfsi_option_view7.php:198 views/sfsi_option_view7.php:211
+#: views/sfsi_option_view7.php:223 views/sfsi_option_view7.php:235
+#: views/sfsi_option_view7.php:247 views/sfsi_option_view7.php:259
+#: views/sfsi_option_view7.php:271 views/sfsi_option_view7.php:280
+#: views/sfsi_option_view7.php:287 views/sfsi_option_view7.php:294
+#: views/sfsi_option_view7.php:301 views/sfsi_option_view7.php:309
+msgid "12k"
+msgstr "12k"
+
+#: views/sfsi_option_view7.php:80
+msgid "Enjoy this site? Please follow and like us!"
+msgstr "¿Disfrutas de este sitio? ¡Por favor, síguenos y danos Me gusta!"
+
+#: views/sfsi_option_view7.php:72
+msgid "You can increase the chances that people share or follow you by displaying a pop-up asking them to. You can define the design and layout below:"
+msgstr "Puedes incrementar las posibilidades de que las personas compartan o te sigan mostrando una ventana emergente que se los pida. Puedes definir el diseño y layout abajo:"
+
+#: views/sfsi_option_view7.php:54
+msgid "Update: if you want many more features for your pop-ups, have a look at %1s MyPopUps. %2s"
+msgstr "Actualización: Si quieres muchas más características para tus ventanas emergentes, echa un vistazo a %1s MyPopUps. %2s"
+
+#: views/sfsi_affiliate_banner.php:7
+msgid "Share the premium plugin and earn 40% of the purchase price!"
+msgstr "¡Comparte el plugin premium y gana 40% del precio de la compra!"
+
+#: views/deactivation/sfsi_deactivation_popup.php:109
+msgid "Just de-activate it"
+msgstr "Simplemente desactívalo"
+
+#: views/deactivation/sfsi_deactivation_popup.php:97
+msgid "Cool - if it was a reason we colud learn from, please let us know in the Support Forum."
+msgstr "Bien - si fuera una razón de la que podríamos aprender, por favor, déjanoslo saber en el Foro de soporte."
+
+#: views/deactivation/sfsi_deactivation_popup.php:83
+msgid "De-activate plugin now"
+msgstr "Desactivar el plugin ahora"
+
+#: views/deactivation/sfsi_deactivation_popup.php:80
+msgid "Thumbs up to that one!"
+msgstr "¡Nos gusta eso!"
+
+#: views/deactivation/sfsi_deactivation_popup.php:75
+msgid "premium version"
+msgstr "versión premium"
+
+#: views/deactivation/sfsi_deactivation_popup.php:75
+msgid "I got the "
+msgstr "Tengo la"
+
+#: views/deactivation/sfsi_deactivation_popup.php:65
+msgid "If you‘re not a Wordpress user yet, please sign up – it‘s quick! Once logged in you‘ll see a section at the bottom where you can ask your question."
+msgstr "Si aun no eres usuario de WordPress, por favor regístrate - ¡es rápido! Una vez conectado, verás una sección en la parte de abajo donde puedes realizar tu pregunta."
+
+#: views/deactivation/sfsi_deactivation_popup.php:62
+#: views/deactivation/sfsi_deactivation_popup.php:100
+msgid "Go to Support Forum >"
+msgstr "Ve al Foro de soporte >"
+
+#: views/deactivation/sfsi_deactivation_popup.php:59
+msgid "so that we can fix it. We‘ll respond quickly! "
+msgstr "para que podamos corregirlo. ¡Responderemos rápido!"
+
+#: views/deactivation/sfsi_deactivation_popup.php:59
+msgid "let us know in the Support Forum what didn't work, "
+msgstr "déjanos saber lo que no funcionó en el Foro de soporte,"
+
+#: views/deactivation/sfsi_deactivation_popup.php:53
+msgid "doesn't work for me"
+msgstr "no me funciona"
+
+#: views/deactivation/sfsi_deactivation_popup.php:53
+msgid "The plugin "
+msgstr "El plugin"
+
+#: views/deactivation/sfsi_deactivation_popup.php:31
+msgid "No, don't worry, there was a different reason, I want to de-activate it"
+msgstr "No, no te preocupes, hubo una razón diferente. Quiero desactivarlo"
+
+#: views/deactivation/sfsi_deactivation_popup.php:26
+msgid "If you're not a WordPress user yet, please sign up – it's quick! Once logged in you‘ll see a section at the bottom where you can ask your question."
+msgstr "Si aún no eres usuario de WordPress, por favor regístrate - ¡es rápido! Una vez conectado, verás una sección en la parte de abajo donde puedes realizar tu pregunta."
+
+#: views/deactivation/sfsi_deactivation_popup.php:23
+msgid "Go to Support Forum>"
+msgstr "Ve al Foro de soporte>"
+
+#: views/deactivation/sfsi_deactivation_popup.php:20
+msgid "so that we can fix it. We‘ll respond quickly!"
+msgstr "para que podamos corregirlo. ¡Responderemos rápido!"
+
+#: views/deactivation/sfsi_deactivation_popup.php:20
+msgid "let us know in the Support Forum what was the issue,"
+msgstr "déjanos saber en el foro de soporte cuál fue el problema,"
+
+#: views/deactivation/sfsi_deactivation_popup.php:19
+#: views/deactivation/sfsi_deactivation_popup.php:58
+msgid "PLEASE"
+msgstr "POR FAVOR"
+
+#: views/deactivation/sfsi_deactivation_popup.php:11
+msgid "Oh! You don\\'t like our plugin?"
+msgstr "¡Oh! ¿No te gusta nuestro plugin?"
+
+#: views/sfsi_options_view.php:282
+msgid "Check the Theme"
+msgstr "Comprueba el tema"
+
+#: views/sfsi_options_view.php:258
+msgid "selections"
+msgstr "selecciones"
+
+#: views/sfsi_options_view.php:255
+msgid "Export"
+msgstr "Exportar"
+
+#: views/sfsi_options_view.php:249
+msgid "Save All Settings"
+msgstr "Guardar todos los ajustes"
+
+#: views/sfsi_options_view.php:232
+msgid "increases sign ups"
+msgstr "aumenta los registros"
+
+#: views/sfsi_options_view.php:232
+msgid "Do you want to show a subscription form ("
+msgstr "¿Quieres mostrar un formulario de suscripción?"
+
+#: views/sfsi_options_view.php:227
+msgid "Do you want to display a pop-up, asking people to subscribe?"
+msgstr "¿Quieres mostrar una ventana emergente preguntando a la gente si se quiere suscribir?"
+
+#: views/sfsi_options_view.php:222
+msgid "Any other wishes for your main icons?"
+msgstr "¿Algún otro deseo para tus iconos principales?"
+
+#: views/sfsi_options_view.php:217
+msgid "Do you want to display 'counts' next to your icons? "
+msgstr "¿Quieres mostrar \"contadores\" al lado de tus iconos?"
+
+#: views/sfsi_options_view.php:211
+msgid "animation do you want to give your icons?"
+msgstr "animación quieres darle a tus iconos?"
+
+#: views/sfsi_options_view.php:211
+msgid "What design  "
+msgstr "¿Qué diseño"
+
+#: views/sfsi_options_view.php:197
+msgid "Where shall they be displayed? "
+msgstr "¿Dónde se deberían mostrar?"
+
+#: views/sfsi_options_view.php:192
+msgid "What do you want the icons to do?"
+msgstr "¿Qué quieres que hagan los iconos?"
+
+#: views/sfsi_options_view.php:186
+msgid "Which icons do you want to show on your site? "
+msgstr "¿Qué iconos quieres mostrar en tu sitio?"
+
+#: views/sfsi_option_view9.php:43
+msgid "Trouble logging in there?"
+msgstr "¿Algún problema para acceder?"
+
+#: views/sfsi_options_view.php:157
+msgid "Learn more"
+msgstr "Más información"
+
+#: views/sfsi_options_view.php:128 views/sfsi_options_view.php:155
+msgid "Go Premium"
+msgstr "Hazte premium"
+
+#: views/sfsi_options_view.php:93
+msgid "Simply answer the questions below %1$s(at least the first 3)%2$s - that`s it!"
+msgstr "Simplemente responde las preguntas de abajo %1$s(al menos las primeras 3)%2$s - ¡y eso es todo!"
+
+#: views/sfsi_options_view.php:9
+msgid "We found errors in your javascript which may cause the plugin to not work properly. Please fix the error:"
+msgstr "Encontramos errores en tu JavaScript que podrían causar que el plugin no funcione correctamente. Por favor, corrige el error:"
+
+#: views/sfsi_aboutus.php:1
+msgid " or write to us at "
+msgstr "o escríbenos a"
+
+#: views/sfsi_aboutus.php:1
+msgid "Please visit us at "
+msgstr "Por favor visítanos en"
+
+#: views/sfsi_section_for_premium.php:104
+msgid "Check out the Premium Plugin "
+msgstr "Echa un vistazo al plugin Premium"
+
+#: views/sfsi_section_for_premium.php:91
+msgid "More platforms"
+msgstr "Más plataformas"
+
+#: views/sfsi_section_for_premium.php:83
+msgid "Friendly support"
+msgstr "Soporte amigable"
+
+#: views/sfsi_section_for_premium.php:75
+msgid "Faster loading"
+msgstr "Carga más rápida"
+
+#: views/sfsi_section_for_premium.php:67
+msgid "Mobile optimization"
+msgstr "Optimización para móviles"
+
+#: views/sfsi_section_for_premium.php:55
+msgid "Better icon placement"
+msgstr "Mejor ubicación de icono"
+
+#: views/sfsi_section_for_premium.php:47
+msgid "Themed icons"
+msgstr "Iconos con temas"
+
+#: views/sfsi_section_for_premium.php:39
+msgid "More icon designs"
+msgstr "Más diseños de iconos"
+
+#: views/sfsi_section_for_premium.php:31
+msgid "More Likes & Shares"
+msgstr "Más me gusta y compartidos"
+
+#: views/sfsi_question3.php:74
+msgid "On your Woocommerce product pages "
+msgstr "En tus páginas de producto de Woocommerce"
+
+#: libs/sfsi_install_uninstall.php:2226
+#: views/subviews/que3/sfsi_que3_place_via_float.php:127
+#: views/subviews/que3/sfsi_que3_place_via_float.php:139
+msgid "Premium feature"
+msgstr "Característica Premium"
+
+#: views/sfsi_question3.php:58
+msgid "Show a Pinterest icon over images on mouse-over"
+msgstr "Muestra un ícono de Pinterest sobre las imágenes al pasar el cursor"
+
+#: views/sfsi_question3.php:17
+msgid "Please select one or multiple placement options:"
+msgstr "Por favor, selecciona una o varias opciones de ubicación:"
+
+#: views/sfsi_option_view3.php:1195
+msgid "Need icons for another theme? Let us know in the %1$sSupport Forum%2$s."
+msgstr "¿Necesitas iconos para otro tema? Déjanoslo saber en el %1$sforo de soporte%2$s."
+
+#: views/sfsi_option_view3.php:1172
+msgid "%1$sLet us create icons matching your site perfectly (both in terms of colors and shape). %2$sLearn more.%3$s"
+msgstr "%1$sPermítenos crear iconos que se asimilen perfectamente a tu estilo (tanto en el color y la forma). %2$sMás información.%3$s"
+
+#: views/sfsi_option_view3.php:1164
+msgid " Tailored -"
+msgstr "Modificado - "
+
+#: views/sfsi_option_view3.php:1149
+msgid "Upload any icons you want."
+msgstr "Sube cualquier icono que quieras."
+
+#: views/sfsi_option_view3.php:1141
+msgid "Custom Icons -"
+msgstr "Iconos personalizados -"
+
+#: views/sfsi_option_view3.php:981
+msgid "Custom Icons "
+msgstr "Iconos personalizados"
+
+#: views/sfsi_option_view3.php:945
+msgid "(for dark backgrounds)"
+msgstr "(para fondos oscuros)"
+
+#: views/sfsi_option_view3.php:945
+msgid "Transparent"
+msgstr "Transparente"
+
+#: views/sfsi_option_view3.php:888
+msgid "Shaded Light"
+msgstr "Sombreado claro"
+
+#: views/sfsi_option_view3.php:859
+msgid "Shaded Dark"
+msgstr "Sombreado oscuro"
+
+#: views/sfsi_option_view3.php:830
+msgid "Silver"
+msgstr "Plateado"
+
+#: views/sfsi_option_view3.php:799
+msgid "Black"
+msgstr "Negro"
+
+#: views/sfsi_option_view3.php:770
+msgid "Glossy"
+msgstr "Glossy"
+
+#: views/sfsi_option_view3.php:741
+msgid "Crystal"
+msgstr "Crystal"
+
+#: views/sfsi_option_view3.php:712
+msgid "Orange"
+msgstr "Anaranjado"
+
+#: views/sfsi_option_view3.php:682
+msgid "Splash"
+msgstr "Salpicado"
+
+#: views/sfsi_option_view3.php:653
+msgid "Chrome Grey"
+msgstr "Gris cromo"
+
+#: views/sfsi_option_view3.php:625
+msgid "Chrome Blue"
+msgstr "Azul cromo"
+
+#: views/sfsi_option_view3.php:597
+msgid "Cubes"
+msgstr "Cubos"
+
+#: views/sfsi_option_view3.php:567
+msgid "Cute"
+msgstr "Cuqui"
+
+#: views/sfsi_option_view3.php:539
+msgid "Thin"
+msgstr "Thin"
+
+#: views/sfsi_option_view3.php:91
+msgid "(Premium)"
+msgstr "(Premium)"
+
+#: views/sfsi_option_view3.php:53 views/sfsi_option_view3.php:85
+msgid "Default"
+msgstr "Predeterminado"
+
+#: views/sfsi_option_view3.php:48
+msgid "Theme options"
+msgstr "Opciones del tema"
+
+#: views/sfsi_option_view3.php:38
+msgid "The icons have been compressed by %1sShortpixel.com%2s for faster loading of your site. Thank you Shortpixel!"
+msgstr "Los iconos han sido comprimidos por %1sShortpixel.com%2s para cargar más rápidamente tu sitio. ¡Gracias Shortpixel!\t"
+
+#: views/sfsi_option_view3.php:32
+msgid "make your visitors aware of your icons"
+msgstr "hacer que tus visitantes noten tus iconos"
+
+#: views/sfsi_option_view3.php:32
+msgid "A smart automatic animation can"
+msgstr "Una animación automática inteligente puede"
+
+#: views/sfsi_option_view3.php:31
+msgid "more “credit”"
+msgstr "más \"crédito\""
+
+#: views/sfsi_option_view3.php:31
+msgid "and gives your site"
+msgstr "y le da a tu sitio"
+
+#: views/sfsi_option_view3.php:31
+msgid "more professional"
+msgstr "más profesional"
+
+#: views/sfsi_option_view3.php:31
+msgid "It comes across as"
+msgstr "Parece más"
+
+#: views/sfsi_option_view3.php:28
+msgid "A good & well-fitting design is not only nice to look at, but it increases chances that people will subscribe and/or share your site with friends:"
+msgstr "Un diseño bueno y acorde no solo es agradable de ver, sino que también incrementa las posibilidades de que las personas se suscriban y/o lo compartan con amigos:"
+
+#: views/sfsi_option_view6.php:657
+msgid "Left aligned"
+msgstr "Alineado a la izquierda"
+
+#: views/sfsi_option_view6.php:652
+msgid "Text on icons:"
+msgstr "Texto en iconos:"
+
+#: views/sfsi_option_view6.php:642 views/sfsi_option_view6.php:647
+msgid "px"
+msgstr "px"
+
+#: views/sfsi_option_view6.php:637
+msgid "Margins:"
+msgstr "Márgenes:"
+
+#: views/sfsi_option_view6.php:628
+msgid "Margin between icons:"
+msgstr "Margen entre iconos:"
+
+#: views/sfsi_option_view6.php:620
+msgid "Gradient"
+msgstr "Degradado"
+
+#: views/sfsi_option_view3.php:130 views/sfsi_option_view6.php:617
+msgid "Flat"
+msgstr "Plano"
+
+#: views/sfsi_option_view6.php:611
+msgid "Style:"
+msgstr "Estilo:"
+
+#: views/sfsi_option_view6.php:594
+msgid "with border radius"
+msgstr "con radio de borde"
+
+#: views/sfsi_option_view6.php:589
+msgid "Sharp"
+msgstr "Cerrados"
+
+#: views/sfsi_option_view6.php:586
+msgid "Round"
+msgstr "Readondeados"
+
+#: views/sfsi_option_view6.php:580
+msgid "Edges:"
+msgstr "Bordes:"
+
+#: views/sfsi_option_view6.php:566
+msgid "Fully responsive"
+msgstr "Completamente adaptable"
+
+#: views/sfsi_option_view6.php:563
+msgid "Fixed icon width"
+msgstr "Ancho de icono fijo"
+
+#: views/sfsi_option_view6.php:557
+msgid "Icons width:"
+msgstr "Ancho de los iconos:"
+
+#: views/sfsi_option_view6.php:548
+msgid "Large"
+msgstr "Grande"
+
+#: views/sfsi_option_view6.php:545
+msgid "Medium"
+msgstr "Mediano"
+
+#: views/sfsi_option_view6.php:542
+msgid "Small"
+msgstr "Pequeño"
+
+#: views/sfsi_option_view6.php:537
+msgid "Icons size:"
+msgstr "Tamaño de los iconos:"
+
+#: views/sfsi_option_view6.php:535
+msgid "Design options"
+msgstr "Opciones de diseño"
+
+#: views/sfsi_option_view6.php:361
+msgid "Alignment of share icons:"
+msgstr "Alineación de los iconos para compartir:"
+
+#: views/sfsi_option_view6.php:343
+msgid ""
+"%1sNew: %2s In the Premium Plugin you can choose to display the text before\n"
+"                        the sharing icons in a font of your choice. You can also define the %3s font\n"
+"                        size, type , and the margins below/above the icons.%4s %5s  Check\n"
+"                        it out.%6s"
+msgstr ""
+"%1sNuevo: %2s En el plugin Premium puedes elegir mostrar el texto antes\n"
+"                        de los íconos para compartir en la fuente que elijas. También puedes definir el %3s tipo\n"
+"                        y tamaño de la fuente, y los márgenes inferiores/superiores de los íconos.%4s %5sEcha\n"
+"                        un vistazo.%6s"
+
+#: views/sfsi_option_view6.php:327
+msgid "Text to appear before the sharing icons: "
+msgstr "Texto que aparecerá antes de los iconos para compartir:"
+
+#: views/sfsi_option_view6.php:323
+msgid "Options:"
+msgstr "Opciones:"
+
+#: libs/sfsi_install_uninstall.php:2226 views/sfsi_option_view2.php:328
+#: views/subviews/que3/sfsi_que3_place_via_float.php:127
+#: views/subviews/que3/sfsi_que3_place_via_float.php:139
+msgid "learn more"
+msgstr "aprende más"
+
+#: views/sfsi_option_view6.php:305
+msgid "2. Facebook is No.1 in «liking», so it’s a must have"
+msgstr "2. Facebook es Número 1 en \"me gusta\", por lo que debes tenerlo"
+
+#: views/sfsi_option_view6.php:304
+msgid "1. The follow-icon ensures that your visitors subscribe to your newsletter"
+msgstr "1. Los iconos para seguir te aseguran que tus visitantes se suscriban a tu boletín de noticias"
+
+#: views/sfsi_option_view6.php:301
+msgid "Those are usually all you need: "
+msgstr "Son todo lo que normalmente necesitarás:"
+
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:116
+msgid "*All icons have «sharing» feature enabled by default. If you want to give them a different function (e.g. link to your Facebook page) then please click on «Define URL» next to the icon."
+msgstr "*Todos los íconos tienen la característica de \"compartir\" activa por defecto. Si quieres darles una función diferente (por ejemplo, un enlace a tu página de Facebook), entonces por favor haz clic en \"Definir URL\" al lado del ícono."
+
+#: views/sfsi_option_view6.php:170 views/sfsi_option_view6.php:191
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:80
+msgid "Cancel"
+msgstr "Cancelar"
+
+#: views/sfsi_option_view6.php:168 views/sfsi_option_view6.php:189
+msgid "Define URL*"
+msgstr "Definir URL*"
+
+#: views/sfsi_option_view6.php:149
+msgid "Select Icons"
+msgstr "Seleccionar iconos"
+
+#: views/sfsi_option_view6.php:139
+msgid "These are responsive & independent from the icons you selected elsewhere in the plugin."
+msgstr "Estos son adaptables e independientes de los iconos que seleccionaste en otro lugar en el plugin."
+
+#: views/sfsi_option_view6.php:128
+msgid "Display the icons I selected above"
+msgstr "Mostrar los iconos que seleccioné arriba"
+
+#: views/sfsi_option_view4.php:1060 views/sfsi_option_view6.php:120
+msgid "Original icons"
+msgstr "Iconos originales"
+
+#: views/sfsi_option_view4.php:1070 views/sfsi_option_view6.php:114
+msgid "Responsive icons"
+msgstr "Iconos adaptables"
+
+#: views/sfsi_option_view2.php:542 views/sfsi_option_view2.php:697
+#: views/sfsi_option_view6.php:102
+msgid "Here you have two options:"
+msgstr "Aquí tienes dos opciones:"
+
+#: views/sfsi_chat_on_admin_pannel.php:61
+msgid "Close window"
+msgstr "Cerrar ventana"
+
+#: views/sfsi_chat_on_admin_pannel.php:60
+msgid "We‘ll get back to you ASAP."
+msgstr "Te responderemos lo más rápido posible."
+
+#: libs/controllers/sfsi_forum_notification_popup.php:109
+#: views/sfsi_chat_on_admin_pannel.php:59 views/sfsi_option_view9.php:51
+msgid "Thank you!"
+msgstr "¡Gracias!"
+
+#: views/sfsi_chat_on_admin_pannel.php:47
+msgid "Your email:"
+msgstr "Tu correo electrónico:"
+
+#: views/sfsi_chat_on_admin_pannel.php:40
+msgid "Your question:"
+msgstr "Tu pregunta:"
+
+#: views/sfsi_chat_on_admin_pannel.php:29
+msgid "quickly!"
+msgstr "rápidamente!"
+
+#: views/sfsi_chat_on_admin_pannel.php:29
+msgid "We‘ll respond "
+msgstr "¡Te responderemos"
+
+#: views/sfsi_chat_on_admin_pannel.php:26
+#: views/subviews/que3/sfsi_que3_place_via_widget.php:34
+msgid "Click here"
+msgstr "Haz clic aquí"
+
+#: views/sfsi_chat_on_admin_pannel.php:24
+msgid "Support Forum"
+msgstr "Foro de soporte"
+
+#: views/sfsi_chat_on_admin_pannel.php:19
+msgid "Please ask your question in the..."
+msgstr "Por favor, realiza tu pregunta en el..."
+
+#: views/sfsi_chat_on_admin_pannel.php:14
+msgid "(for the Premium plugin)"
+msgstr "(para el plugin Premium)"
+
+#: views/sfsi_chat_on_admin_pannel.php:14
+msgid "Pre-sales question"
+msgstr "Pregunta de pre-venta"
+
+#: views/sfsi_chat_on_admin_pannel.php:13
+msgid "(for the free plugin)"
+msgstr "(para el plugin gratuito)"
+
+#: views/sfsi_chat_on_admin_pannel.php:13
+msgid "Technical question"
+msgstr "Pregunta técnica"
+
+#: views/sfsi_chat_on_admin_pannel.php:9
+msgid "we'll still respond quickly"
+msgstr "igualmente responderemos rápido"
+
+#: views/sfsi_chat_on_admin_pannel.php:9
+msgid "No chat agent are available, However "
+msgstr "Ningún agente se encuentra disponible. Sin embargo,"
+
+#: views/sfsi_option_view5.php:1586
+msgid "Show more useful tips for more sharing & traffic?"
+msgstr "¿Mostrar más consejos útiles para más compartidos y tráfico?"
+
+#: views/sfsi_option_view5.php:1585
+msgid "Tips"
+msgstr "Consejos"
+
+#: views/sfsi_option_view5.php:1554
+msgid "Suppress error messages?"
+msgstr "¿Borrar mensajes de error?"
+
+#: views/sfsi_option_view5.php:1553
+msgid "Error reporting"
+msgstr "Informe de errores"
+
+#: views/sfsi_option_view5.php:1438
+msgid "Weibo:"
+msgstr "Weibo:"
+
+#: views/sfsi_option_view5.php:1469
+msgid "Ok:"
+msgstr "OK:"
+
+#: views/sfsi_option_view5.php:1465
+msgid "VK:"
+msgstr "VK:"
+
+#: views/sfsi_option_view5.php:1459
+msgid "Telegram:"
+msgstr "Telegram:"
+
+#: views/sfsi_option_view5.php:1455
+msgid "Instagram:"
+msgstr "Instagram:"
+
+#: views/sfsi_option_view5.php:1449
+msgid "Youtube:"
+msgstr "YouTube:"
+
+#: views/sfsi_option_view5.php:1445
+msgid "Pinterest:"
+msgstr "Pinterest:"
+
+#: views/sfsi_option_view5.php:1434
+msgid "WhatsApp:"
+msgstr "WhatsApp:"
+
+#: views/sfsi_option_view5.php:1428
+msgid "WeChat:"
+msgstr "WeChat:"
+
+#: views/sfsi_option_view5.php:1424
+msgid "LinkedIn:"
+msgstr "LinkedIn:"
+
+#: views/sfsi_option_view5.php:1418
+msgid "Facebook:"
+msgstr "Facebook:"
+
+#: views/sfsi_option_view5.php:1409
+msgid "Email:"
+msgstr "Correo electrónico:"
+
+#: views/sfsi_option_view5.php:1406
+msgid "RSS:"
+msgstr "RSS:"
+
+#: views/sfsi_option_view5.php:1401
+msgid "If you’ve given your icon only one function (i.e. no pop-up where user can perform different actions) then you can define here what text will be displayed if a user moves his mouse over the icon:"
+msgstr "Si le has dado solo una función a tu icono (esto es, sin ventana emergente donde el usuario pueda realizar diferentes acciones), entonces puedes definir aquí qué texto se mostrará si un usuario mueve su cursor sobre el icono:"
+
+#: views/sfsi_option_view5.php:1399
+msgid "Mouseover text"
+msgstr "Texto al pasar el cursor"
+
+#: views/sfsi_option_view5.php:1388
+msgid "Hide section for all"
+msgstr "Ocultar sección para todo"
+
+#: views/sfsi_option_view5.php:1376
+msgid "Post"
+msgstr "Entrada"
+
+#: views/sfsi_option_view5.php:1363
+msgid "Page"
+msgstr "Página"
+
+#: views/sfsi_option_view5.php:1347
+msgid "On the pages where you edit your posts/pages, you’ll see a (new) section where you can define which pictures & text should be shared. This extra section is displayed on the following:"
+msgstr "En las páginas donde editas tus entradas/páginas verás una (nueva) sección en la que puedes definir qué imágenes y texto deberían compartirse. Esta sección adicional se muestra en las siguientes:"
+
+#: views/sfsi_option_view5.php:1346
+msgid "Sharing texts & pictures?"
+msgstr "¿Compartir textos e imágenes?"
+
+#: views/sfsi_option_view5.php:1332
+msgid "This is not to be confused with making the icons permanently placed in the same position, which is possible in the %1$s Premium Plugin.%2$s"
+msgstr "No se debe confundir con hacer que los iconos permanezcan ubicados en la misma posición, lo que es posible en el %1$s plugin Premium.%2$s"
+
+#: views/sfsi_option_view5.php:1322
+msgid "If you select «Yes» here, then the icons which you placed via %1$swidget%2$s or %3$sshortcode%4$s will still be visible on the screen as user scrolls down your page, i.e. they will stick at the top."
+msgstr "Si seleccionas \"Sí\" aquí, entonces los iconos que ubicaste a través de %1$swidget%2$s o %3$sshortcode%4$s aun serán visibles en la pantalla a medida que el usuario se desplaza hacia abajo en tu página, esto significa que se fijarán a la parte superior."
+
+#: views/sfsi_option_view5.php:1303
+msgid "Make icons stick?"
+msgstr "¿Hacer fijos los iconos?"
+
+#: views/sfsi_option_view5.php:1296
+msgid "Sticky icons"
+msgstr "Iconos fijos"
+
+#: views/sfsi_option_view5.php:1261
+msgid "If a user clicks on your icons, do you want to open the page in a new window?"
+msgstr "Si un usuario hace clic en tus iconos, ¿quieres abrir la página en una nueva ventana?"
+
+#: views/sfsi_option_view5.php:1260
+msgid "New window"
+msgstr "Nueva ventana"
+
+#: views/sfsi_option_view5.php:370
+msgid "(with respect to icons in the first row; only relevant if your icons show in two or more rows)"
+msgstr "(en relación a los iconos en la primera fila; solo relevante si tus iconos se muestran en dos o más filas)"
+
+#: views/sfsi_option_view5.php:368
+msgid "Alignment of icons In the second row:"
+msgstr "Alineación de iconos en la segunda fila:"
+
+#: views/sfsi_option_view5.php:356
+msgid "Alignment of icons if placed via shortcode:"
+msgstr "Alineación de iconos si se ubicaron por medio de shortcode:"
+
+#: views/sfsi_option_view5.php:350 views/sfsi_option_view5.php:362
+#: views/sfsi_option_view5.php:377 views/sfsi_option_view6.php:364
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:154
+msgid "Left"
+msgstr "Izquierda "
+
+#: views/sfsi_option_view5.php:349 views/sfsi_option_view5.php:361
+#: views/sfsi_option_view5.php:376 views/sfsi_option_view6.php:368
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:157
+msgid "Right"
+msgstr "Derecha"
+
+#: views/sfsi_option_view5.php:343
+msgid "Alignment of icons within a widget:"
+msgstr "Alineación de iconos dentro de un widget:"
+
+#: views/sfsi_option_view5.php:339
+msgid "define this"
+msgstr "definir esto"
+
+#: views/sfsi_option_view5.php:339
+msgid "Leave empty if you don't want to"
+msgstr "Dejar vacío si no quieres"
+
+#: views/sfsi_option_view5.php:337
+msgid "Icons per row:"
+msgstr "Iconos por fila:"
+
+#: views/sfsi_option_view5.php:335
+msgid "Alignments"
+msgstr "Alineaciones"
+
+#: views/sfsi_option_view5.php:318
+msgid "Spacing between icons:"
+msgstr "Espacio entre iconos:"
+
+#: views/sfsi_option_view5.php:318
+msgid " tall"
+msgstr "alto"
+
+#: views/sfsi_option_view5.php:318
+msgid "pixels wide "
+msgstr "píxeles de ancho"
+
+#: views/sfsi_option_view5.php:318
+msgid "Size:"
+msgstr "Tamaño:"
+
+#: views/sfsi_option_view5.php:317
+msgid "Size &amp; spacing of your icons"
+msgstr "Tamaño &amp; espacio de tus iconos"
+
+#: views/sfsi_option_view5.php:207
+msgid "Order of your icons"
+msgstr "Orden de tus iconos"
+
+#: views/subviews/que4/banner.php:45
+msgid "View more"
+msgstr "Ver más"
+
+#: views/subviews/que4/animatethem.php:117
+msgid "seconds"
+msgstr "segundos"
+
+#: views/subviews/que4/animatethem.php:115
+msgid "Every"
+msgstr "Cada"
+
+#: views/subviews/que4/animatethem.php:111
+msgid "When the site is first loaded"
+msgstr "Cuando el sitio se carga por primera vez"
+
+#: views/subviews/que4/animatethem.php:106
+msgid "Shuffle them automatically"
+msgstr "Mezclarlos automáticamente"
+
+#: views/subviews/que4/animatethem.php:96
+msgid "Above options are available in the"
+msgstr "Las opciones de arriba están disponible en el"
+
+#: views/subviews/que4/animatethem.php:92
+msgid "Flip"
+msgstr "Girar"
+
+#: views/subviews/que4/animatethem.php:91
+msgid "No effect"
+msgstr "Sin efecto"
+
+#: views/subviews/que4/animatethem.php:88
+msgid "Transition effect to those icons"
+msgstr "Efecto de transición a esos iconos"
+
+#: views/subviews/que4/animatethem.php:59
+msgid "Show other icons on mouse-over (Only applied for Desktop Icons)"
+msgstr "Mostrar otros iconos al posar el ratón (solo se aplica en iconos de escritorio)"
+
+#: views/subviews/que4/animatethem.php:52
+msgid "Greyed-out options are available in the"
+msgstr "Las opciones sombreadas están disponibles en"
+
+#: views/subviews/que4/animatethem.php:47
+msgid "(Icons turn from full color to shadow)"
+msgstr "(Los iconos pasan de todo color a sombreados)"
+
+#: views/subviews/que4/animatethem.php:46
+msgid "Fade Out"
+msgstr "Desvanecer"
+
+#: views/subviews/que4/animatethem.php:39
+msgid "(Both fade in and scale effects)"
+msgstr "(Tanto efectos de aparecer y de escala)\t"
+
+#: views/subviews/que4/animatethem.php:29
+msgid "(Icons become bigger)"
+msgstr "(Los iconos se agrandan)"
+
+#: views/subviews/que4/animatethem.php:28
+msgid "Scale"
+msgstr "Escala"
+
+#: views/subviews/que4/animatethem.php:21
+msgid "(Icons turn from shadow to full color)"
+msgstr "(Los iconos pasan de sombreados a todo color)"
+
+#: views/subviews/que4/animatethem.php:20
+msgid "Fade In"
+msgstr "Aparecer"
+
+#: views/subviews/que4/animatethem.php:12
+msgid "Same-icon effects"
+msgstr "Efectos del icono mismo"
+
+#: views/subviews/que4/animatethem.php:8
+msgid "Mouse-Over effects"
+msgstr "Efectos al pasar el cursor"
+
+#: views/subviews/que4/animatethem.php:4
+msgid "Animate them"
+msgstr "Animarlos"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:203
+msgid "Want to disable the floating icons on mobile?"
+msgstr "¿Quieres desactivar los iconos flotantes en móviles?"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:103
+msgid "Right:"
+msgstr "Derecha:"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:98
+msgid "Left:"
+msgstr "Izquierda:"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:93
+msgid "Bottom:"
+msgstr "Inferior:"
+
+#: views/sfsi_option_view5.php:318
+#: views/subviews/que3/sfsi_que3_place_via_float.php:90
+#: views/subviews/que3/sfsi_que3_place_via_float.php:95
+#: views/subviews/que3/sfsi_que3_place_via_float.php:100
+#: views/subviews/que3/sfsi_que3_place_via_float.php:105
+msgid "Pixels"
+msgstr "Píxeles"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:88
+msgid "Top:"
+msgstr "Arriba:"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:84
+msgid "Margin From:"
+msgstr "Margen desde:"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:77
+msgid "Bottom right"
+msgstr "Abajo a la derecha"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:72
+msgid "Center bottom"
+msgstr "Centro abajo"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:67
+msgid "Bottom left"
+msgstr "Abajo a la izquierda"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:60
+msgid "Center right"
+msgstr "Centro a la derecha"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:54
+msgid "Center left"
+msgstr "Centro a la izquierda"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:47
+msgid "Top right"
+msgstr "Arriba a la derecha"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:42
+msgid "Center top"
+msgstr "Centro arriba"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:37
+msgid "Top left"
+msgstr "Arriba a la izquierda"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:31
+msgid "Define the location:"
+msgstr "Define la ubicación:"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:28
+msgid "Floating over your website's pages"
+msgstr "Flotando por las páginas de tu web"
+
+#: views/sfsi_option_view8.php:103
+msgid "Go to the "
+msgstr "Ir al"
+
+#: views/subviews/que3/sfsi_que3_place_via_widget.php:27
+msgid "Show them via a widget"
+msgstr "Mostrarlos mediante un widget"
+
+#: views/subviews/que3/sfsi_que3_place_via_after_posts.php:17
+msgid "Show icons after posts"
+msgstr "Mostrar los iconos luego de las entradas"
+
+#: views/subviews/que3/sfsi_que3_place_via_shortcode.php:136
+msgid ""
+" where - as part of our service - we can place the icons for you, making theme adjustments\n"
+"\t\t\t\t\twhere needed. This ensures the perfect appearance (on all devices) for your icons."
+msgstr "donde, como parte de nuestro servicio, podemos ubicar los iconos por ti, realizando ajustes al tema donde sean necesarios. Esto asegura la apariencia perfecta (en todos los dispositivos) de tus iconos."
+
+#: views/subviews/que3/sfsi_que3_place_via_shortcode.php:135
+msgid "Premium plugin"
+msgstr "plugin Premium"
+
+#: views/subviews/que3/sfsi_que3_place_via_shortcode.php:135
+msgid "You can try via shortcode (see above), however if you don't want any hassle, check out our"
+msgstr "Puedes intentar por medio de shortcode (ve arriba). Sin embargo, si no quieres complicarte, échale un vistazo a nuestro"
+
+#: views/subviews/que3/sfsi_que3_place_via_shortcode.php:132
+msgid "Placing icons in your theme's header can be tricky / technical as CSS & PHP know-how is required (as every theme is different, no \"automatic\" placement is possible)."
+msgstr "Ubicar tus íconos en la cabecera de tu tema puede ser complicado / técnico ya que se requiere conocimiento de CSS y PHP (como cada tema es diferente, no es posible ubicarlos \"automáticamente\")."
+
+#: views/subviews/que3/sfsi_que3_place_via_shortcode.php:128
+msgid "In your theme's header"
+msgstr "En la cabecera de tu tema"
+
+#: views/subviews/que3/sfsi_que3_place_via_float.php:163
+#: views/subviews/que3/sfsi_que3_place_via_shortcode.php:45
+#: views/subviews/que3/sfsi_que3_place_via_widget.php:51
+msgid "Vertically"
+msgstr "Verticalmente"
+
+#: views/subviews/que3/sfsi_que3_place_via_shortcode.php:30
+msgid "Or, place the icons directly into our (theme) codes by using"
+msgstr "O, ubica los iconos directamente en nuestros códigos (tema) utilizando"
+
+#: views/subviews/que3/sfsi_que3_place_via_shortcode.php:28
+msgid " to place the icons anywhere you want."
+msgstr "para poner los iconos donde quieras."
+
+#: views/subviews/que3/sfsi_que3_place_via_shortcode.php:28
+msgid "Please use the shortcode"
+msgstr "Por favor, utiliza el shortcode"
+
+#: views/subviews/que3/sfsi_que3_place_via_shortcode.php:24
+msgid "Place via shortcode"
+msgstr "Ponlo por medio de un shortcode"
+
+#: views/sfsi_option_view2.php:844
+msgid "%1$sNew:%2$s In the Premium Plugin you can also give custom icons the feature that when people click on it, they can call you, or send you an SMS. %3$sGo premium now%4$s or learn more.%5$s"
+msgstr "%1$sNuevo:%2$s En el plugin Premium también puedes darle a los iconos personalizados la característica de que si las personas le hacen clic, te pueden llamar, o enviarte un SMS. %3$sHazte premium ahora%4$s o conoce más.%5$s"
+
+#: views/sfsi_option_view2.php:831
+msgid "Link :"
+msgstr "Enlace:"
+
+#: views/sfsi_option_view2.php:829
+msgid "Where do you want this icon to link to?"
+msgstr "¿Adónde quieres enlazar este icono?"
+
+#: views/sfsi_option_view2.php:642
+msgid "Visit me on OK:"
+msgstr "Visítame en OK:"
+
+#: views/sfsi_option_view2.php:637
+msgid "When clicked on, users will get directed to your OK page."
+msgstr "Cuando se le hace clic, los usuarios serán dirigidos a tu página de OK."
+
+#: views/sfsi_option_view2.php:635
+msgid "OK"
+msgstr "OK"
+
+#: views/sfsi_option_view2.php:618
+msgid "When clicked on, users will get directed to your VK page."
+msgstr "Cuando se le hace clic, los usuarios serán dirigidos a tu página de VK."
+
+#: views/sfsi_option_view2.php:760
+msgid "When clicked on, users will get directed to your TikTok page."
+msgstr "Cuando se le hace clic, los usuarios serán dirigidos a tu página de TikTok."
+
+#: views/sfsi_option_view2.php:488
+msgid "My Telegram username"
+msgstr "Mi nombre de usuario de Telegram"
+
+#: views/sfsi_option_view2.php:482
+msgid "Pre-filled message"
+msgstr "Mensaje precompletado"
+
+#: views/sfsi_option_view2.php:465
+msgid "You need to be logged in to Linkedin to be able to use it."
+msgstr "Necesitas estar conectado a LinkedIn para poder utilizarlo."
+
+#: views/sfsi_option_view2.php:465
+msgid "To find your Product or Company ID, you can use their ID lookup tool at"
+msgstr "Para encontrar tu ID de compañía o producto, puedes utilizar su herramienta para buscar ID en"
+
+#: views/sfsi_option_view2.php:462
+msgid "Recommend my business or product on Linkedin:"
+msgstr "Recomendar mi negocio o producto en LinkedIn:"
+
+#: views/sfsi_option_view2.php:460
+msgid "Share my page on LinkedIn"
+msgstr "Compartir mi página en LinkedIn"
+
+#: views/sfsi_option_view2.php:458
+msgid "Follow me on Linkedin:"
+msgstr "Seguirme en Linkedin:"
+
+#: views/sfsi_option_view2.php:457
+msgid "Visit my Linkedin page at:"
+msgstr "Visitar mi página de Linkedin en:"
+
+#: views/sfsi_option_view2.php:456
+msgid "The LinkedIn icon should allow users to... "
+msgstr "El icono de LinkedIn debería permitir a los usuarios..."
+
+#: views/sfsi_option_view2.php:450
+msgid " You find your ID in the link of your profile page, e.g. https://www.linkedin.com/profile/view?id=%1s8539887%2s&trk=nav_responsive_tab_profile_pic"
+msgstr "Encuentras tu ID en el enlace de tu página de perfil. Por ejemplo, https://www.linkedin.com/profile/view?id=%1s8539887%2s&trk=nav_responsive_tab_profile_pic"
+
+#: views/sfsi_option_view2.php:441
+msgid " The LinkedIn icon can perform several actions. Pick below which ones it should perform. If you select several options, then users can select what they want to do %1s (see an example) %2s "
+msgstr "El icono de LinkedIn puede llevar a cabo varias acciones. Elige a continuación cuáles deberían realizarse. Si seleccionas varias opciones, los usuarios podrán seleccionar qué quieren hacer %1s (ve un ejemplo) %2s"
+
+#: views/sfsi_option_view2.php:405 views/sfsi_option_view2.php:417
+#: views/sfsi_option_view2.php:429 views/sfsi_option_view2.php:684
+msgid "URL:"
+msgstr "URL:"
+
+#: views/sfsi_option_view2.php:404
+msgid "When clicked on, users will get directed to your Instagram page."
+msgstr "Cuando se le hace clic, los usuarios serán dirigidos a tu página de Instagram."
+
+#: views/sfsi_option_view2.php:395
+msgid "Pin my blog on Pinterest (+1)"
+msgstr "Pinear mi blog en Pinterest (+1)"
+
+#: views/sfsi_option_view2.php:394
+msgid "Visit my Pinterest page at:"
+msgstr "Visita mi página de Pinterest en:"
+
+#: views/sfsi_option_view2.php:393
+msgid "The Pinterest icon should allow users to..."
+msgstr "El icono de Pinterest debería permitir a los usuarios..."
+
+#: views/sfsi_option_view2.php:387
+msgid " The Pinterest icon can perform several actions. Pick below which ones it should perform. If you select several options, then users can select what they want to do %1s (see an example) %2s "
+msgstr "El icono de Pinterest puede llevar a cabo varias acciones. Elige a continuación cuáles deberían realizarse. Si seleccionas varias opciones, los usuarios podrán seleccionar qué quieren hacer %1s (ve un ejemplo) %2s "
+
+#: views/sfsi_option_view2.php:360
+msgid "(allows people to subscribe to you directly, without leaving your blog)"
+msgstr "(permite que las personas se puedan suscribir a ti directamente, sin abandonar tu blog)"
+
+#: views/sfsi_option_view2.php:359
+msgid "Subscribe to me on Youtube"
+msgstr "Suscribirse a mi canal de YouTube"
+
+#: views/sfsi_option_view2.php:354
+msgid "Visit my Youtube page at:"
+msgstr "Visitar mi página de YouTube en:"
+
+#: views/sfsi_option_view2.php:350
+msgid "The Youtube icon should allow users to... "
+msgstr "EL icono de YouTube debería permitir a los usuarios..."
+
+#: views/sfsi_option_view2.php:343
+msgid "The Youtube icon can perform several actions. Pick below which ones it should perform. If you select several options, then users can select what they want to do %1s (see an example) %2s "
+msgstr "El icono de YouTube puede llevar a cabo varias acciones. Elige a continuación cuáles deberían realizarse. Si seleccionas varias opciones, los usuarios podrán seleccionar qué quieren hacer %1s (ve un ejemplo) %2s \t"
+
+#: views/sfsi_option_view2.php:280
+msgid "Like my blog on Facebook (+1)"
+msgstr "Darle me gusta a mi blog en Facebook (+1)"
+
+#: views/sfsi_option_view2.php:276
+msgid "Visit my Facebook page at:"
+msgstr "Visitar mi página de Facebook en:"
+
+#: views/sfsi_option_view2.php:272
+msgid "The Facebook icon should allow users to..."
+msgstr "El icono de Facebook debería permitir a los usuarios..."
+
+#: views/sfsi_option_view2.php:267
+msgid "The Facebook icon can perform several actions. Pick below which ones it should perform. If you select several options, then users can select what they want to do %1s (see an example) %2s "
+msgstr "El icono de Facebook puede llevar a cabo varias acciones. Elige a continuación cuáles deberían realizarse. Si seleccionas varias opciones, los usuarios podrán seleccionar qué quieren hacer %1s (ve un ejemplo) %2s "
+
+#: views/sfsi_option_view2.php:251
+msgid "All data will be treated highly confidentially, see the %1s Privacy Policy %2s"
+msgstr "Todos los datos serán tratados con la mayor confidencialidad, ve la %1s política de privacidad %2s"
+
+#: views/sfsi_option_view2.php:248
+msgid "This will create your FREE account on follow.it, using above email."
+msgstr "Esto creará tu cuenta GRATIS en follow.it utilizando el correo electrónico anterior."
+
+#: views/sfsi_option_view2.php:242
+msgid "Click here to benefit from all advantages >"
+msgstr "Haz clic aquí para beneficiarte de todas las ventajas >"
+
+#: views/sfsi_option_view2.php:230
+msgid "of the emails"
+msgstr "de los correos electrónicos"
+
+#: views/sfsi_option_view2.php:230
+msgid "Tailor the sender name & subject line"
+msgstr "Modifica el nombre del remitente y el asunto"
+
+#: views/sfsi_option_view2.php:229
+msgid "when people subscribe or unsubscribe"
+msgstr "cuando las personas se suscriben o cancelan la suscripción"
+
+#: views/sfsi_option_view2.php:229
+msgid "Get alerts"
+msgstr "Recibe alertas"
+
+#: views/sfsi_option_view2.php:228
+msgid "by being listed in the follow.it directory"
+msgstr "al ser publicado en el directorio de follow.it"
+
+#: views/sfsi_option_view2.php:228
+msgid "Get more traffic"
+msgstr "Obtén más tráfico"
+
+#: views/sfsi_option_view2.php:223
+msgid "Automatically post on"
+msgstr "Publicar automáticamente en"
+
+#: views/sfsi_option_view2.php:222
+msgid "interesting statistics"
+msgstr "estadísticas interesantes"
+
+#: views/sfsi_option_view2.php:222
+msgid "subscribers’ emails"
+msgstr "correos electrónicos de los suscriptores"
+
+#: views/sfsi_option_view2.php:222
+msgid "See your"
+msgstr "Ve los"
+
+#: views/sfsi_option_view2.php:221
+msgid "to your site"
+msgstr "a tu sitio"
+
+#: views/sfsi_option_view2.php:221
+msgid "More people come back"
+msgstr "Más personas regresan"
+
+#: views/sfsi_option_view2.php:217
+msgid "The service offers many (more) advantages:"
+msgstr "El servicio ofrece muchas (más) ventajas:"
+
+#: views/sfsi_option_view2.php:214
+msgid "(provider of the service)"
+msgstr "(proveedor del servicio)"
+
+#: views/sfsi_option_view2.php:214
+msgid "follow.it icon"
+msgstr "icono de follow.it"
+
+#: views/sfsi_option_view2.php:208
+msgid "Email + Follow text"
+msgstr "Correo electrónico + texto para seguir"
+
+#: views/sfsi_option_view2.php:202
+msgid "Email icon"
+msgstr "Icono del correo electrónico"
+
+#: views/sfsi_option_view2.php:125
+msgid "For most blogs it’s"
+msgstr "Para la mayoría de los blogs es"
+
+#: views/sfsi_option_view2.php:123
+msgid "RSS URL:"
+msgstr "URL del RSS:"
+
+#: views/sfsi_option_view2.php:121
+msgid "When clicked on, users can subscribe via RSS"
+msgstr "Cuando se le hace clic, los usuarios pueden suscribirse por medio de RSS"
+
+#: views/sfsi_option_view1.php:793 views/sfsi_option_view2.php:862
+#: views/sfsi_option_view3.php:1222 views/sfsi_option_view4.php:1086
+#: views/sfsi_option_view5.php:1625 views/sfsi_option_view6.php:185
+#: views/sfsi_option_view6.php:188 views/sfsi_option_view7.php:673
+#: views/sfsi_option_view8.php:732 views/sfsi_question3.php:139
+msgid "Save"
+msgstr "Guardar"
+
+#: views/sfsi_option_view1.php:720 views/sfsi_option_view1.php:721
+msgid "Steam"
+msgstr "Steam"
+
+#: views/sfsi_option_view1.php:705 views/sfsi_option_view1.php:706
+msgid "Amazon"
+msgstr "Amazon"
+
+#: views/sfsi_option_view1.php:736 views/sfsi_option_view1.php:737
+msgid "Twitch"
+msgstr "Twitch"
+
+#: views/sfsi_option_view1.php:732 views/sfsi_option_view1.php:733
+msgid "Xing"
+msgstr "Xing"
+
+#: views/sfsi_option_view1.php:683 views/sfsi_option_view1.php:684
+msgid "Houzz"
+msgstr "Houzz"
+
+#: views/sfsi_option_view1.php:688 views/sfsi_option_view1.php:689
+msgid "Tumblr"
+msgstr "Tumblr"
+
+#: views/sfsi_option_view1.php:724 views/sfsi_option_view1.php:725
+msgid "Vimeo"
+msgstr "Vimeo"
+
+#: views/sfsi_option_view1.php:385 views/sfsi_option_view2.php:695
+msgid "Reddit"
+msgstr "Reddit"
+
+#: views/sfsi_option_view1.php:710 views/sfsi_option_view1.php:711
+msgid "Blogger"
+msgstr "Blogger"
+
+#: views/sfsi_option_view1.php:652 views/sfsi_option_view1.php:653
+msgid "Buffer"
+msgstr "Buffer"
+
+#: views/sfsi_option_view1.php:694 views/sfsi_option_view1.php:695
+msgid "Flicker"
+msgstr "Flicker"
+
+#: views/sfsi_option_view1.php:715 views/sfsi_option_view1.php:716
+msgid "Skype"
+msgstr "Skype"
+
+#: views/sfsi_option_view1.php:662 views/sfsi_option_view1.php:663
+msgid "Soundcloud"
+msgstr "Soundcloud"
+
+#: views/sfsi_option_view1.php:678 views/sfsi_option_view1.php:679
+msgid "Print"
+msgstr "Print"
+
+#: views/sfsi_option_view1.php:748 views/sfsi_option_view1.php:749
+msgid "Yelp"
+msgstr "Yelp"
+
+#: views/sfsi_option_view1.php:373 views/sfsi_option_view2.php:678
+msgid "Snapchat"
+msgstr "Snapchat"
+
+#: views/sfsi_option_view1.php:596 views/sfsi_option_view2.php:826
+#: views/sfsi_option_view5.php:1538 views/sfsi_option_view6.php:223
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:107
+msgid "Custom"
+msgstr "Perzonalizado"
+
+#: views/sfsi_option_view1.php:570 views/sfsi_option_view1.php:602
+msgid "Upload a custom icon if you have other accounts/websites you want to link to."
+msgstr "Sube un icono personalizado si tienes otras cuentas/sitios que quieres enlazar."
+
+#: views/sfsi_option_view1.php:501 views/sfsi_option_view3.php:1150
+msgid "Get it now."
+msgstr "Consíguelo ahora."
+
+#: views/sfsi_option_view1.php:499
+msgid "Upload a custom icon if you have other accounts/websites you want to link to -"
+msgstr "Sube un icono personalizado si tienes otras cuentas/sitios que quieres enlazar -"
+
+#: views/sfsi_option_view1.php:497 views/sfsi_option_view3.php:1147
+msgid "Premium Feature:"
+msgstr "Característica Premium:"
+
+#: views/sfsi_option_view1.php:490
+msgid "Custom Icon "
+msgstr "Icono personalizado"
+
+#: views/sfsi_option_view1.php:362
+msgid "Show this icon if you have a Weibo account."
+msgstr "Mostrar este icono si tienes una cuenta de Weibo."
+
+#: views/sfsi_option_view1.php:356 views/sfsi_option_view2.php:575
+#: views/sfsi_pop_content.php:514
+msgid "Weibo"
+msgstr "Weibo"
+
+#: views/sfsi_option_view1.php:344
+msgid "Show this icon if you have a WeChat account."
+msgstr "Mostrar este icono si tienes una cuenta de WeChat."
+
+#: views/sfsi_option_view1.php:340 views/sfsi_option_view2.php:513
+#: views/sfsi_pop_content.php:534
+msgid "WeChat"
+msgstr "WeChat"
+
+#: views/sfsi_option_view1.php:328
+msgid "Show this icon if you have an OK account."
+msgstr "Mostrar este icono si tienes una cuenta de OK."
+
+#: views/sfsi_option_view1.php:322 views/sfsi_pop_content.php:494
+msgid "Ok"
+msgstr "OK"
+
+#: views/sfsi_option_view1.php:309
+msgid "Show this icon if you have a VK account."
+msgstr "Mostrar este icono si tienes una cuenta de VK."
+
+#: views/sfsi_option_view1.php:305 views/sfsi_option_view2.php:616
+#: views/sfsi_pop_content.php:474
+msgid "VK"
+msgstr "VK"
+
+#: views/sfsi_option_view1.php:293
+msgid "Show this icon if you have a Telegram account."
+msgstr "Mostrar este icono si tienes una cuenta de Telegram."
+
+#: views/sfsi_option_view1.php:287 views/sfsi_option_view2.php:472
+#: views/sfsi_pop_content.php:454
+msgid "Telegram"
+msgstr "Telegram"
+
+#: views/sfsi_option_view1.php:276
+msgid "Show this icon if you want to allow users to share the page via WhatsApp."
+msgstr "Mostrar este icono si quieres permitir que los usuarios puedan compartir la página por WhatsApp"
+
+#: views/sfsi_option_view1.php:272 views/sfsi_option_view2.php:540
+msgid "WhatsApp"
+msgstr "WhatsApp"
+
+#: views/sfsi_option_view1.php:212
+msgid "Show this icon if you have an Instagram account."
+msgstr "Mostrar este icono si tienes una cuenta de Instagram."
+
+#: views/sfsi_option_view1.php:206 views/sfsi_option_view2.php:402
+#: views/sfsi_pop_content.php:434
+msgid "Instagram"
+msgstr "Instagram"
+
+#: views/sfsi_option_view1.php:194
+msgid "Show this icon if you have a Pinterest account (and you should set up one if you publish new pictures regularly – that can increase your traffic significantly)."
+msgstr "Mostrar este icono si tienes una cuenta de Pinterest (y deberías establecer una si publicas nuevas imágenes regularmente - esto puede incrementar tu tráfico significativamente)."
+
+#: views/sfsi_option_view1.php:188 views/sfsi_option_view2.php:382
+#: views/sfsi_pop_content.php:414
+msgid "Pinterest"
+msgstr "Pinterest"
+
+#: views/sfsi_option_view1.php:175
+msgid " No.1 network for business purposes. Use this icon if you’re a LinkedInner."
+msgstr "La red número 1 para negocios. Utilízala si eres un usuario de LinkedIn."
+
+#: views/sfsi_option_view1.php:171 views/sfsi_option_view2.php:436
+msgid "LinkedIn"
+msgstr "LinkedIn"
+
+#: views/sfsi_option_view1.php:160 views/sfsi_option_view1.php:175
+#: views/sfsi_option_view1.php:255 views/sfsi_option_view1.php:427
+#: views/sfsi_option_view1.php:570 views/sfsi_option_view1.php:602
+msgid "It depends:"
+msgstr "Depende:"
+
+#: views/sfsi_option_view1.php:157 views/sfsi_option_view2.php:338
+#: views/sfsi_option_view5.php:872 views/sfsi_pop_content.php:374
+msgid "Youtube"
+msgstr "YouTube"
+
+#: views/sfsi_option_view1.php:139
+msgid "Can have a strong promotional effect."
+msgstr "Puede tener un efecto publicitario fuerte."
+
+#: views/sfsi_option_view5.php:892 views/sfsi_pop_content.php:336
+msgid "Twitter"
+msgstr "Twitter"
+
+#: views/sfsi_option_view1.php:117
+msgid "Facebook is the giant in the social media world, and even if you don’t have a Facebook account yourself you should display this icon, so that Facebook users can share your site on Facebook. "
+msgstr "Facebook es el gigante del mundo de las redes sociales, y aunque tú no tengas una cuenta de Facebook, deberías mostrar este icono para que los usuarios de Facebook puedan compartir tu sitio allí."
+
+#: views/sfsi_option_view1.php:115
+msgid "Facebook is crucial, esp. for sharing."
+msgstr "Facebook es crucial especialmente para compartir."
+
+#: views/sfsi_option_view1.php:111 views/sfsi_option_view2.php:263
+#: views/sfsi_option_view5.php:699 views/sfsi_pop_content.php:319
+msgid "Facebook"
+msgstr "Facebook"
+
+#: views/sfsi_option_view1.php:94
+msgid " to make people follow you. Not offering an email subscription option means losing out on future traffic to your site."
+msgstr "para hacer que la gente te siga. No ofrecer una opción de suscripción por correo electrónico significa perderte de tráfico futuro a tu sitio."
+
+#: views/sfsi_option_view1.php:94
+msgid "much more effective than social media"
+msgstr "mucho más efectivo que las redes sociales\t"
+
+#: views/sfsi_option_view1.php:94
+msgid "Everybody uses email – that’s why it’s "
+msgstr "Todos utilizan correo electrónico - por eso es"
+
+#: views/sfsi_option_view1.php:88
+msgid "Remove credit link"
+msgstr "Quitar el enlace de los agradecimientos"
+
+#: views/sfsi_option_view1.php:81
+msgid "Email is the most effective tool to build up followership."
+msgstr "El correo electrónico es la herramienta más efectiva para crear seguidores."
+
+#: views/sfsi_option_view1.php:77 views/sfsi_option_view2.php:137
+#: views/sfsi_pop_content.php:302
+msgid "Email"
+msgstr "Correo electrónico"
+
+#: views/sfsi_option_view1.php:61 views/sfsi_option_view1.php:98
+#: views/sfsi_option_view1.php:121 views/sfsi_option_view1.php:145
+msgid "Read more"
+msgstr "Leer más"
+
+#: views/sfsi_option_view1.php:59
+msgid "here"
+msgstr "aquí"
+
+#: views/sfsi_option_view1.php:59
+msgid "RSS stands for Really Simply Syndication and is an easy way for people to read your content. You can learn more about it "
+msgstr "RSS son las siglas de Really Simple Syndication y es una manera fácil para que las personas lean tu contenido. Puedes aprender más acerca de esto"
+
+#: views/sfsi_option_view1.php:57
+msgid "RSS is still popular, esp. among the tech-savvy crowd."
+msgstr "RSS es aun muy popular, especialmente en las personas entendidas en tecnología."
+
+#: views/sfsi_option_view1.php:56 views/sfsi_option_view1.php:81
+#: views/sfsi_option_view1.php:115 views/sfsi_option_view1.php:139
+msgid "Strongly recommended:"
+msgstr "Muy recomendado:"
+
+#: views/sfsi_option_view1.php:52 views/sfsi_option_view2.php:119
+#: views/sfsi_pop_content.php:284
+msgid "RSS"
+msgstr "RSS"
+
+#: views/sfsi_option_view1.php:40
+msgid " because people have different preferences, and more options mean that there’s something for everybody, increasing the chances that you get followed and/or shared."
+msgstr "porque las personas tienen diferentes preferencias, y tener más opciones significa que hay algo para cada uno, lo que incrementa las posibilidades de que te sigan y/o compartan."
+
+#: views/sfsi_option_view1.php:39
+msgid "the more icons you offer the better"
+msgstr "mientras más iconos ofrezcas, mejor"
+
+#: views/sfsi_option_view1.php:38
+msgid "In general,"
+msgstr "En general,"
+
+#: views/sfsi_option_view8.php:870
+msgid "Right Align"
+msgstr "Alineación derecha"
+
+#: views/sfsi_option_view5.php:348 views/sfsi_option_view5.php:360
+#: views/sfsi_option_view5.php:375 views/sfsi_option_view6.php:660
+#: views/sfsi_option_view8.php:868
+msgid "Centered"
+msgstr "Centrado"
+
+#: views/sfsi_option_view8.php:866
+msgid "Left Align"
+msgstr "Alineación izquierda"
+
+#: views/sfsi_option_view8.php:850
+msgid "Bold"
+msgstr "Negrita"
+
+#: views/sfsi_option_view7.php:403 views/sfsi_option_view8.php:848
+msgid "Italic"
+msgstr "Cursiva"
+
+#: views/sfsi_option_view7.php:401 views/sfsi_option_view8.php:846
+msgid "Oblique"
+msgstr "Oblicua"
+
+#: views/sfsi_option_view7.php:399 views/sfsi_option_view8.php:844
+msgid "Inherit"
+msgstr "Heredar"
+
+#: views/sfsi_option_view7.php:397 views/sfsi_option_view8.php:842
+msgid "Normal"
+msgstr "Normal"
+
+#: views/sfsi_option_view7.php:381 views/sfsi_option_view8.php:826
+msgid "Verdana"
+msgstr "Verdana"
+
+#: views/sfsi_option_view7.php:379 views/sfsi_option_view8.php:824
+msgid "Trebuchet MS"
+msgstr "Trebuchet MS"
+
+#: views/sfsi_option_view7.php:377 views/sfsi_option_view8.php:822
+msgid "Times New Roman"
+msgstr "Times New Roman"
+
+#: views/sfsi_option_view7.php:375 views/sfsi_option_view8.php:820
+msgid "Tahoma"
+msgstr "Tahoma"
+
+#: views/sfsi_option_view7.php:373 views/sfsi_option_view8.php:818
+msgid "Lucida Console"
+msgstr "Lucida Console"
+
+#: views/sfsi_option_view7.php:371 views/sfsi_option_view8.php:816
+msgid "Impact"
+msgstr "Impact"
+
+#: views/sfsi_option_view7.php:369 views/sfsi_option_view8.php:812
+msgid "Helvetica"
+msgstr "Helvetica"
+
+#: views/sfsi_option_view7.php:367 views/sfsi_option_view8.php:808
+msgid "Georgia"
+msgstr "Georgia"
+
+#: views/sfsi_option_view7.php:365 views/sfsi_option_view8.php:806
+msgid "Courier New"
+msgstr "Courier New"
+
+#: views/sfsi_option_view7.php:363 views/sfsi_option_view8.php:804
+msgid "Comic Sans MS"
+msgstr "Comic Sans MS"
+
+#: views/sfsi_option_view7.php:361 views/sfsi_option_view8.php:802
+msgid "Calibri"
+msgstr "Calibri"
+
+#: views/sfsi_option_view7.php:359 views/sfsi_option_view8.php:798
+msgid "Arial Black"
+msgstr "Arial Black"
+
+#: views/sfsi_option_view7.php:357 views/sfsi_option_view8.php:792
+msgid "Arial"
+msgstr "Arial"
+
+#: views/sfsi_option_view1.php:796 views/sfsi_option_view2.php:866
+#: views/sfsi_option_view3.php:1228 views/sfsi_option_view4.php:1090
+#: views/sfsi_option_view5.php:1629 views/sfsi_option_view6.php:707
+#: views/sfsi_option_view7.php:678 views/sfsi_option_view8.php:738
+#: views/sfsi_question3.php:145
+msgid "Collapse area"
+msgstr "Cerrar área"
+
+#: views/sfsi_option_view7.php:480 views/sfsi_option_view8.php:712
+msgid "Check it out."
+msgstr "Échale un vistazo."
+
+#: views/sfsi_option_view8.php:712
+msgid "In the Premium Plugin you can choose to display the text on subscribe form in a font already present in your theme."
+msgstr "En el plugin Premium puedes elegir mostrar el texto en el formulario de suscripción en una fuente existente en tu tema."
+
+#: views/sfsi_option_view7.php:480 views/sfsi_option_view8.php:712
+msgid "New:"
+msgstr "Nuevo:"
+
+#: views/sfsi_option_view8.php:676
+msgid "Button color:"
+msgstr "Color del botón:"
+
+#: views/sfsi_option_view8.php:644
+msgid "Font size"
+msgstr "Tamaño de fuente"
+
+#: views/sfsi_option_view8.php:560
+msgid "Subscribe button"
+msgstr "Botón de suscripción"
+
+#: views/sfsi_option_view8.php:448
+msgid "Entry field"
+msgstr "Campo de entrada"
+
+#: views/sfsi_option_view8.php:430 views/sfsi_option_view8.php:530
+#: views/sfsi_option_view8.php:662
+msgid "Alignment:"
+msgstr "Alineación:"
+
+#: views/sfsi_option_view7.php:421 views/sfsi_option_view8.php:412
+#: views/sfsi_option_view8.php:538
+msgid "Font size:"
+msgstr "Tamaño de la fuente:"
+
+#: views/sfsi_option_view7.php:413 views/sfsi_option_view8.php:386
+#: views/sfsi_option_view8.php:618
+msgid "Font color:"
+msgstr "Color de la fuente:"
+
+#: views/sfsi_option_view7.php:391 views/sfsi_option_view8.php:372
+#: views/sfsi_option_view8.php:492 views/sfsi_option_view8.php:604
+msgid "Font style:"
+msgstr "Estilo de la fuente:"
+
+#: views/sfsi_option_view7.php:351 views/sfsi_option_view8.php:364
+#: views/sfsi_option_view8.php:484 views/sfsi_option_view8.php:596
+msgid "Font:"
+msgstr "Fuente:"
+
+#: views/sfsi_option_view7.php:343 views/sfsi_option_view8.php:344
+#: views/sfsi_option_view8.php:464 views/sfsi_option_view8.php:576
+msgid "Text:"
+msgstr "Texto:"
+
+#: views/sfsi_option_view8.php:328
+msgid "Text above the entry field"
+msgstr "Texto sobre el campo de entrada"
+
+#: views/sfsi_option_view6.php:684 views/sfsi_option_view8.php:294
+msgid "Background color:"
+msgstr "Color de fondo:"
+
+#: views/sfsi_option_view8.php:269
+msgid "Color"
+msgstr "Color "
+
+#: views/sfsi_option_view6.php:574 views/sfsi_option_view6.php:631
+#: views/sfsi_option_view8.php:263 views/sfsi_option_view8.php:418
+#: views/sfsi_option_view8.php:544 views/sfsi_option_view8.php:650
+#: views/subviews/que3/sfsi_que3_place_via_sticky_bar.php:169
+msgid "pixels"
+msgstr "píxeles"
+
+#: views/sfsi_option_view8.php:257
+msgid "Thickness"
+msgstr "Grosor"
+
+#: views/sfsi_option_view8.php:227
+msgid "Border?"
+msgstr "¿Borde?"
+
+#: views/sfsi_option_view8.php:215
+msgid "Width"
+msgstr "Ancho"
+
+#: views/sfsi_option_view8.php:207
+msgid "Height"
+msgstr "Altura"
+
+#: views/sfsi_option_view4.php:334 views/sfsi_option_view5.php:393
+#: views/sfsi_option_view5.php:1270 views/sfsi_option_view5.php:1287
+#: views/sfsi_option_view5.php:1314 views/sfsi_option_view5.php:1562
+#: views/sfsi_option_view5.php:1578 views/sfsi_option_view5.php:1594
+#: views/sfsi_option_view6.php:680 views/sfsi_option_view7.php:646
+#: views/sfsi_option_view8.php:193 views/sfsi_option_view8.php:243
+#: views/subviews/que3/sfsi_que3_place_via_float.php:183
+#: views/subviews/que3/sfsi_que3_place_via_float.php:221
+#: views/subviews/que3/sfsi_que3_place_via_shortcode.php:65
+#: views/subviews/que3/sfsi_que3_place_via_widget.php:72
+msgid "No"
+msgstr "No"
+
+#: views/sfsi_option_view4.php:331 views/sfsi_option_view5.php:404
+#: views/sfsi_option_view5.php:1266 views/sfsi_option_view5.php:1283
+#: views/sfsi_option_view5.php:1309 views/sfsi_option_view5.php:1558
+#: views/sfsi_option_view5.php:1574 views/sfsi_option_view5.php:1590
+#: views/sfsi_option_view6.php:676 views/sfsi_option_view7.php:655
+#: views/sfsi_option_view8.php:185 views/sfsi_option_view8.php:235
+#: views/subviews/que3/sfsi_que3_place_via_float.php:194
+#: views/subviews/que3/sfsi_que3_place_via_float.php:211
+#: views/subviews/que3/sfsi_que3_place_via_shortcode.php:76
+#: views/subviews/que3/sfsi_que3_place_via_widget.php:83
+msgid "Yes"
+msgstr "Sí"
+
+#: views/sfsi_option_view8.php:177
+msgid "Adjust size to space on the website?"
+msgstr "¿Ajustar el tamaño al espacio en el sitio?"
+
+#: views/sfsi_option_view8.php:161
+msgid "Overall size & border"
+msgstr "Tamaño y borde general"
+
+#: views/sfsi_option_view8.php:159
+msgid "Define text & design (optional)"
+msgstr "Definir texto y diseño (opcional)"
+
+#: views/sfsi_option_view8.php:120 views/sfsi_option_view8.php:892
+msgid "Get new posts by email:"
+msgstr "Obtener nuevas publicaciones por correo electrónico:"
+
+#: views/sfsi_option_view8.php:105
+msgid "3. Copy & paste HTML code:"
+msgstr "3. Copiar y pegar el código HTML:"
+
+#: views/sfsi_option_view8.php:104
+msgid " to place it into your codes"
+msgstr "para colocarlo en tus códigos"
+
+#: views/sfsi_option_view8.php:104
+msgid "[USM_form]"
+msgstr "[USM_form]"
+
+#: views/sfsi_option_view8.php:104
+msgid "Use the shortcode"
+msgstr "Utiliza el shortcode"
+
+#: views/sfsi_option_view8.php:104
+msgid "2. Shortcode:"
+msgstr "2. Shortcode:"
+
+#: views/sfsi_option_view8.php:103
+msgid " and drag & drop it to the sidebar."
+msgstr "y arrástralo y suéltalo en la barra lateral."
+
+#: views/sfsi_option_view8.php:103
+msgid "widget settings<"
+msgstr "ajustes del widget<"
+
+#: views/sfsi_option_view8.php:103
+msgid "1. Widget:"
+msgstr "1. Widget:"
+
+#: views/sfsi_option_view8.php:100
+msgid "You can place the form by different methods:"
+msgstr "Puedes colocar el formulario a través de diferentes métodos:"
+
+#: views/sfsi_option_view8.php:99
+msgid "Place it on your site"
+msgstr "Colócalo en tu sitio"
+
+#: views/sfsi_option_view5.php:671 views/sfsi_option_view5.php:691
+#: views/sfsi_option_view5.php:864 views/sfsi_option_view5.php:885
+#: views/sfsi_option_view5.php:1061 views/sfsi_option_view6.php:140
+#: views/sfsi_option_view8.php:91
+msgid "Preview:"
+msgstr "Vista previa:"
+
+#: views/sfsi_option_view8.php:81
+msgid "To get access to the emails who subscribe, interesting statistics about your subscribers, alerts when people subscribe or unsubscribe and to tailor the sender name & the subject line of the emails, please %1s click here.%2s"
+msgstr "Para obtener acceso a los correos de quienes se suscriben, estadísticas interesantes sobre tus suscriptores, alertas de cuando las personas se suscriben o cancelan la suscripción y para modificar el nombre del remitente y el asunto de los correos, por favor, %1s haz clic aquí.%2s"
+
+#: views/sfsi_option_view8.php:76
+msgid "In addition to the email- and follow-icon you can also show a subscription form which maximizes chances that people subscribe to your site."
+msgstr "Además de los iconos de correo electrónico y para seguir, también puedes mostrar un formulario de suscripción que aumenta las probabilidades de que las personas se suscriban a tu sitio."
+
+#: views/sfsi_global_banners.php:255
+msgid "%1$sImportant:%2$s Your website used to be on http (before you enabled an SSL certificate to switch to https). We found share counts for your URLs on http which usually get lost after switch to https (because Facebook etc. provide the counts per url, and an url on https is a different url then one on http).<br><br> %3$sWe found a solution for that so that%4$s your share counts on http and https will be aggregated and your full number of share counts is restored. It is implemented in the Premium Plugin"
+msgstr "%1$sImportante:%2$s Tu web solía estar en http (antes de que activaras un certificado SSL para cambiar a https). Descubrimos que los recuentos de quienes compartieron tus URL en http generalmente se pierden luego de cambiarlas a https (porque Facebook, etcétera, proveen los recuentos por cada URL, y la URL en https es diferente a la URL en http).<br><br> %3$sDescubrimos la solución para esto%4$s para que los contadores en http y https se sumen y el número completo de compartidos se restaure. Está implementado en el plugin Premium"
+
+#: views/sfsi_global_banners.php:264
+#: views/subviews/que3/sfsi_que3_place_via_shortcode.php:138
+msgid "Get it now"
+msgstr "Consíguelo ahora"
+
+#: views/subviews/que4/animatethem.php:53
+#: views/subviews/que4/animatethem.php:97
+msgid "Premium Plugin"
+msgstr "plugin Premium"
+
+#: views/sfsi_global_banners.php:93 views/sfsi_global_banners.php:126
+#: views/sfsi_global_banners.php:160 views/sfsi_global_banners.php:195
+#: views/sfsi_global_banners.php:230 views/sfsi_other_banners.php:54
+#: views/sfsi_other_banners.php:105 views/sfsi_other_banners.php:148
+#: views/sfsi_other_banners.php:190 views/sfsi_other_banners.php:235
+#: views/sfsi_other_banners.php:278 views/sfsi_other_banners.php:320
+msgid "Get it now at 20% discount"
+msgstr "Obtenlo ahora con un 20% de descuento"
+
+#: libs/sfsi_install_uninstall.php:1838 libs/sfsi_install_uninstall.php:1839
+#: libs/sfsi_widget.php:16
+msgid "Ultimate Social Media Icons"
+msgstr "Iconos de Ultimate Social Media"
+
+#: libs/sfsi_widget.php:8
+msgid "Ultimate Social Media Icons widgets"
+msgstr "Widgets de iconos de Ultimate Social Media"
+
+#: libs/sfsi_custom_social_sharing_data.php:258
+msgid "<span id=\"sfsi_twitter_desc_remaining_char\">106</span> Characters Remaining"
+msgstr "<span id=\"sfsi_twitter_desc_remaining_char\">106</span> Caracteres restantes"
+
+#: libs/sfsi_custom_social_sharing_data.php:254
+msgid "This will be used as tweet-text (the link which get shared will be automatically the added at the end). If you don’t enter anything here the tweet text will be used which you defined globally under question 6 on the plugin’s settings page. "
+msgstr "Esto será utilizado como texto del tuit (el enlace que se comparte será añadido automáticamente al final). Si no introduces nada aquí, el texto del tuit será el que definiste universalmente en la pregunta 6 en la página de ajustes del plugin."
+
+#: libs/sfsi_custom_social_sharing_data.php:245
+msgid "<strong>Tweet </strong>"
+msgstr "<strong>Tuit </strong>"
+
+#: libs/sfsi_custom_social_sharing_data.php:235
+msgid "This description will be used when this post is shared on Pinterest. Leave it blank to use the post title."
+msgstr "Esta descripción será utilizada cuando esta entrada se comparta en Pinterest. Déjala vacía para utilizar el título de la entrada."
+
+#: libs/sfsi_custom_social_sharing_data.php:227
+msgid "<strong>Pinterest description </strong>(leave blank to use the post title)"
+msgstr "<strong>Descripción de Pinterest </strong>(dejar vacío para utilizar el título de la entrada)"
+
+#: libs/sfsi_custom_social_sharing_data.php:189
+msgid "<span id=\"sfsi_desc_remaining_char\">297</span> Characters Remaining"
+msgstr "<span id=\"sfsi_desc_remaining_char\">297</span> Caracteres restantes"
+
+#: libs/sfsi_custom_social_sharing_data.php:185
+msgid "This description will be used when shared on Facebook, Linkedin, Twitter and WhatsApp (if you use ‘Twitter cards’). Leave it blank to use the post excerpt. [Developers: this is used by the open graph meta tag «og:description»]"
+msgstr "Esta descripción será utilizada cuando se comparte en Facebook, LinkedIn, Twitter y WhatsApp (si utilizas \"cards de Twitter\"). Déjala en blanco para utilizar el extracto de la entrada. [Desarrolladores: esto es utilizado por la etiqueta open graph meta \"og:description\"]"
+
+#: libs/sfsi_custom_social_sharing_data.php:176
+msgid "<strong>Description </strong>(leave blank to use the post exerpt)"
+msgstr "<strong>Descripción </strong>(dejar en blanco para utilizar el extracto de la entrada)"
+
+#: libs/sfsi_custom_social_sharing_data.php:165
+msgid "<span id=\"sfsi_title_remaining_char\">95</span> Characters Remaining"
+msgstr "<span id=\"sfsi_title_remaining_char\">95</span>  Caracteres restantes"
+
+#: libs/sfsi_custom_social_sharing_data.php:160
+msgid "This title will be used when shared on Facebook, Linkedin and WhatsApp. Leave it blank to use the post title. [Developers: this is used by the open graph meta tag «og:title»]"
+msgstr "Este título se utilizará cuando se comparta en Facebook, LinkedIn y WhatsApp. Déjala en blanco para utilizar el título de la entrada. [Desarrolladores: esto es utilizado por la etiqueta open graph meta \"og:title\"]"
+
+#: libs/sfsi_custom_social_sharing_data.php:152
+msgid "<strong>Title </strong>(leave blank to use the post title)"
+msgstr "<strong>Título </strong>(dejar en blanco para utilizar el título de la entrada)"
+
+#: libs/sfsi_custom_social_sharing_data.php:129
+#: libs/sfsi_custom_social_sharing_data.php:207
+msgid "<strong>Picture </strong>(For social media sharing)"
+msgstr "<strong>Imagen </strong>(Para compartir en redes sociales)"
+
+#: libs/sfsi_subscribe_widget.php:11 libs/sfsi_subscribe_widget.php:14
+msgid "Ultimate Social Subscribe Form"
+msgstr "Formulario de suscripción de Ultimate Social"
+
+#: ultimate_social_media_icons.php:946
+msgid "If you do not know how to do the upgrade, please ask your server team or hosting company to do it for you."
+msgstr "Si no sabes cómo realizar la actualización, pídeselo a tu equipo de servidores o tu empresa de hosting que lo haga por ti."
+
+#: ultimate_social_media_icons.php:941
+msgid ""
+" We noticed you are running your site on a PHP version older than 5.4. Please upgrade to a more recent\n"
+"                        version. This is not only important for running the Ultimate Social Media Plugin, but also for security\n"
+"                        reasons in general."
+msgstr "Nos hemos dado cuenta de que tu sitio funciona con una versión PHP más antigua que la 5.4. Por favor, actualiza a una versión más reciente. No solo es importante para correr el plugin Ultimate Social Media, sino por razones de seguridad en general."
+
+#: ultimate_social_media_icons.php:814
+msgid "Check it out"
+msgstr "Échale un vistazo"
+
+#: ultimate_social_media_icons.php:812
+msgid ", we found a fix for that:"
+msgstr "encontramos una solución para eso:"
+
+#: ultimate_social_media_icons.php:812
+msgid "have a look at our Premium Plugin"
+msgstr "echa un vistazo a nuestro plugin Premium,"
+
+#: ultimate_social_media_icons.php:810
+msgid "If you don’t want to lose the Facebook share & like counts"
+msgstr "Si no quieres perder tus conteos de me gusta y compartidos en Facebook"
+
+#: ultimate_social_media_icons.php:810
+msgid "Recently switched to https?"
+msgstr "¿Cambiaste a https recientemente?"
+
+#: css/images/index.php:2 css/index.php:3
+#: css/jquery-ui-1.10.4/images/index.php:3 css/jquery-ui-1.10.4/index.php:3
+#: fonts/index.php:3 images/icons_theme/animated_icons/index.php:3
+#: images/icons_theme/badge/index.php:3 images/icons_theme/black/index.php:3
+#: images/icons_theme/chrome_blue/index.php:3
+#: images/icons_theme/chrome_grey/index.php:3
+#: images/icons_theme/crystal/index.php:3 images/icons_theme/cubes/index.php:3
+#: images/icons_theme/cute/index.php:3 images/icons_theme/default/index.php:3
+#: images/icons_theme/flat/index.php:3
+#: images/icons_theme/flat_square/index.php:3
+#: images/icons_theme/flat_squared/index.php:3
+#: images/icons_theme/glossy/index.php:3
+#: images/icons_theme/icons_only/index.php:3 images/icons_theme/index.php:3
+#: images/icons_theme/official/index.php:3
+#: images/icons_theme/orange/index.php:3
+#: images/icons_theme/shaded_dark/index.php:3
+#: images/icons_theme/shaded_light/index.php:3
+#: images/icons_theme/silver/index.php:3 images/icons_theme/splash/index.php:3
+#: images/icons_theme/stitched/index.php:3 images/icons_theme/thin/index.php:3
+#: images/icons_theme/transparent/index.php:3 images/index.php:3
+#: images/visit_icons/Visit_us_twitter/index.php:3 index.php:3 js/index.php:3
+#: libs/controllers/index.php:3 libs/index.php:3 views/index.php:3
+msgid "Access Denied"
+msgstr "Acceso denegado"
+
+#. Description of the plugin
+#: ultimate_social_media_icons.php
+msgid "Easy to use and 100% FREE social media plugin which adds social media icons to your website with tons of customization features!."
+msgstr "¡Plugin de redes sociales fácil de utilizar y 100% GRATIS que añade iconos de redes sociales a tu web con muchísimas características de personalizado!"
+
+#. Plugin URI of the plugin
+#: ultimate_social_media_icons.php
+msgid "https://ultimatelysocial.com"
+msgstr "https://ultimatelysocial.com"
+
+#. Plugin Name of the plugin
+#: ultimate_social_media_icons.php
+msgid "Social Media and Share Icons (Ultimate Social Media)"
+msgstr "Iconos para compartir y de redes sociales (Ultimate Social Media)"

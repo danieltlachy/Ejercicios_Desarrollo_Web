@@ -1,0 +1,138 @@
+/* Wildcard/Comodin, aplica a cualquier elemento o componente del documento HTML*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Estilo a etiqueta directa de HTML*/
+body {
+    width: 100%; /* Porcentaje de tamano de pantalla ancho dinamico*/
+    height: 100vh; /* Viewport Height (vh) Llenar todo el alto*/
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #000000, #1f3d6b);
+}
+
+/* Estilo a etiqueta directa de HTML*/
+header {
+    height: auto;
+    display: flex;
+    align-items: end; /* Alineacion vertical*/
+    justify-content: center; /* Alineacion horizontal*/
+    background: transparent;
+    color: white;
+    font-size: 2.5vw;
+}
+
+/* Estilo a etiqueta directa de HTML*/
+footer {
+    background-color: rgb(1, 123, 23);
+    position: absolute;
+    bottom: 0%;
+    /* Con base en la ubicacion absoluta, posicion
+    del componente de abajo hacia arriba*/
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center; /* Alineacion vertical*/
+    justify-content: center; /* Alineacion horizontal*/
+    color: white;
+}
+
+/* Estilo a nivel de clase*/
+.logo {
+    width: 5%;
+    height: auto;
+    margin: 5px 15px 5px 5px;
+}
+
+/* Estilo a nivel de clase*/
+.contenido {
+    /* Centrar div contenido*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    /* Formato del div contenido*/
+    width: 40%;
+    border: 1px solid #717377;
+    padding: 20px;
+    border-radius: 16px;
+    background: transparent;
+    box-shadow: 0 3 15px rgba(40, 209, 40, 0.5);
+
+}
+
+/*Estilo a etiqueta directa de HTML*/
+table {
+    width: 100%;
+}
+
+/* Estilo a etiqueta directa de HTML solo para un tipo en especifico*/
+input[type="button"] {
+    border: none;
+    width: 60%;
+    height: 60px;
+    margin: 2px;
+    border-radius: 50%;
+    background: transparent;
+    color: #ffffff;
+    font-size: 20px;
+    box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1);
+    cursor: pointer; /* Cambia el cursor a una mano*/
+    transition-duration: 1s;
+}
+
+/* Estilo a etiqueta directa de HTML solo para un tipo en especifico
+adicionalmente que tenga un ESTADO EN ESPECIFICO*/
+input[type="button"]:hover {
+    background-color: #b7d7f9;
+}
+
+/* Estilo a un componente directo a partir de su ID*/
+#txt_resultado {
+    width: 100%;
+    height: 50px;
+    border: none;
+    text-align: right;
+    color: black;
+    font-size: 45px;
+    font-family: Consolas;
+    background-color: gainsboro;
+}
+
+/* Estilo a un componente directo a partir de su ID*/
+#b_ig {
+    background-color: #c6f987;
+    border: none;
+    color: black;
+    width: 100%;
+    height: 50px;
+    border-radius: 1%;
+    transition-duration: 0.5s;
+}
+
+/* Estilo a un componente directo a partir de su ID en un estado del componente*/
+#b_ig:hover {
+    background-color: #66cf47;
+}
+
+#b_lim {
+    background-image: url(../resources/images/limpiar.png);
+    background-repeat: no-repeat;
+    background-size: 59px;
+}
+
+#b_bor {
+    background-image: url(../resources/images/borrar.png);
+    background-repeat: no-repeat;
+    background-size: 59px;
+}
+
+#b_igual {
+    background-image: url(../resources/images/igual.png);
+    background-repeat: no-repeat;
+    background-size: 59px;
+}

@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*Wildcard/Comodin, aplica a cualquier elemento o componente del documento HTML*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: navy;
+}
+/*Estilo a etiqueta directa de HTML*/
+body{
+    width: 100%; /*Porcentaje de tamaño pantalla Ancho dinámico*/
+    height: 100vh; /*Viewport Height (vh) Llenar todo el alto*/
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    background-image:url("../resources/fondo.jpg");
+}
+
+/*Estilo a etiqueta directa de HTML*/
+header {
+    text-align: center;
+    font-size: 20px;
+}
+
+/*Estilo a nivel de clase*/
+.contenido{
+    /* Formato del div contenido */
+    border: 1px solid #717377;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 16px;
+    background: #ffffff52;
+    box-shadow: 0px 3px 15px rgba(37, 235, 19, 0.8);
+}
+
+input,select {
+    width: 250px;
+    padding: 10px 30px;
+    font-size: 18px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    font-weight: 0;
+    font-size: 14px;
+    padding: 10px 30px;
+    box-shadow: rgb(0, 0, 0) 0px 0px 0px 0px;
+    border-radius: 50px;
+    transition : 1000ms;
+    cursor: pointer;
+    background-color: #fff;
+    color: #0066cc;
+    border: solid 2px #0066cc;
+}
+
+input[type=submit]:hover{
+    transition : 1000ms;
+    padding: 10px 50px;
+    transform : translateY(-1px);
+    background-color: #0066CC;
+    color: #fff;
+    border: 2px solid #0066cc;
+}
+
+.resultados {
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #717377;
+    margin: 15px;
+    padding: 20px;
+    border-radius: 16px;
+    background: #ffffff52;
+    box-shadow: 0px 3px 15px rgba(37, 235, 19, 0.8);
+}
+
+.tarjetas {
+    margin: 5%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tarjeta {
+    background-color: #448ce986;
+    width: 24%;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition-duration: 0.5s;
+}
+.tarjeta:hover {
+    background-color: #4ea0cfd3;
+}
+
+.sinresultados {
+    color: #ac3131;
+    font-weight: bold;
+}

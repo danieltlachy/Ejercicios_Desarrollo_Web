@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cocktail Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🍹 Cocktail Explorer</h1>
+    <div class="search-bar">
+      <input type="text" id="searchInput" placeholder="Buscar cóctel (ej. Margarita)">
+      <button onclick="buscarCoctel()">Buscar</button>
+      <button onclick="cargarAleatorio()">🎲 Aleatorio</button>
+    </div>
+  </header>
+
+  <main>
+    <section id="categoriasContainer">
+      <h2>Categorías</h2>
+      <div id="categorias"></div>
+    </section>
+
+    <section>
+      <h2>Favoritos ⭐</h2>
+      <div id="favoritos"></div>
+    </section>
+
+    <section>
+      <h2>Explorar Cócteles</h2>
+      <div id="cocteles" class="grid"></div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2023 Cocktail Explorer | Powered by TheCocktailDB</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,415 @@
+# Translation of Themes - Twenty Twelve in Spanish (Mexico)
+# This file is distributed under the same license as the Themes - Twenty Twelve package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2024-02-24 16:51:04+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/4.0.1\n"
+"Language: es_MX\n"
+"Project-Id-Version: Themes - Twenty Twelve\n"
+
+#. Description of the theme
+#: style.css
+#, gp-priority: high
+msgid "The 2012 theme for WordPress is a fully responsive theme that looks great on any device. Features include a front page template with its own widgets, an optional display font, styling for post formats on both index and single views, and an optional no-sidebar page template. Make it yours with a custom menu, header image, and background."
+msgstr "El tema 2012 para WordPress es un tema completamente responsivo que se ve genial en cualquier dispisitivo. Sus características incluyen una plantilla para la página principal con sus propios widgets, una tipodragía opcional, formatos de estilo para tus publicaciones tanto en la vista del índice y sencilla, además de una plantilla opcional que no cuenta con barra lateral. "
+
+#. Theme Name of the theme
+#: style.css inc/block-patterns.php:20
+#, gp-priority: high
+msgid "Twenty Twelve"
+msgstr "Twenty Twelve"
+
+#: inc/block-patterns.php:106
+msgid "It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar. Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth."
+msgstr "Es un país paradisíaco, en el que las partes tostadas de las frases vuelan hacia tu boca. Incluso el todopoderoso Pointing no tiene control sobre los textos ciegos, es una vida casi no ortográfica Un día, sin embargo, una pequeña línea de texto ciego con el nombre de Lorem Ipsum decidió partir hacia el lejano Mundo de la Gramática. Muy lejos, detrás de las montañas de palabras, lejos de los países Vokalia y Consonantia, viven los textos ciegos. Separados viven en Bookmarksgrove, justo en la costa de la Semántica, un gran océano lingüístico. Un pequeño río llamado Duden fluye junto a su lugar y lo abastece de la regelialia necesaria. Es un país paradisíaco, en el que las partes tostadas de las frases vuelan hacia tu boca."
+
+#: inc/block-patterns.php:100
+msgid "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth."
+msgstr "Muy lejos, tras las montañas de la palabra, lejos de los países Vokalia y Consonantia, viven los textos ciegos. Separados, viven en Bookmarksgrove, justo en la costa de la Semántica, un gran océano lingüístico. Un pequeño río llamado Duden fluye junto a su lugar y lo abastece de la regelialia necesaria. Es un país paradisíaco, en el que las partes tostadas de las frases vuelan hacia tu boca."
+
+#: inc/block-patterns.php:89
+msgid "Left-aligned Image and Paragraph"
+msgstr "Imagen y párrafo alineados a la izquierda"
+
+#: inc/block-patterns.php:80
+msgid "—  Albert Einstein"
+msgstr "—  Albert Einstein"
+
+#: inc/block-patterns.php:78
+msgid "\"Few people are capable of expressing with equanimity opinions which differ from the prejudices of their social environment. Most people are even incapable of forming such opinions.\""
+msgstr "\"Pocas personas son capaces de expresar con ecuanimidad opiniones que difieren de los prejuicios de su entorno social. La mayoría de la gente es incluso incapaz de formarse tales opiniones.\""
+
+#: inc/block-patterns.php:74
+msgid "Left-aligned Large Quote"
+msgstr "Cita grande alineada a la izquierda"
+
+#: inc/block-patterns.php:48 inc/block-patterns.php:95
+msgid "Close up of a yellow leaf."
+msgstr "Primer plano de una hoja amarilla."
+
+#: inc/block-patterns.php:43 inc/block-patterns.php:54
+#: inc/block-patterns.php:62
+msgid "Close up of a yellow and green leaf."
+msgstr "Primer plano de una hoja amarilla y verde."
+
+#: inc/block-patterns.php:33
+msgid "Floating Images Gallery"
+msgstr "Galería de imágenes flotantes"
+
+#: functions.php:482
+msgid "Your comment is awaiting moderation. This is a preview; your comment will be visible after it has been approved."
+msgstr "Tu comentario está esperando ser moderado. Esto es una vista previa; tu comentario será visible después de que haya sido aprobado."
+
+#. translators: %s: The post title.
+#: comments.php:35
+msgid "One thought on &ldquo;%s&rdquo;"
+msgstr "Un comentario en &ldquo;%s&rdquo;"
+
+#: functions.php:101
+msgid "White"
+msgstr "Blanco"
+
+#: functions.php:96
+msgid "Light Gray"
+msgstr "Gris claro"
+
+#: functions.php:91
+msgid "Medium Gray"
+msgstr "Gris medio"
+
+#: functions.php:86
+msgid "Dark Gray"
+msgstr "Gris oscuro"
+
+#: functions.php:81
+msgid "Blue"
+msgstr "Azul"
+
+#. Template Name of the theme
+msgid "Full-width Page Template, No Sidebar"
+msgstr "Página a tamaño completo, sin barras laterales"
+
+#. Template Name of the theme
+msgid "Front Page Template"
+msgstr "Plantilla de página de portada"
+
+#. translators: %s: Tag title.
+#: tag.php:24
+msgid "Tag Archives: %s"
+msgstr "Archivo de la etiqueta: %s"
+
+#: single.php:25
+msgctxt "Next post link"
+msgid "&rarr;"
+msgstr "&rarr;"
+
+#: single.php:24
+msgctxt "Previous post link"
+msgid "&larr;"
+msgstr "&larr;"
+
+#: search.php:46
+msgid "Sorry, but nothing matched your search criteria. Please try again with some different keywords."
+msgstr "Lo sentimos pero no hay nada que se ajuste a tu criterio de búsqueda. Por favor, inténtalo de nuevo con otras palabras clave."
+
+#. translators: %s: Search query.
+#: search.php:21
+msgid "Search Results for: %s"
+msgstr "Resultados de la búsqueda para: %s"
+
+#. translators: %s: Post editor URL.
+#: index.php:49
+msgid "Ready to publish your first post? <a href=\"%s\">Get started here</a>."
+msgstr "¿Listo para publicar tu primera entrada? <a href=\"%s\">Empieza aquí</a>."
+
+#: index.php:42
+msgid "No posts to display"
+msgstr "No hay entradas que mostrar"
+
+#: image.php:47
+msgid "Next &rarr;"
+msgstr "Siguiente &rarr;"
+
+#: image.php:46
+msgid "&larr; Previous"
+msgstr "&larr; Anterior"
+
+#. translators: 1: Date, 2: Date, 3: Attachment URL, 4: Image width in pixels,
+#. 5: Image height in pixels, 6: Post parent permalink, 7: Post parent title,
+#. 8: Post parent title.
+#: image.php:31
+msgid "<span class=\"meta-prep meta-prep-entry-date\">Published </span> <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> at <a href=\"%3$s\" title=\"Link to full-size image\">%4$s &times; %5$s</a> in <a href=\"%6$s\" title=\"Go to %7$s\" rel=\"gallery\">%8$s</a>."
+msgstr "<span class=\"meta-prep meta-prep-entry-date\">Publicado el</span> <span class=\"entry-date\"><time class=\"entry-date\" datetime=\"%1$s\">%2$s</time></span> a las <a href=\"%3$s\" title=\"Enlace a la imagen completa\">%4$s &times; %5$s</a> en <a href=\"%6$s\" title=\"Ir a %7$s\" rel=\"gallery\">%8$s</a>."
+
+#: header.php:45
+msgid "Skip to content"
+msgstr "Ir al contenido"
+
+#: header.php:44
+msgid "Menu"
+msgstr "Menú"
+
+#. translators: 3: Date, 4: Author display name.
+#: functions.php:556
+msgid "This entry was posted on %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr "Esta entrada fue publicada en %3$s<span class=\"by-author\"> por %4$s</span>."
+
+#. translators: 1: Category name, 3: Date, 4: Author display name.
+#: functions.php:553
+msgid "This entry was posted in %1$s on %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr "Esta entrada fue publicada en %1$s en %3$s<span class=\"by-author\"> por %4$s</span>."
+
+#. translators: 1: Category name, 2: Tag name, 3: Date, 4: Author display name.
+#: functions.php:550
+msgid "This entry was posted in %1$s and tagged %2$s on %3$s<span class=\"by-author\"> by %4$s</span>."
+msgstr "Esta entrada fue publicada en %1$s y etiquetada en %2$s el %3$s<span class=\"by-author\"> por %4$s</span>."
+
+#. translators: %s: Author display name.
+#: functions.php:544
+msgid "View all posts by %s"
+msgstr "Ver todas las entradas de %s"
+
+#. translators: Used between list items, there is a space after the comma.
+#: functions.php:404
+msgid ", "
+msgstr ", "
+
+#: functions.php:501
+msgid "Reply"
+msgstr "Responder"
+
+#: functions.php:480
+msgid "Your comment is awaiting moderation."
+msgstr "Tu comentario está pendiente de moderación."
+
+#. translators: 1: Date, 2: Time.
+#: functions.php:472
+msgid "%1$s at %2$s"
+msgstr "%1$s a las %2$s"
+
+#: functions.php:465
+msgid "Post author"
+msgstr "Autor"
+
+#: functions.php:449
+msgid "(Edit)"
+msgstr "(Editar)"
+
+#: functions.php:449
+msgid "Pingback:"
+msgstr "Pingback:"
+
+#: functions.php:421
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Entradas más nuevas <span class=\"meta-nav\">&rarr;</span>"
+
+#: functions.php:420
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&larr;</span> Entradas más antiguas"
+
+#: functions.php:419 single.php:23
+msgid "Post navigation"
+msgstr "Navegación de entradas"
+
+#: functions.php:382
+msgid "Second Front Page Widget Area"
+msgstr "Segunda Área para Widgets de la Página Frontal "
+
+#: functions.php:372 functions.php:384
+msgid "Appears when using the optional Front Page template with a page set as Static Front Page"
+msgstr "Aparece cuando se utiliza la plantilla opcional de la Página Frontal  con una página establecida como Página Frontal Estática"
+
+#: functions.php:370
+msgid "First Front Page Widget Area"
+msgstr "Área de Widgets de la Primera Página Frontal "
+
+#: functions.php:360
+msgid "Appears on posts and pages except the optional Front Page template, which has its own widgets"
+msgstr "Aparece en publicaciones y páginas, excepto en la Plantilla Opcional de la Página Principal, la cual tiene sus propios widgets."
+
+#: functions.php:358
+msgid "Main Sidebar"
+msgstr "Barra lateral principal"
+
+#. translators: %s: Page number.
+#: functions.php:326
+msgid "Page %s"
+msgstr "Página %s"
+
+#. translators: If there are characters in your language that are not supported
+#. by Open Sans, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:172
+msgctxt "Open Sans font: on or off"
+msgid "on"
+msgstr "Encendido"
+
+#: functions.php:115
+msgid "Primary Menu"
+msgstr "Menú principal"
+
+#. translators: %s: WordPress
+#: footer.php:24
+msgid "Proudly powered by %s"
+msgstr "Creado con %s"
+
+#: footer.php:21
+msgid "Semantic Personal Publishing Platform"
+msgstr "Plataforma de publicación semántica personal."
+
+#. translators: %s: Author display name.
+#: content.php:85
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Ver todas las entradas de %s <span class=\"meta-nav\">&rarr;</span>"
+
+#: content.php:16
+msgid "Featured post"
+msgstr "Entrada destacada"
+
+#: content-page.php:24 content.php:50 image.php:124
+msgid "Pages:"
+msgstr "Páginas:"
+
+#: content-none.php:17 index.php:63
+msgid "Apologies, but no results were found. Perhaps searching will help find a related post."
+msgstr "Disculpas, pero no se han encontrado resultados. Quizás pueda buscar una entrada relacionada."
+
+#: content-none.php:13 index.php:59 search.php:42
+msgid "Nothing Found"
+msgstr "No se ha encontrado nada"
+
+#: content-link.php:15
+msgid "Link"
+msgstr "Enlace"
+
+#: content-aside.php:29 content-image.php:26 content-link.php:27
+#: content-page.php:31 content-quote.php:26 content-status.php:43
+#: content.php:60 functions.php:492 image.php:42
+msgid "Edit"
+msgstr "Editar"
+
+#: content-aside.php:26 content-image.php:23 content-link.php:24
+#: content-quote.php:23 content-status.php:40 content.php:35
+msgid "% Replies"
+msgstr "% Respuestas"
+
+#: content-aside.php:26 content-image.php:23 content-link.php:24
+#: content-quote.php:23 content-status.php:40 content.php:35
+msgid "1 Reply"
+msgstr "1 Respuesta"
+
+#: content-aside.php:26 content-image.php:23 content-link.php:24
+#: content-quote.php:23 content-status.php:40 content.php:35
+msgid "Leave a reply"
+msgstr "Deja un comentario"
+
+#. translators: %s: Post title.
+#: content-aside.php:11 content-link.php:11 content-quote.php:11
+#: content-status.php:11
+msgid "Permalink to %s"
+msgstr "Enlace permanente a %s"
+
+#: content-aside.php:18 content-image.php:13 content-link.php:17
+#: content-quote.php:16 content-status.php:34 content.php:46
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Sigue leyendo <span class=\"meta-nav\">&rarr;</span>"
+
+#: comments.php:75
+msgid "Comments are closed."
+msgstr "Los Comentarios están cerrados."
+
+#: comments.php:64
+msgid "Newer Comments &rarr;"
+msgstr "Comentarios más recientes &rarr;"
+
+#: comments.php:63
+msgid "&larr; Older Comments"
+msgstr "&larr; Comentarios más antiguos"
+
+#: comments.php:62
+msgid "Comment navigation"
+msgstr "Navegación de comentarios"
+
+#. translators: 1: The number of comments, 2: The post title.
+#: comments.php:41
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "%1$s comentario en &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s comentarios en &ldquo;%2$s&rdquo;"
+
+#. translators: %s: Category title.
+#: category.php:24
+msgid "Category Archives: %s"
+msgstr "Archivos de la categoría %s"
+
+#. translators: Author display name.
+#. translators: %s: Author display name.
+#: author.php:74 content.php:77
+msgid "About %s"
+msgstr "Acerca de %s"
+
+#. translators: Author display name.
+#: author.php:36
+msgid "Author Archives: %s"
+msgstr "Archivo del Autor: %s"
+
+#: archive.php:39
+msgid "Archives"
+msgstr "Archivo"
+
+#. translators: %s: Date.
+#: archive.php:37
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#. translators: %s: Date.
+#: archive.php:37
+msgid "Yearly Archives: %s"
+msgstr "Archivo por años: %s"
+
+#. translators: %s: Date.
+#: archive.php:34
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#. translators: %s: Date.
+#: archive.php:34
+msgid "Monthly Archives: %s"
+msgstr "Archivo por meses: %s"
+
+#. translators: %s: Date.
+#: archive.php:31
+msgid "Daily Archives: %s"
+msgstr "Archivo por días: %s"
+
+#: 404.php:21
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "Parece que no encontramos lo que estás intentando localizar. Es posible que te ayude buscarlo."
+
+#: 404.php:17
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr "Esto es vergonzoso, ¿cierto?"
+
+#. Author URI of the theme
+#: style.css footer.php:21
+#, gp-priority: low
+msgid "https://wordpress.org/"
+msgstr "https://es-mx.wordpress.org/"
+
+#. Author of the theme
+#: style.css
+#, gp-priority: low
+msgid "the WordPress team"
+msgstr "el equipo de WordPress"
+
+#. Theme URI of the theme
+#: style.css
+#, gp-priority: low
+msgid "https://wordpress.org/themes/twentytwelve/"
+msgstr "https://es-mx.wordpress.org/themes/twentytwelve/"

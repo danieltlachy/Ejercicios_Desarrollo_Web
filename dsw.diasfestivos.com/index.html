@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Días Festivos</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/diasfestivos.js"></script>
+    </head>
+    <body>
+        <header>
+            <h1>Días Festivos</h1>
+        </header>
+        <br><br>
+        <div class="contenido">
+            <form onsubmit="return consultar()">
+                <label for="cbx_pais">Selecciona un país:</label>
+                <select name="" id="cbx_pais">
+                    <option value="MX" selected>México</option>
+                    <option value="US">Estados Unidos</option>
+                </select>
+                &nbsp;
+                <label for="txt_anio">Selecciona un año:</label>
+                <input id="txt_anio" type="number" min="2000" max="2050" step="1" required />
+                &nbsp;
+                <label for="cbx_mes">Selecciona un mes:</label>
+                <select id="cbx_mes">
+                    <option value="1" selected>Enero</option>
+                    <option value="2">Febrero</option>
+                    <option value="3">Marzo</option>
+                    <option value="4">Abril</option>
+                    <option value="5">Mayo</option>
+                    <option value="6">Junio</option>
+                    <option value="7">Julio</option>
+                    <option value="8">Agosto</option>
+                    <option value="9">Septiembre</option>
+                    <option value="10">Octubre</option>
+                    <option value="11">Noviembre</option>
+                    <option value="12">Diciembre</option>
+                </select>
+                &nbsp;
+                <input type="submit" value="Consultar" />
+            </form>
+        </div>
+        <br><br>
+        <div id="div_resultados" class="resultados"></div>
+    </body>
+</html>

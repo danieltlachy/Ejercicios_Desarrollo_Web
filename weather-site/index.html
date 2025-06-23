@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicación acerca del Clima</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="weatherInfo" id="weatherHeader">
+        <h1>Bienvenido(a) a una aplicación acerca del Clima</h1>
+    </div>
+
+    <form id="weatherForm">
+        <label for="txt_city">Ingresa el nombre de una Ciudad:</label>
+        <input type="text" name="txt_city" id="txt_city" placeholder="Ciudad" required>
+        <br><br>
+        <input type="button" value="Consultar el clima actual" onclick="getWeatherData()">
+        <br><br>
+        <input type="button" value="Consultar el pronóstico de los siguientes 5 días" onclick="getWeatherForecast()">
+    </form>
+
+    <main>
+        <div id="interno">
+            <div class="weatherInfo" id="forecastHeader"></div>
+            <div id="resultados"></div>
+        </div>
+    </main>
+
+    <footer>
+        <marquee behavior="scroll" direction="left">
+            Aplicación de clima desarrollada por Daniel Mongeote Tlachy
+        </marquee>
+    </footer>
+    <script type="text/javascript" src="js/weather.js"></script>
+</body>
+</html>

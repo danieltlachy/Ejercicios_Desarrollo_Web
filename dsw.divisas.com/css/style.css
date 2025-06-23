@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*Wildcard/Comodin, aplica a cualquier elemento o componente 
+del documento HTML*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+/*Estilo a etiqueta directa de HTML*/
+body{
+    width: 100%; /*Porcentaje de tamaño pantalla Ancho dinámico*/
+    height: 100vh; /*Viewport Height (vh) Llenar todo el alto*/
+    justify-content: center;
+    align-items: center;
+    background:
+        radial-gradient(black 15%, transparent 16%) 0 0,
+        radial-gradient(black 15%, transparent 16%) 8px 8px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+        radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+    background-color:#282828;
+    background-size:16px 16px;
+}
+
+/*Estilo a etiqueta directa de HTML*/
+header {
+    text-align: center;
+    font-size: 20px;
+}
+
+/*Estilo a nivel de clase*/
+.imagen_moneda{
+    width:85px;
+    height:85px;
+}
+
+/*Estilo a nivel de clase*/
+.botonswitch{
+    background: transparent;
+    background-image: url('/img/switch.png'); 
+    background-size: cover; 
+    background-position: center; 
+    margin: 20px;
+    width:64px;
+    height:64px;
+}
+
+/*Estilo a nivel de clase*/
+.contenedormonedas{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+/*Estilo a nivel de clase*/
+.contenido{
+    /* Centrar div contenido */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+
+    /* Formato del div contenido */
+    width: 40%;
+    border: 1px solid #717377;
+    padding: 20px;
+    border-radius: 16px;
+    background: transparent;
+    box-shadow: 0px 3px 15px rgba(37, 235, 19, 0.8);
+}
+
+.entrada{
+    width: 100%;
+    height: 50px;
+    border: none;
+    text-align: right;
+    color: black;
+    font-size: 20px;
+    background-color: gainsboro;
+}
+
+.resultado{
+    width: 100%;
+    height: 50px;
+    border: none;
+    text-align: right;
+    color: black;
+    font-size: 20px;
+    background-color: #98ecff;
+}
+
+.btn_convertir {
+    width: 100%;
+	box-shadow:inset 0px 1px 0px 0px #a4e271;
+	background:linear-gradient(to bottom, #89c403 5%, #77a809 100%);
+	background-color:#89c403;
+	border-radius:6px;
+	border:1px solid #74b807;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #528009;
+}
+
+.btn_convertir:hover {
+	background:linear-gradient(to bottom, #77a809 5%, #89c403 100%);
+	background-color:#77a809;
+}
+.btn_convertir:active {
+	position:relative;
+	top:5px;
+}
+
+/*Estilo a etiqueta directa de HTML*/
+footer {
+    background-color: rgb(1, 123, 23);
+    position: absolute;
+    bottom: 0%; 
+    /* Con base en la ubicación absoluta, posición del 
+    componente de abajo hacia arriba*/
+    width: 100%;
+    height: 30px;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
